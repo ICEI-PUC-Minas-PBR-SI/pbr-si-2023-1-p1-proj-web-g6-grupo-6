@@ -46,16 +46,28 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001|  O sistema deve permitir cadastrar usuários | ALTA|
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
-
+|RF-001| O sistema deve permitir cadastrar usuários | ALTA |
+|RF-002| O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | ALTA |
+|RF-003| O sistema deve permitir que usuários Beneficiados cadastrem Projetos| ALTA |
+|RF-004| O sistema deve permitir que usuários Voluntários se inscrevam em Projetos |  ALTA |
+|RF-005| O sistema deve permitir classificar os projetos entre Presencial ou Online | ALTA |
+|RF-006| O sistema deve permitir classificar os Projetos em Área de Motivação | ALTA |
+|RF-007| O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica | ALTA |
+|RF-008| O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto | ALTA |
+|RF-009| O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve atender as normais legais | MÉDIA | 
+|RNF-002| O sistema deve funcionar 24/7 | BAIXA | 
+|RNF-003| O sistema deve abrir o login em 10s | BAIXA |
+|RNF-004| O sistema deve fazer backup de 24 em 24 horas | BAIXA |
+|RNF-005| O sistema deve ser acessado via cloud | BAIXA |
+|RNF-006| O sistema deve ser responsivo | MÉDIA |
+|RNF-007| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA
+|RNF-008| O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada | ALTA
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
