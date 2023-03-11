@@ -11,11 +11,12 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Lucas Vieira Souza
+* João Marcelo Byrro Ferreira Pinto
+* Eduarda Faria Pinheiro 
+* Giovanna Fabíola Vaz
+* Leticia Gabriela Ramos Macedo
+* Gustavo Amaral Silva
 
 ## Orientador
 
