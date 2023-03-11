@@ -17,6 +17,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Giovanna Fabíola Vaz
 * Leticia Gabriela Ramos Macedo
 * Gustavo Amaral Silva
+*  Otávio Stefanine Nunes Soutelo
 
 ## Orientador
 
