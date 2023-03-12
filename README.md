@@ -6,8 +6,7 @@
 `DISCIPLINA: Projeto - Aplicações Web`
 
 `SEMESTRE: 1º`
-
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto trata-se do desenvolvimento de um site que facilite a execução de trabalhos voluntários, uma vez que irá conectar pessoas em situação de necessidade e pessoas que desejam ajudar o próximo. Para isso, o grupo pretende montar um site que seja de fácil acesso a todos, de modo a alcançar mais pessoas e, assim, promover o aumento do trabalho volutário na sociedade.  
 
 ## Integrantes
 
