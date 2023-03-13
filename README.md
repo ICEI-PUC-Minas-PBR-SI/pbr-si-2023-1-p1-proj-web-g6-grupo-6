@@ -16,11 +16,12 @@ O projeto trata-se do desenvolvimento de um site que facilite a execução de tr
 * Giovanna Fabíola Vaz
 * Leticia Gabriela Ramos Macedo
 * Gustavo Amaral Silva
-*  Otávio Stefanine Nunes Soutelo
+* Otávio Stefanine Nunes Soutelo
 
 ## Orientador
 
-* Nome completo do professor 1
+* Fabio Leandro Rodrigues Cordeiro
+* Cristiano Geraldo Teixeira Silva
 
 # Planejamento
 
