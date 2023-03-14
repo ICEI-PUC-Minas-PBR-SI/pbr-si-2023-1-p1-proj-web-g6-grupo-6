@@ -1,101 +1,77 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
+Persona 1: Maria Fernanda
+•	Idade: 49 anos 
+•	Sexo: Feminino 
+•	Formação educacional: Ensino superior completo 
+•	Renda: Renda própria (salário) 
+•	Profissão: Educadora 
+•	Religião: Católica 
+•	Classe social: Média 
+•	Localização: Região central de Belo Horizonte  
+•	Estado civil: Casada
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
-
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Persona 2: Artur
+•	Idade: 17 anos
+•	Sexo: Masculino
+•	Formação educacional: Ensino médio incompleto (Desistiu da escola pela precariedade da instituição)
+•	Renda:  R$ 1.302 (Salário mínimo)
+•	Religião: Católica
+•	Classe social: Baixa
+•	Localização: Aglomerado da Serra (Periferia de MG)
+•	Condição de vida: Precária
 
 ## Histórias de Usuários
+Contexto: Um site projetado para conectar diversas pessoas que possuem demandas e objetivos em cima do mesmo tópico: trabalho voluntário. Com o propósito de facilitar a interação entre voluntários e pessoas que necessitam de algum auxílio, o projeto consiste em desenvolver uma plataforma que assegura que os usuários se cadastrem e se identifiquem como voluntários ou beneficiários e, assim, conecta ambos os lados de acordo com a compatibilidade entre os perfis.
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Voluntário: Como uma pessoa que tem a intenção de se voluntariar para realizar trabalhos que beneficiem a sociedade, quero ter acesso a um site que me permita encontrar ONGs, instituições e pessoas físicas que necessitem de ajuda em algum serviço na região em que moro, para que eu possa me voluntariar.  
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+Critérios de aceite: 
+•	Uma lista exibida no site com as informações: 
+-	Da pessoa/ONG/instituição que necessite de algum trabalho voluntário; 
+-	Da localização do beneficário; 
+-	Do tipo de serviço necessário. 
+•	Banco de dados atualizado com as informações de todos os beneficiários. 
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+ Definição de Pronto: 
+•	Banco de dados feito, revisado e em produção; 
+•	A lista dos beneficiários pendentes revisada e no ar. 
+Beneficiário: Como uma ONG/instituição/pessoa que necessita de ajuda e auxílio em algum serviço, quero ter acesso a um site que me permita encontrar pessoas que estão dispostas a ajudar e que se voluntariam a prestar serviços sociais, para que a minha situação seja resolvida. 
+Critérios de aceite: 
+•	Uma lista exibida no site com as informações: 
+-	Da pessoa voluntária; 
+-	Da localização do voluntário; 
+-	Do tipo de serviço fornecido. 
+•	Banco de dados atualizado com as informações de todos os voluntários. 
+Definição de Pronto: 
+•	Banco de dados feito, revisado e em produção; 
+•	A lista dos voluntários pendentes revisada e no ar.
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
 ### Requisitos Funcionais
-
-|ID    | Descrição do Requisito  | Prioridade | Responsável |
-|------|-----------------------------------------|----| ----|
-|RF-001| O sistema deve permitir cadastrar usuários | ALTA |
-|RF-002| O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | ALTA |
-|RF-003| O sistema deve permitir que usuários Beneficiados cadastrem Projetos| ALTA |
-|RF-004| O sistema deve permitir que usuários Voluntários se inscrevam em Projetos |  ALTA |
-|RF-005| O sistema deve permitir classificar os projetos entre Presencial ou Online | ALTA |
-|RF-006| O sistema deve permitir classificar os Projetos em Área de Motivação | ALTA |
-|RF-007| O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica | ALTA |
-|RF-008| O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto | ALTA |
-|RF-009| O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto | ALTA |
+•	O sistema deve permitir cadastrar usuários;
+•	O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados;
+•	O sistema deve permitir que usuários Beneficiados cadastrem Projetos;
+•	O sistema deve permitir que usuários Voluntários se inscrevam em Projetos;
+•	O sistema deve permitir classificar os projetos entre Presencial ou Online; 
+•	O sistema deve permitir classificar os Projetos em Área de Motivação;
+•	O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica;
+•	O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto;
+•	O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto.
 
 ### Requisitos não Funcionais
+•	O sistema deve funcionar 24/7;
+•	O sistema deve abrir o login em 10s;
+•	O sistema deve fazer backup de 24 em 24 horas;
+•	O sistema deve ser acessado via cloud;
+•	O sistema deve ser responsivo;
+•	O sistema deve fechar os projetos concluídos ou que tenham data de validade;
+•	O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada.
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve atender as normais legais | MÉDIA | 
-|RNF-002| O sistema deve funcionar 24/7 | BAIXA | 
-|RNF-003| O sistema deve abrir o login em 10s | BAIXA |
-|RNF-004| O sistema deve fazer backup de 24 em 24 horas | BAIXA |
-|RNF-005| O sistema deve ser acessado via cloud | BAIXA |
-|RNF-006| O sistema deve ser responsivo | MÉDIA |
-|RNF-007| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA
-|RNF-008| O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada | ALTA
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
+•	O projeto deverá ser entregue até o final do semestre;
+•	Não pode ser desenvolvido um módulo de backend.
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
