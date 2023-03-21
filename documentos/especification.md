@@ -44,34 +44,21 @@ Definição de Pronto:
 ## Requisitos
 
 ### Requisitos Funcionais
-•	O sistema deve permitir cadastrar usuários;
-•	O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados;
-•	O sistema deve permitir que usuários Beneficiados cadastrem Projetos;
-•	O sistema deve permitir que usuários Voluntários se inscrevam em Projetos;
-•	O sistema deve permitir classificar os projetos entre Presencial ou Online; 
-•	O sistema deve permitir classificar os Projetos em Área de Motivação;
-•	O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica;
-•	O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto;
-•	O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto.
+
+|ID    | Descrição do Requisito  | Prioridade | Responsável |
+|------|-----------------------------------------|----| ----|
+RF-001 - O sistema deve permitir cadastrar usuários com login e senha - ALTA 
+RF-002 - O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | ALTA 
+RF-003 - O sistema deve permitir que usuários Beneficiados cadastrem Projetos - ALTA 
+RF-004 - O sistema deve permitir que usuários Voluntários se inscrevam em Projetos -  ALTA 
+RF-005 - O sistema deve permitir classificar os Projetos em Área de Motivação - ALTA 
+RF-006 - O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica - ALTA 
+RF-007 - O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto - MÉDIA 
+RF-008 - O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto - MÉDIA 
+
 
 ### Requisitos não Funcionais
 •	O sistema deve funcionar 24/7;
-•	O sistema deve abrir o login em 10s;
-•	O sistema deve fazer backup de 24 em 24 horas;
-•	O sistema deve ser acessado via cloud;
-•	O sistema deve ser responsivo;
-•	O sistema deve fechar os projetos concluídos ou que tenham data de validade;
-•	O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada.
-|ID    | Descrição do Requisito  | Prioridade | Responsável |
-|------|-----------------------------------------|----| ----|
-|RF-001| O sistema deve permitir cadastrar usuários com login e senha|  ALTA | 
-|RF-002| O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | ALTA |
-|RF-003| O sistema deve permitir que usuários Beneficiados cadastrem Projetos | ALTA |
-|RF-004| O sistema deve permitir que usuários Voluntários se inscrevam em Projetos |  ALTA |
-|RF-005| O sistema deve permitir classificar os Projetos em Área de Motivação | ALTA |
-|RF-006| O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica | ALTA |
-|RF-007| O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto | MÉDIA |
-|RF-008| O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto | MÉDIA |
 
 ### Requisitos não Funcionais
 |RNF-001| O sistema deve funcionar 24/7 | BAIXA | 
