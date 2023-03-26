@@ -68,12 +68,12 @@ Definição de Pronto:
 |RF-008| O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto | MÉDIA |
 
 ### Requisitos não Funcionais
-|RNF-001| O sistema deve funcionar 24/7 | BAIXA | 
-|RNF-002| O sistema deve abrir o login em 10s | BAIXA |
-|RNF-003| O sistema deve fazer backup de 24 em 24 horas | BAIXA |
-|RNF-004| O sistema deve ser acessado via cloud | BAIXA |
-|RNF-005| O sistema deve ser responsivo | MÉDIA |
-|RNF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA |
+|RF-001| O sistema deve funcionar 24/7 | BAIXA | 
+|RF-002| O sistema deve abrir o login em 10s | BAIXA |
+|RF-003| O sistema deve fazer backup de 24 em 24 horas | BAIXA |
+|RF-004| O sistema deve ser acessado via cloud | BAIXA |
+|RF-005| O sistema deve ser responsivo | MÉDIA |
+|RF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA |
 
 ## Restrições
 •	O projeto deverá ser entregue até o final do semestre;
