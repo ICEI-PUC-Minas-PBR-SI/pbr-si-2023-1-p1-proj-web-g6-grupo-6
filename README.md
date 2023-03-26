@@ -10,12 +10,12 @@ O projeto trata-se do desenvolvimento de um site que facilite a execução de tr
 
 ## Integrantes
 
-* Lucas Vieira Souza
-* João Marcelo Byrro Ferreira Pinto
 * Eduarda Faria Pinheiro 
 * Giovanna Fabíola Vaz
-* Leticia Gabriela Ramos Macedo
 * Gustavo Amaral Silva
+* João Marcelo Byrro Ferreira Pinto
+* Leticia Gabriela Ramos Macedo
+* Lucas Vieira Souza
 * Otávio Stefanine Nunes Soutelo
 
 ## Orientador
