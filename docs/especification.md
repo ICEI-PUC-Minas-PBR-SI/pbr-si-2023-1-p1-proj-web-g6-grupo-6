@@ -72,3 +72,7 @@ Definição de Pronto: <br />
 •	O projeto não poderá ser desenvolvido um módulo de backend;<br />
 • O sistema deverá estar em conformidade com os parâmetros instituídos pela lei nº 12.965, denominada Marco Civil da Internet.<br />
 • Ao final do semestre, deverá ser entregue uma aplicação que forneça acesso facilitado a todas as pessoas, englobando todas as idades, classes sociais e gêneros.
+
+## Linguagens Utilizadas
+• Front-end: HTML + CSS, Bootstrap;
+• Back-end: não será utilizado nesta aplicação. 
