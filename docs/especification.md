@@ -1,6 +1,10 @@
 # Especificações do Projeto
 Uma aplicação projetada para conectar diversas pessoas que possuem demandas e objetivos em cima do mesmo tópico: trabalho voluntário. Com o propósito de facilitar a interação entre voluntários e pessoas que necessitam de algum auxílio, o projeto consiste em desenvolver uma plataforma que assegura que os usuários se cadastrem e se identifiquem como voluntários ou beneficiários e, assim, conecta ambos os lados de acordo com a compatibilidade entre os perfis. Para isso, é necessário que essa aplicação seja totalmente responsiva, de forma a tornar-se acessível para todos os tipoa de aparelhos eletrônicos e pessoas. Ademais, o sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados, por meio do cadastro de usuários com login e senha e sua incrição em projetos. Ainda, essa aplicação conta com o empenho e dedicação de cada integrante do grupo. Dessa forma, espera-se um resultado positivo e satisfatório em relação ao projeto.
 
+## Linguagens Utilizadas
+• Front-end: HTML + CSS, Bootstrap;
+• Back-end: não será utilizado nesta aplicação. 
+
 ## Personas
 • Persona 1: João, 19 anos, estudante tentando ingressar em uma universidade pública para concluir o ensino superior, classe média-baixa.<br />
 João é um estudante que está se esforçando para conseguir ingressar em uma universidade pública, entretanto, devido à falta de recursos e por questões financeiras, não conseguiu realizar o seu sonho ainda. Dessa forma, ele necessita de uma aplicação que o conecte a grupos de estudo gratuitos, que atuam como "pré-vestibular" e que ofereçam assistência a jovens que enfrentam o mesmo problema de João. Seus hobbies incluem tocar violão, ler e fazer caminhadas.
@@ -48,32 +52,28 @@ Definição de Pronto: <br />
 ## Requisitos Funcionais
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| O sistema deve permitir cadastrar usuários com login e senha|  ALTA | 
-|RF-002| O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | ALTA |
-|RF-003| O sistema deve permitir que usuários Beneficiados cadastrem Projetos | ALTA |
-|RF-004| O sistema deve permitir que usuários Voluntários se inscrevam em Projetos |  ALTA |
-|RF-005| O sistema deve permitir classificar os Projetos em Área de Motivação | ALTA |
-|RF-006| O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica | ALTA |
-|RF-007| O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto | MÉDIA |
-|RF-008| O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto | MÉDIA |
+|RF-001| O sistema deve permitir cadastrar usuários com login e senha|  ALTA | Giovanna Vaz |
+|RF-002| O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | ALTA | Eduarda Faria |
+|RF-003| O sistema deve permitir que usuários Beneficiados cadastrem Projetos | ALTA | Gustavo Amaral |
+|RF-004| O sistema deve permitir que usuários Voluntários se inscrevam em Projetos |  ALTA | Letícia Gabriela |
+|RF-005| O sistema deve permitir classificar os Projetos em Área de Motivação | ALTA | João Marcelo |
+|RF-006| O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica | ALTA | Lucas Vieira |
+|RF-007| O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto | MÉDIA | Otávio Nunes |
+|RF-008| O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto | MÉDIA | Eduarda Faria |
 
 ### Requisitos não Funcionais
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| O sistema deve parar 5 vezes ao ano para manutenção e funcionar no restante do tempo | BAIXA | 
-|RF-002| O sistema deve abrir o login em 10s | BAIXA |
-|RF-003| O sistema deve fazer backup incremental diário| BAIXA |
-|RF-004| O sistema deve ser acessado via cloud | BAIXA |
-|RF-005| O sistema deve ser responsivo | MÉDIA |
-|RF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA |
-|RNF-007| O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada. |MÉDIA|
+|RF-001| O sistema deve parar 5 vezes ao ano para manutenção e funcionar no restante do tempo | BAIXA | Giovanna Vaz |
+|RF-002| O sistema deve abrir o login em 5s | BAIXA | Letícia Gabriela |
+|RF-003| O sistema deve fazer backup incremental diário| BAIXA | João Marcelo |
+|RF-004| O sistema deve ser acessado via cloud | BAIXA | Gustavo Amaral |
+|RF-005| O sistema deve ser responsivo | MÉDIA | Giovanna Vaz |
+|RF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA | Todos os envolvidos |
+|RNF-007| O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada. |MÉDIA| Lucas Vieira |
 
 ## Restrições
 •	O projeto deverá ser entregue até o final do semestre;<br />
 •	O projeto não poderá ser desenvolvido um módulo de backend;<br />
 • O sistema deverá estar em conformidade com os parâmetros instituídos pela lei nº 12.965, denominada Marco Civil da Internet.<br />
 • Ao final do semestre, deverá ser entregue uma aplicação que forneça acesso facilitado a todas as pessoas, englobando todas as idades, classes sociais e gêneros.
-
-## Linguagens Utilizadas
-• Front-end: HTML + CSS, Bootstrap;
-• Back-end: não será utilizado nesta aplicação. 
