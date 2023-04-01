@@ -1,8 +1,10 @@
 # Especificações do Projeto
-Uma aplicação projetada para conectar diversas pessoas que possuem demandas e objetivos em cima do mesmo tópico: trabalho voluntário. Com o propósito de facilitar a interação entre voluntários e pessoas que necessitam de algum auxílio, o projeto consiste em desenvolver uma plataforma que assegura que os usuários se cadastrem e se identifiquem como voluntários ou beneficiários e, assim, conecta ambos os lados de acordo com a compatibilidade entre os perfis. Para isso, é necessário que essa aplicação seja totalmente responsiva, de forma a tornar-se acessível para todos os tipoa de aparelhos eletrônicos e pessoas. Ademais, o sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados, por meio do cadastro de usuários com login e senha e sua incrição em projetos. Ainda, essa aplicação conta com o empenho e dedicação de cada integrante do grupo. Dessa forma, espera-se um resultado positivo e satisfatório em relação ao projeto.
+Uma aplicação projetada para conectar diversas pessoas que possuem demandas e objetivos em cima do mesmo tópico: trabalho voluntário. Com o propósito de facilitar a interação entre voluntários e pessoas que necessitam de algum auxílio, o projeto consiste em desenvolver uma plataforma que assegura que os usuários se cadastrem e se identifiquem como voluntários ou beneficiários e, assim, conecta ambos os lados de acordo com a compatibilidade entre os perfis. 
+<br /> Para isso, é necessário que essa aplicação seja totalmente responsiva, de forma a tornar-se acessível para todos os tipoa de aparelhos eletrônicos e pessoas. Ademais, o sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados, por meio do cadastro de usuários com login e senha e sua incrição em projetos. Ainda, essa aplicação conta com o empenho e dedicação de cada integrante do grupo. 
+<br /> Dessa forma, espera-se um resultado positivo e satisfatório em relação ao projeto.
 
 ## Linguagens Utilizadas
-• Front-end: HTML + CSS, Bootstrap;
+• Front-end: HTML + CSS, Bootstrap; <br />
 • Back-end: não será utilizado nesta aplicação. 
 
 ## Personas
