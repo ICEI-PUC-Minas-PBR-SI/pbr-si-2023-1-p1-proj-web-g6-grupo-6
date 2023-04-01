@@ -66,12 +66,12 @@ Definição de Pronto: <br />
 ### Requisitos não Funcionais
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| O sistema deve parar 5 vezes ao ano para manutenção e funcionar no restante do tempo | BAIXA | Giovanna Vaz |
-|RF-002| O sistema deve abrir o login em 5s | BAIXA | Letícia Gabriela |
-|RF-003| O sistema deve fazer backup incremental diário| BAIXA | João Marcelo |
-|RF-004| O sistema deve ser acessado via cloud | BAIXA | Gustavo Amaral |
-|RF-005| O sistema deve ser responsivo | MÉDIA | Giovanna Vaz |
-|RF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA | Letícia Gabriela |
+|RNF-001| O sistema deve parar 5 vezes ao ano para manutenção e funcionar no restante do tempo | BAIXA | Giovanna Vaz |
+|RMF-002| O sistema deve abrir o login em 5s | BAIXA | Letícia Gabriela |
+|RNF-003| O sistema deve fazer backup incremental diário| BAIXA | João Marcelo |
+|RNF-004| O sistema deve ser acessado via cloud | BAIXA | Gustavo Amaral |
+|RNF-005| O sistema deve ser responsivo | MÉDIA | Giovanna Vaz |
+|RNF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA | Letícia Gabriela |
 |RNF-007| O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada. |MÉDIA| Lucas Vieira |
 
 ## Restrições
