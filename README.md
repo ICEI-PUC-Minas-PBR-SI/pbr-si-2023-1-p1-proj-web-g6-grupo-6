@@ -6,7 +6,7 @@
 `DISCIPLINA: Projeto - Aplicações Web`
 
 `SEMESTRE: 1º`
-O projeto trata-se do desenvolvimento de um site que facilite a execução de trabalhos voluntários, uma vez que irá conectar pessoas em situação de necessidade e pessoas que desejam ajudar ao próximo. Para isso, o esta aplicação será feita com o objetivo facilitar o acesso a todos, de modo a alcançar mais pessoas e, assim, promover o aumento do trabalho volutário na sociedade.  
+O projeto trata-se do desenvolvimento de uma aplicação que facilite e permita a execução de trabalhos voluntários, uma vez que irá conectar pessoas em situação de necessidade e pessoas que desejam ajudar ao próximo. Para isso, o esta aplicação será feita com o objetivo facilitar o acesso a todos, de modo a alcançar mais pessoas e, assim, promover o aumento do trabalho volutário na sociedade.  
 
 ## Integrantes
 
