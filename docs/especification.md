@@ -1,5 +1,5 @@
 # Especificações do Projeto
-Este projeto consiste no desenvolvimento de uma aplicação que tem o fim de conectar pessoas em situação de carência a pessoas e ONGs que fornecem auxílio de forma gratuita e totalmente beneficente. Para isso, é necessário que essa aplicação seja totalmente responsiva, de forma a tornar-se acessível para todos os tipoa de aparelhos eletrônicos e pessoas. Ademais, o sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados, por meio do cadastro de usuários com login e senha e sua incrição em projetos. Ainda, essa aplicação conta com o empenho e dedicação de cada integrante do grupo. Dessa forma, espera-se um resultado positivo e satisfatório em relação ao projeto.
+Uma aplicação projetada para conectar diversas pessoas que possuem demandas e objetivos em cima do mesmo tópico: trabalho voluntário. Com o propósito de facilitar a interação entre voluntários e pessoas que necessitam de algum auxílio, o projeto consiste em desenvolver uma plataforma que assegura que os usuários se cadastrem e se identifiquem como voluntários ou beneficiários e, assim, conecta ambos os lados de acordo com a compatibilidade entre os perfis. Para isso, é necessário que essa aplicação seja totalmente responsiva, de forma a tornar-se acessível para todos os tipoa de aparelhos eletrônicos e pessoas. Ademais, o sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados, por meio do cadastro de usuários com login e senha e sua incrição em projetos. Ainda, essa aplicação conta com o empenho e dedicação de cada integrante do grupo. Dessa forma, espera-se um resultado positivo e satisfatório em relação ao projeto.
 
 ## Personas
 • Persona 1: João, 19 anos, estudante tentando ingressar em uma universidade pública para concluir o ensino superior, classe média-baixa.<br />
@@ -20,9 +20,8 @@ Gabriela está procurando por um site que ofereça uma ampla variedade de oportu
 
 
 ## Histórias de Usuários
-Contexto: Um site projetado para conectar diversas pessoas que possuem demandas e objetivos em cima do mesmo tópico: trabalho voluntário. Com o propósito de facilitar a interação entre voluntários e pessoas que necessitam de algum auxílio, o projeto consiste em desenvolver uma plataforma que assegura que os usuários se cadastrem e se identifiquem como voluntários ou beneficiários e, assim, conecta ambos os lados de acordo com a compatibilidade entre os perfis.
 
--> Voluntário: Como uma pessoa que tem a intenção de se voluntariar para realizar trabalhos que beneficiem a sociedade, quero ter acesso a um site que me permita encontrar ONGs, instituições e pessoas físicas que necessitem de ajuda em algum serviço na região em que moro, para que eu possa me voluntariar.  
+-> Voluntário: Como um voluntário de diversos projetos que beneficiem a sociedade, quero ter acesso a um site que me permita encontrar ONGs, instituições e pessoas físicas que necessitem de ajuda em algum serviço na região em que moro, para que eu possa me voluntariar.  
 Critérios de aceite: <br />
  •	Banco de dados atualizado com as informações de todos os beneficiários. <br />
  •	Uma lista exibida no site com as informações: 
@@ -61,9 +60,9 @@ Definição de Pronto: <br />
 ### Requisitos não Funcionais
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| O sistema deve funcionar 24/7 | BAIXA | 
+|RF-001| O sistema deve parar 5 vezes ao ano para manutenção e funcionar no restante do tempo | BAIXA | 
 |RF-002| O sistema deve abrir o login em 10s | BAIXA |
-|RF-003| O sistema deve fazer backup de 24 em 24 horas | BAIXA |
+|RF-003| O sistema deve fazer backup incremental diário| BAIXA |
 |RF-004| O sistema deve ser acessado via cloud | BAIXA |
 |RF-005| O sistema deve ser responsivo | MÉDIA |
 |RF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA |
