@@ -71,7 +71,7 @@ Definição de Pronto: <br />
 |RF-003| O sistema deve fazer backup incremental diário| BAIXA | João Marcelo |
 |RF-004| O sistema deve ser acessado via cloud | BAIXA | Gustavo Amaral |
 |RF-005| O sistema deve ser responsivo | MÉDIA | Giovanna Vaz |
-|RF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA | Todos os envolvidos |
+|RF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA | Letícia Gabriela |
 |RNF-007| O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada. |MÉDIA| Lucas Vieira |
 
 ## Restrições
