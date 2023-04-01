@@ -1,4 +1,6 @@
 # Especificações do Projeto
+Este projeto consiste no desenvolvimento de uma aplicação que tem o fim de conectar pessoas em situação de carência a pessoas e ONGs que fornecem auxílio de forma gratuita e totalmente beneficente. Para isso, é necessário que essa aplicação seja totalmente responsiva, de forma a tornar-se acessível para todos os tipoa de aparelhos eletrônicos e pessoas. Ademais, o sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados, por meio do cadastro de usuários com login e senha e sua incrição em projetos. Ainda, essa aplicação conta com o empenho e dedicação de cada integrante do grupo. Dessa forma, espera-se um resultado positivo e satisfatório em relação ao projeto.
+
 ## Personas
 • Persona 1: João, 19 anos, estudante tentando ingressar em uma universidade pública para concluir o ensino superior, classe média-baixa.<br />
 João é um estudante que está se esforçando para conseguir ingressar em uma universidade pública, entretanto, devido à falta de recursos e por questões financeiras, não conseguiu realizar o seu sonho ainda. Dessa forma, ele necessita de uma aplicação que o conecte a grupos de estudo gratuitos, que atuam como "pré-vestibular" e que ofereçam assistência a jovens que enfrentam o mesmo problema de João. Seus hobbies incluem tocar violão, ler e fazer caminhadas.
