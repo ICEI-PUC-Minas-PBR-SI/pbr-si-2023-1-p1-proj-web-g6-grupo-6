@@ -29,7 +29,7 @@ Gabriela está procurando por uma aplicação que ofereça uma ampla variedade d
 |Usuário - Voluntário/ONG| Quero ter acesso a pessoas/ONGs/Instituições que necessitem de ajuda | Para que eu possa me voluntariar |
 |Usuário - Voluntário/ONG| Preciso ter acesso a informações sobre serviços e demandas na região em que moro | Para que eu possa prover ajuda e auxílio |
 |Usuário - Voluntário/ONG| Preciso ter acesso a um banco de dados atualizado e revisado com as informações de todos os beneficiários | Para que eu saiba onde me cadastrar |
-|Usuário - Voluntário/ONG| Preciso ter acesso às informações relacionadas à localizção e carência do beneficiário | Para que eu me inscreva em algum projeto que esteja ao meu alcance |
+|Usuário - Voluntário/ONG| Preciso ter acesso às informações relacionadas à localização e carência do beneficiário | Para que eu me inscreva em algum projeto que esteja ao meu alcance |
 |Usuário -  Voluntário/ONG| Quero ter acesso a uma lista revisada e atualizada sobre os processos pendentes | Para que eu saiba como e onde prover ajuda |
 |Usuário -  ONG/Benefciário/Instituição| Quero ter acesso a pessoas que estão dispostas a ajudar | Para que eu possa receber assistência para o meu problema |
 |Usuário -  ONG/Beneficiário/Instituição| Preciso ter acesso a um banco de dados atualizado com as informações de todos os voluntários | Para saber quais voluntários estão ainda disponíveis |
