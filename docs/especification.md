@@ -23,33 +23,19 @@ Carlos afirma que possui os materiais necessários para a reforma, mas por uma q
 Gabriela já atuou em diversos trabalhos voluntários, principalmente na sua cidade natal, onde ajudou em um abrigo para animais abandonados e também em uma organização que fornece alimentos para pessoas em situação de rua. Ela também participou de um projeto de recuperação de áreas verdes.<br />
 Gabriela acredita que é importante retribuir à comunidade e fazer a diferença na vida das pessoas. Além disso, ela tem habilidades em design gráfico e gostaria de usá-las para ajudar organizações a criarem campanhas e materiais de comunicação mais eficazes. Ela também quer se conectar com outras pessoas que compartilham seus valores e interesses. <br />
 Gabriela está procurando por um site que ofereça uma ampla variedade de oportunidades de voluntariado, onde ela possa encontrar algo que se adapte às suas habilidades e agenda. Ela espera que o site seja fácil de usar e permita que ela se conecte com organizações sem fins lucrativos e outros voluntários de maneira eficiente. Ela também espera que o site forneça informações claras sobre as expectativas e as responsabilidades de cada oportunidade de voluntariado, para que ela possa escolher uma que atenda suas expectativas.
-
-
-## Histórias de Usuários
-
--> Voluntário: Como um voluntário de diversos projetos que beneficiem a sociedade, quero ter acesso a um site que me permita encontrar ONGs, instituições e pessoas físicas que necessitem de ajuda em algum serviço na região em que moro, para que eu possa me voluntariar.  
-Critérios de aceite: <br />
- •	Banco de dados atualizado com as informações de todos os beneficiários. <br />
- •	Uma lista exibida no site com as informações: 
--	Da pessoa/ONG/instituição que necessite de algum trabalho voluntário; 
--	Da localização do beneficário; 
--	Do tipo de serviço necessário. 
-
-Definição de Pronto: <br />
-	•	Banco de dados feito, revisado e em produção;<br />
- •	A lista dos beneficiários pendentes revisada e no ar. 
  
--> Beneficiário: Como uma ONG/instituição/pessoa que necessita de ajuda e auxílio em algum serviço, quero ter acesso a um site que me permita encontrar pessoas que estão dispostas a ajudar e que se voluntariam a prestar serviços sociais, para que a minha situação seja resolvida. 
-Critérios de aceite: <br />
-•	Banco de dados atualizado com as informações de todos os voluntários. <br />
-•	Uma lista exibida no site com as informações: 
--	Da pessoa voluntária; 
--	Da localização do voluntário; 
--	Do tipo de serviço fornecido. 
-
-Definição de Pronto: <br />
-•	Banco de dados feito, revisado e em produção; <br />
-•	A lista dos voluntários pendentes revisada e no ar.
+|EU COMO... | QUERO/PRECISO... | PARA... |
+|------|-----------------------------------------|----|
+|Usuário - Voluntário/ONG| Quero ter acesso a pessoas/ONGs/Instituições que necessitem de ajuda| Para que eu possa me voluntariar |
+|Usuário - Voluntário/ONG| Preciso ter acesso a informações sobre serviços e demandas na região em que moro | Para que eu possa prover ajuda e auxílio |
+|Usuário - Voluntário/ONG| Preciso ter acesso a um banco de dados atualizado e revisado com as informações de todos os beneficiários| Para que eu saiba onde me cadastrar |
+|Usuário - Voluntário/ONG| Preciso ter acesso às informações relacionadas à localizção e carência do beneficiário | Para que eu me inscreva em algum projeto que esteja ao meu alcance |
+|Usuário -  Voluntário/ONG| Quero ter acesso a uma lista revisada e atualizada sobre os processos pendentes|Para que eu saiba como e onde prover ajuda |
+|Usuário -  ONG/Benefciário/Instituição| Quero ter acesso a pessoas que estão dispostas a ajudar | Para que eu receber assistência para o meu problema |
+|Usuário -  ONG/Beneficiário/Instituição| Preciso ter acesso a um banco de dados atualizado com as informações de todos os voluntários | Para saber quais voluntários estão ainda disponíveis |
+|Usuário -  ONG/Beneficiário/Instituição| Quero ter acesso a uma lista com informações sobre o voluntário, sobre sua localização e o serviço fornecido| Para que eu possa receber a assistência necessária |
+|Administrador| Quero investir recursos e esforços no desenvolvimento da aplicação | Para que haja sucesso ao final do projeto |
+|Desenvolvedor| Quero desenvolver uma aplicação responsiva e intuitiva | Para que a aplicação se torne acessível a todos |
 
 ## Requisitos Funcionais
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
