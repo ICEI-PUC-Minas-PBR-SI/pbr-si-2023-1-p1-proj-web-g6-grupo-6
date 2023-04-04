@@ -67,4 +67,4 @@ Gabriela está procurando por uma aplicação que ofereça uma ampla variedade d
 • Ao final do semestre, deverá ser entregue uma aplicação que forneça acesso facilitado a todas as pessoas, englobando todas as idades, classes sociais e gêneros.
 
 # Diagrama de caso de uso
-> https://www.canva.com/design/DAFfGur_0X0/GvJ1UFtF1mthO_rZVjwVdA/edit?utm_content=DAFfGur_0X0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+> https://www.canva.com/design/DAFfGur_0X0/GvJ1UFtF1mthO_rZVjwVdA/edit?utm_content=DAFfGur_0X0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
