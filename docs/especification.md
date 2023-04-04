@@ -65,3 +65,6 @@ Gabriela está procurando por uma aplicação que ofereça uma ampla variedade d
 •	O projeto não poderá ser desenvolvido um módulo de backend;<br />
 • O sistema deverá estar em conformidade com os parâmetros instituídos pela lei nº 12.965, denominada Marco Civil da Internet.<br />
 • Ao final do semestre, deverá ser entregue uma aplicação que forneça acesso facilitado a todas as pessoas, englobando todas as idades, classes sociais e gêneros.
+
+# Diagrama de caso de uso
+> https://www.canva.com/design/DAFfGur_0X0/GvJ1UFtF1mthO_rZVjwVdA/edit?utm_content=DAFfGur_0X0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
