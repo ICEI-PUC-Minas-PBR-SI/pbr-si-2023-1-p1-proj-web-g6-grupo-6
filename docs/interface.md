@@ -17,12 +17,12 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## Wireframes
 
 ![Exemplo de Wireframe](img/wireframe-example.png)
-![Exemplo de Wireframe](imges/logincadastrovc.png)
-![Exemplo de Wireframe](imges/logincadastrovm.png)
-![Exemplo de Wireframe](imges/cadastrovc.png)
-![Exemplo de Wireframe](imges/cadastrovm.png)
-![Exemplo de Wireframe](imges/loginvc.png)
-![Exemplo de Wireframe](imges/loginvm.png)
+![Exemplo de Wireframe](images/logincadastrovc.png)
+![Exemplo de Wireframe](images/logincadastrovm.png)
+![Exemplo de Wireframe](images/cadastrovc.png)
+![Exemplo de Wireframe](images/cadastrovm.png)
+![Exemplo de Wireframe](images/loginvc.png)
+![Exemplo de Wireframe](images/loginvm.png)
 
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
