@@ -16,37 +16,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Wireframes
 
-Página inicial:
- <br /> 
-![Exemplo de Wireframe](images/.png)
 
-Login ou cadastro:
- <br /> 
-![Exemplo de Wireframe](images/.png)
-
-Login:
- <br /> 
-![Exemplo de Wireframe](images.png)
-
-Cadastro:
- <br /> 
-![Exemplo de Wireframe](images/.png)
-
-Meu perfil:
- <br /> 
-![Exemplo de Wireframe](images/.png)
-
-Feed:
- <br /> 
-![Exemplo de Wireframe](images/.png)
-
-Novo post:
- <br /> 
-![Exemplo de Wireframe](images/.png)
-
-Novo projeto:
- <br /> 
-![Exemplo de Wireframe](images/.png)
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
