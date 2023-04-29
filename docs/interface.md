@@ -70,7 +70,7 @@ Novo post versão mobile:
 
 Novo projeto:
 <br />
-![Exemplo de Wireframe](images/insmobile.jpg)
+![Exemplo de Wireframe](images/inscmobile.jpg)
 <br />
 Novo projeto versão mobile:
 ![Exemplo de Wireframe](images/inscomp.jpg)
