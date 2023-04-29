@@ -15,9 +15,6 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 
 ## Wireframes
-Página inicial:
-<br /> 
-Página inicial versão mobile:
 
 Login ou Cadastro:
  <br /> 
@@ -46,21 +43,7 @@ Cadastro versão mobile:
 ![Exemplo de Wireframe](images/cadastrovm.png)
  <br /> 
 
-Meu perfil:
-<br /> 
-Meu perfil versão Mobile:
 
-Feed:
-<br /> 
-Feed versão mobile:
-
-Novo post:
-<br /> 
-Novo post versão mobile:
-
-Novo projeto:
-<br /> 
-Novo projeto versão mobile:
 
 
 
