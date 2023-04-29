@@ -1,9 +1,10 @@
 Eduarda Faria Pinheiro:
 
 Giovanna Fabíola Vaz: 
-· Elaboração do User Flow;
-· Participação na organização e estruturação do trabalho; 
-· Edicão e padronização das wireframes.
+· Elaboração do User Flow
+· Participação na organização e estruturação do trabalho
+· Edicão e padronização das wireframes
+· Versão mobile da página de Feed, Novo post, Novo projeto e Preferências
 
 Gustavo Amaral Silva:
 
@@ -14,7 +15,7 @@ Leticia Gabriela Ramos Macedo:
 · wireframe meu perfil 
 · versao mobile do meu perfil 
 · versao mobile da tela de novo post
-·versao mobile da página inicial
+· versao mobile da página inicial
 
 Lucas Vieira Souza:
 
