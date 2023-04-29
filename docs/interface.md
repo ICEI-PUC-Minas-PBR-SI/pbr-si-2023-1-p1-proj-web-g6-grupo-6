@@ -69,6 +69,7 @@ Novo post versão mobile:
 ![Exemplo de Wireframe](images/Novo-post-mobile.png)
 
 Novo projeto:
+<br />
 ![Exemplo de Wireframe](images/insmobile.jpg)
 <br />
 Novo projeto versão mobile:
