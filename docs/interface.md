@@ -7,19 +7,82 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+![Exemplo de UserFlow](images/userflowc1.png)
+![Exemplo de UserFlow](images/userflowc2.png)
+![Exemplo de UserFlow](images/userflowc3.png)
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
 
 ## Wireframes
+Página inicial:
+<br />
+Pagina inicial versão mobile:
+<br />
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Login ou Cadastro:
+ <br /> 
+![Exemplo de Wireframe](images/logincadastrovc.png)
+ <br /> 
+Login ou cadastro mobile:
+ <br /> 
+![Exemplo de Wireframe](images/logincadastrovm.png)
+ <br /> 
+
+Login:
+ <br /> 
+![Exemplo de Wireframe](images/loginvc.png)
+<br /> 
+Login mobile:
+ <br /> 
+![Exemplo de Wireframe](images/loginvm.png)
+ <br /> 
+
+Cadastro:
+ <br /> 
+![Exemplo de Wireframe](images/cadastrovc.png)
+<br /> 
+Cadastro mobile:
+ <br /> 
+![Exemplo de Wireframe](images/cadastrovm.png)
+ <br /> 
+ 
+ Meu perfil:
+ <br /> 
+Meu perfil mobile:
+ <br /> 
+ 
+Feed:
+<br />
+![Exemplo de Wireframe](images/Feed.png)
+
+Feed versão mobile:
+<br />
+![Exemplo de Wireframe](images/Feed-versão-mobile.png)
+
+Novo post:
+<br />
+![Exemplo de Wireframe](images/Novo-post.png)
+
+Novo post versão mobile:
+<br />
+![Exemplo de Wireframe](images/Novo-post-mobile.png)
+
+Novo projeto:
+<br />
+Novo projeto versão mobile:
+<br />
+Preferências:
+<br />
+Preferências versão mobile:
+<br />
+
+
+ 
+
+
+
+
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
