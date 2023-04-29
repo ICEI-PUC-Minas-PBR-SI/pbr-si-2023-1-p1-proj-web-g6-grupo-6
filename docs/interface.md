@@ -49,13 +49,19 @@ Cadastro mobile:
  
 Feed:
 <br />
+![Exemplo de Wireframe](images/Feed.png)
+
 Feed versão mobile:
 <br />
+![Exemplo de Wireframe](images/Feed-versão-mobile.png)
 
 Novo post:
 <br />
+![Exemplo de Wireframe](images/Novo-post.png)
+
 Novo post versão mobile:
 <br />
+![Exemplo de Wireframe](images/Novo-post-mobile.png)
 
 Novo projeto:
 <br />
@@ -63,6 +69,32 @@ Novo projeto versão mobile:
 <br />
 
 
+Login ou Cadastro:
+ <br /> 
+![Exemplo de Wireframe](images/logincadastrovc.png)
+ <br /> 
+Login ou cadastro versão mobile:
+ <br /> 
+![Exemplo de Wireframe](images/logincadastrovm.png)
+ <br /> 
+
+Login:
+ <br /> 
+![Exemplo de Wireframe](images/loginvc.png)
+<br /> 
+Login versão mobile:
+ <br /> 
+![Exemplo de Wireframe](images/loginvm.png)
+ <br /> 
+
+Cadastro:
+ <br /> 
+![Exemplo de Wireframe](images/cadastrovc.png)
+<br /> 
+Cadastro versão mobile:
+ <br /> 
+![Exemplo de Wireframe](images/cadastrovm.png)
+ <br /> 
 
 
 
