@@ -15,6 +15,53 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 
 ## Wireframes
+Página inicial:
+<br />
+Pagina inicial versão mobile:
+<br />
+
+Login ou Cadastro:
+ <br /> 
+![Exemplo de Wireframe](images/logincadastrovc.png)
+ <br /> 
+Login ou cadastro mobile:
+ <br /> 
+![Exemplo de Wireframe](images/logincadastrovm.png)
+ <br /> 
+
+Login:
+ <br /> 
+![Exemplo de Wireframe](images/loginvc.png)
+<br /> 
+Login mobile:
+ <br /> 
+![Exemplo de Wireframe](images/loginvm.png)
+ <br /> 
+
+Cadastro:
+ <br /> 
+![Exemplo de Wireframe](images/cadastrovc.png)
+<br /> 
+Cadastro mobile:
+ <br /> 
+![Exemplo de Wireframe](images/cadastrovm.png)
+ <br /> 
+ 
+Feed:
+<br />
+Feed versão mobile:
+<br />
+
+Novo post:
+<br />
+Novo post versão mobile:
+<br />
+
+Novo projeto:
+<br />
+Novo projeto versão mobile:
+<br />
+
 
 Login ou Cadastro:
  <br /> 
