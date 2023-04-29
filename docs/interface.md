@@ -47,6 +47,11 @@ Cadastro mobile:
 ![Exemplo de Wireframe](images/cadastrovm.png)
  <br /> 
  
+ Meu perfil:
+ <br /> 
+Meu perfil mobile:
+ <br /> 
+ 
 Feed:
 <br />
 ![Exemplo de Wireframe](images/Feed.png)
@@ -66,6 +71,10 @@ Novo post versão mobile:
 Novo projeto:
 <br />
 Novo projeto versão mobile:
+<br />
+Preferências:
+<br />
+Preferências versão mobile:
 <br />
 
 
