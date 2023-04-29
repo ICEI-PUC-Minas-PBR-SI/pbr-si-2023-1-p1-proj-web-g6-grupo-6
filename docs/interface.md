@@ -15,11 +15,14 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 
 ## Wireframes
+Página inicial:
+Página inicial versão mobile:
+
 Login ou Cadastro:
  <br /> 
 ![Exemplo de Wireframe](images/logincadastrovc.png)
  <br /> 
-Login ou cadastro mobile:
+Login ou cadastro versão mobile:
  <br /> 
 ![Exemplo de Wireframe](images/logincadastrovm.png)
  <br /> 
@@ -28,7 +31,7 @@ Login:
  <br /> 
 ![Exemplo de Wireframe](images/loginvc.png)
 <br /> 
-Login mobile:
+Login versão mobile:
  <br /> 
 ![Exemplo de Wireframe](images/loginvm.png)
  <br /> 
@@ -37,10 +40,23 @@ Cadastro:
  <br /> 
 ![Exemplo de Wireframe](images/cadastrovc.png)
 <br /> 
-Cadastro mobile:
+Cadastro versão mobile:
  <br /> 
 ![Exemplo de Wireframe](images/cadastrovm.png)
  <br /> 
+
+Meu perfil:
+Meu perfil versão Mobile:
+
+Feed:
+Feed versão mobile:
+
+Novo post:
+Novo post versão mobile:
+
+Novo projeto:
+Novo projeto versão mobile:
+
 
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
