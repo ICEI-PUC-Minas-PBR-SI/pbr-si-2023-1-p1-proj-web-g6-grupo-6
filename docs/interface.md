@@ -49,13 +49,19 @@ Cadastro mobile:
  
 Feed:
 <br />
+![Exemplo de Wireframe](images/Feed.png)
+
 Feed versão mobile:
 <br />
+![Exemplo de Wireframe](images/Feed-versão-mobile.png)
 
 Novo post:
 <br />
+![Exemplo de Wireframe](images/Novo-post.png)
+
 Novo post versão mobile:
 <br />
+![Exemplo de Wireframe](images/Novo-post-mobile.png)
 
 Novo projeto:
 <br />
@@ -63,6 +69,7 @@ Novo projeto versão mobile:
 <br />
 
 
+ 
 
 
 
