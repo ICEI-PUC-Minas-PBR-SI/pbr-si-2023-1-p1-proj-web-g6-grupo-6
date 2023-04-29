@@ -22,3 +22,4 @@ Lucas Vieira Souza:
 Otávio Stefanine Nunes Soutelo:
 · Elaboração da interface/wireframe (cadastro e login);
 · Participação na organização e estruturação do trabalho.
+
