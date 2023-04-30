@@ -13,11 +13,11 @@
 ## Wireframes
 Página inicial:
 <br />
-[Exemplo de Wireframe](images/paginainicial.png)
+![Exemplo de Wireframe](images/paginainicial.png)
 <br />
 Pagina inicial versão mobile:
 <br />
-[Exemplo de Wireframe](images/paginainicialmobile.png)
+![Exemplo de Wireframe](images/paginainicialvm.png)
 
 Login ou Cadastro:
  <br /> 
@@ -49,36 +49,45 @@ Cadastro mobile:
  Meu perfil:
  <br /> 
 ![Exemplo de Wireframe](images/MeuPerfil-COMPUTADOR.png)
+<br />
 Meu perfil mobile:
  <br /> 
  ![Exemplo de Wireframe](images/MeuPerfil-MOBILE.png)
+ <br />
 Feed:
 <br />
 ![Exemplo de Wireframe](images/Feed.png)
+<br />
 
 Feed versão mobile:
 <br />
 ![Exemplo de Wireframe](images/Feed-versão-mobile.png)
+<br />
 
 Novo post:
 <br />
 ![Exemplo de Wireframe](images/Novo-post.png)
+<br />
 
 Novo post versão mobile:
 <br />
 ![Exemplo de Wireframe](images/Novo-post-mobile.png)
+<br />
 
 Novo projeto:
 <br />
 ![Exemplo de Wireframe](images/inscomp.jpg)
 <br />
 Novo projeto versão mobile:
+<br />
 ![Exemplo de Wireframe](images/inscmobile.jpg)
 <br />
 Preferências:
+<br />
 ![Exemplo de Wireframe](images/vscomp.jpg)
 <br />
 Preferências versão mobile:
+<br />
 ![Exemplo de Wireframe](images/vsmobile.jpg)
 <br />
 
