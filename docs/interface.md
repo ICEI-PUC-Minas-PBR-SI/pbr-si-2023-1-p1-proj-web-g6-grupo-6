@@ -49,9 +49,10 @@ Cadastro mobile:
  
  Meu perfil:
  <br /> 
+![Exemplo de Wireframe](images/MeuPerfil-COMPUTADOR.png)
 Meu perfil mobile:
  <br /> 
- 
+ ![Exemplo de Wireframe](images/MeuPerfil-MOBILE.png)
 Feed:
 <br />
 ![Exemplo de Wireframe](images/Feed.png)
