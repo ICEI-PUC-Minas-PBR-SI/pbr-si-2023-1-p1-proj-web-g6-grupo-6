@@ -17,7 +17,7 @@ Página inicial:
 <br />
 Pagina inicial versão mobile:
 <br />
-[Exemplo de Wireframe](images/PaginaInicial-MOBILE.png)
+[Exemplo de Wireframe](images/paginainicialmobile.png)
 
 Login ou Cadastro:
  <br /> 
