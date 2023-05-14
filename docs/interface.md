@@ -19,6 +19,13 @@ Pagina inicial versão mobile:
 <br />
 ![Exemplo de Wireframe](images/paginainicialvm.png)
 
+Central de Ajuda:
+<br />
+![Exemplo de Wireframe](images/centralAjuda.png)
+<br />
+![Exemplo de Wireframe](images/centralAjuda-mobile.png)
+<br />
+
 Login ou Cadastro:
  <br /> 
 ![Exemplo de Wireframe](images/logincadastrovc.png)
