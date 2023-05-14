@@ -23,6 +23,8 @@ Central de Ajuda:
 <br />
 ![Exemplo de Wireframe](images/centralAjuda.png)
 <br />
+Central de Ajuda mobile:
+<br />
 ![Exemplo de Wireframe](images/centralAjuda-mobile.png)
 <br />
 
