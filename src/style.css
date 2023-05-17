@@ -8,11 +8,26 @@
 }
 
 .Lucas_Card {
-    padding: auto;
+    padding: 10px;
     margin: auto;
     border: solid 2px black;
     border-radius: 15px;
     display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    width: 900px;
+    height: 550px;
+    box-shadow: 60px -16px #9b63cb;
+}
+.Lucas_Card2 {
+    padding: 10px;
+    margin: auto;
+    border: solid 2px black;
+    border-radius: 15px;
+    display: grid;
+    gap: 1px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -23,7 +38,6 @@
 }
 
 .Lucas_Input {
-    text-align: left;
     color: black;
     border: 0px;
     border-radius: 11px;
@@ -41,6 +55,25 @@
 }
 
 .Lucas_button {
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    top: 87%;
+    right: 47%;
+    text-align: auto;
+    border: auto;
+    border-radius: 11px;
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255)
+}
+.Lucas_button2 {
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    top: 78%;
+    right: 47%;
     text-align: auto;
     border: auto;
     border-radius: 11px;
