@@ -37,7 +37,19 @@
     height: 550px;
     box-shadow: 60px -16px #9b63cb;
 }
-
+.Lucas_Card3 {
+    padding: auto;
+    margin: auto;
+    border: solid 2px black;
+    border-radius: 15px;
+    display: flexbox;
+    justify-content: left;
+    text-align: right;
+    font-size: 25px;
+    width: 900px;
+    height: 550px;
+    box-shadow: 60px -16px #9b63cb;
+}
 .Lucas_Input {
     color: black;
     border: 0px;
@@ -79,32 +91,14 @@
     font-size: 18px
 }
 
-.Lucas_Card3 {
-    padding: auto;
-    margin: auto;
-    border: solid 2px black;
-    border-radius: 15px;
-    display: flexbox;
-    justify-content: left;
-    text-align: right;
-    font-size: 25px;
-    width: 900px;
-    height: 550px;
-    box-shadow: 60px -16px #9b63cb;
+.Lucas_button2:hover{
+    transform:scale(1.2);
+}
+.Lucas_button2{
+    transition:transform 0.3;
 }
 
-.Lucas_button {
-    display: inline;
-    text-align: auto;
-    border: auto;
-    border-radius: 11px;
-    width: 130px;
-    height: 50px;
-    font-size: 15px;
-    background-color: rgb(255, 255, 255)
-}
-
-.Lucas_button2 {
+.Lucas_button2{
     display: inline;
     justify-content: left;
     text-align: auto;
@@ -115,9 +109,14 @@
     font-size: 15px;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
-    color: black;
+    color: black; 
 }
-
+.Lucas_button2:hover{
+transform: scale(1.2);
+}
+.Lucas_button2{
+    transition: transform 0.3s;
+}
 @media screen and (max-width: 600px) {
     .Lucas_Card {
         padding: auto;
