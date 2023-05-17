@@ -1,0 +1,51 @@
+.Lucas_Voltar {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(245, 241, 241);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Lucas_Card {
+    padding: auto;
+    margin: auto;
+    border: solid 2px black;
+    border-radius: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    width: 900px;
+    height: 550px;
+    box-shadow: 60px -16px #9b63cb;
+}
+
+.Lucas_Input {
+    text-align: left;
+    color: black;
+    border: 0px;
+    border-radius: 11px;
+    width: 350px;
+    background-color: rgb(230, 229, 229);
+    height: 40px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.Lucas_p {
+    text-decoration: none;
+    color: black;
+    font-size: 18px
+}
+
+.Lucas_button {
+    text-align: auto;
+    border: auto;
+    border-radius: 11px;
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255)
+}
