@@ -19,24 +19,21 @@
     font-size: 25px;
     width: 900px;
     height: 550px;
-    box-shadow: 60px -16px #9b63cb;
+    box-shadow: 60px -16px #D6E8DB;
 }
 
 .Lucas_Card2 {
-    padding: 10px;
+    padding: auto;
     margin: auto;
     border: solid 2px black;
     border-radius: 15px;
-    display: grid;
-    gap: 1px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: block;
     font-size: 25px;
     width: 900px;
     height: 550px;
-    box-shadow: 60px -16px #9b63cb;
+    box-shadow: 60px -16px #D6E8DB;
 }
+
 .Lucas_Card3 {
     padding: auto;
     margin: auto;
@@ -48,8 +45,9 @@
     font-size: 25px;
     width: 900px;
     height: 550px;
-    box-shadow: 60px -16px #9b63cb;
+    box-shadow: 60px -16px #D6E8DB;
 }
+
 .Lucas_Input {
     color: black;
     border: 0px;
@@ -91,14 +89,15 @@
     font-size: 18px
 }
 
-.Lucas_button2:hover{
-    transform:scale(1.2);
-}
-.Lucas_button2{
-    transition:transform 0.3;
+.Lucas_button2:hover {
+    transform: scale(1.2);
 }
 
-.Lucas_button2{
+.Lucas_button2 {
+    transition: transform 0.3;
+}
+
+.Lucas_button2 {
     display: inline;
     justify-content: left;
     text-align: auto;
@@ -109,27 +108,25 @@
     font-size: 15px;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
-    color: black; 
+    color: black;
 }
-.Lucas_button2:hover{
-transform: scale(1.2);
+
+.Lucas_button2:hover {
+    transform: scale(1.2);
 }
-.Lucas_button2{
+
+.Lucas_button2 {
     transition: transform 0.3s;
 }
-@media screen and (max-width: 600px) {
-    .Lucas_Card {
-        padding: auto;
-        margin: auto;
-        border: solid 2px black;
-        border-radius: 15px;
-        display: block;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        font-size: 25px;
-        width: 900px;
-        height: 550px;
-        box-shadow: 60px -16px #9b63cb;
-    }
+
+.cabecalho {
+    background-color: #D6E8DB;
+}
+
+footer {
+    background-color: #D6E8DB;
+}
+
+.black-color {
+    background-color: black;
 }
