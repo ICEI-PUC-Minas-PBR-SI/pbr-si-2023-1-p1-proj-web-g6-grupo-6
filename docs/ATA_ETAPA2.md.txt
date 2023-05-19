@@ -26,10 +26,8 @@ Leticia Gabriela Ramos Macedo:
 
 Lucas Vieira Souza:
 · Elaboração da wireframe da Página inicial
-. Programação da página de login
-. Programação da página de register
-. Programação da página de LoginRegister
 
 Otávio Stefanine Nunes Soutelo:
 · Elaboração da interface/wireframe (cadastro e login);
 · Participação na organização e estruturação do trabalho.
+
