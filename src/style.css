@@ -1,9 +1,15 @@
 .cabecalho{
-   background-color: #D6E8DB;
+    background-color: #D6E8DB;
 }
 footer{
     background-color:#D6E8DB;
 }
 .black-color{
     background-color :black;
-  }
+}
+.texto{
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: rgb(94, 94, 94);
+}

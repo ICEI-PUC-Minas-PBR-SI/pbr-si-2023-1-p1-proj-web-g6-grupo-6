@@ -1,0 +1,21 @@
+
+footer{
+    background-color: rgb(217, 230, 230);
+}
+
+.texto{
+    margin-left: 3%;
+    color:rgb(82, 82, 82);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho{
+    margin: auto;
+    border-top: 0%;
+    background-color: #7bd172;
+    margin-top: 0;
+}
+
+.btn{
+    margin-left: 40%;
+}
