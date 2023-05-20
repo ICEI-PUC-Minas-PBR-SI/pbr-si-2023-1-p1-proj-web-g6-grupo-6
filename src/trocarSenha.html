@@ -40,16 +40,16 @@
                                     <ul class="navbar-nav me-auto">
                                         <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/CasaVerde.png"
                                             class="mt-2" height="15%" width="10%">
-                                        <a class="nav-link mt-2 text-light" href="#">Feed</a>
+                                        <a class="nav-link mt-2" href="feed.html">Feed</a>
                                         <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/MaisVerde.png"
                                             height="15%" width="10%">
-                                        <a class="nav-link mt-2 text-light" href="#">Novo Post</a>
+                                        <a class="nav-link mt-2" href="novo_post.html">Novo Post</a>
                                         <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/LupaVerde.png"
                                             height="15%" width="10%">
-                                        <a class="nav-link mt-2 text-light" href="#">Novo Projeto</a>
+                                        <a class="nav-link mt-2" href="#">Novo Projeto</a>
                                         <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/UserVerde.png"
                                             height="15%" width="10%">
-                                        <a class="nav-link mt-2 text-light" href="#">Meu Perfil</a>
+                                        <a class="nav-link mt-2" href="#">Meu Perfil</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -61,29 +61,44 @@
         </div>
         <div class="row p-5">
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/iconVoltar.png" alt="icone voltar"
-                    width="30" height="30" class="float-right">
-                <button type="button" class="btn btn-outline-secondary">Voltar à Central de Ajuda</button>
+                <a href="centralAjuda.html"><img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/iconVoltar.png" alt="icone voltar"
+                    width="30" height="30" class="float-right"></a>
+                    <a href="centralAjuda.html"><button type="button">Voltar à Central de Ajuda</button></a>
+                </div>
                 <!--Título da página-->
-            </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
-                <p class="fs-1 text-left">Substituição de senha</p>
+                <p class="fs-1 text-left">Esqueci minha senha</p>
             </div>
         </div>
         <div class="row ps-5">
-            <h2>Esqueceu sua senha?</h2>
-            <form>
-                <label for="senha-atual">Senha Atual:</label>
-                <input type="password" id="senha-atual" name="senha-atual"><br>
-
-                <label for="nova-senha">Nova Senha:</label>
-                <input type="password" id="nova-senha" name="nova-senha"><br>
-
-                <label for="confirmar-senha">Confirmar Nova Senha:</label>
-                <input type="password" id="confirmar-senha" name="confirmar-senha"><br>
-
-                <input type="submit" value="Substituir Senha">
-            </form>
+            <div class="col-lg-7 col-md-7 col-sm-12 ps-5 ms-5">
+                <h3>Siga o passo a passo para a troca de senhas</h3>
+                <br>
+                <form>
+                    <label for="inputPassword5" class="form-label">Preencha este campo com o seu e-mail de login</label>
+                    <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                    <div id="passwordHelpBlock" class="form-text">
+                    </div>
+                    <br>
+                    <label for="inputPassword5" class="form-label">Insira uma nova senha</label>
+                    <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                    <div id="passwordHelpBlock" class="form-text">
+                        Sua senha deve ter de 8 a 20 caracteres, contendo letras e números. A nova senha não pode conter caracters especiais e espaços.
+                    </div>
+                    <br>
+                    <label for="inputPassword5" class="form-label">Confirme sua nova senha</label>
+                    <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                    <div id="passwordHelpBlock" class="form-text">
+                        Sua senha deve ter de 8 a 20 caracteres, contendo letras e números. A nova senha não pode conter caracters especiais e espaços.
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 text-center">
+                    <a class="btn btn-success px-5 ms-5 mt-4" href="paginaInicial" role="button">CONFIRMA</a>
+                </div>
+                <br><br><br><br><br>
+            </div>
         </div>
     </div>
 </body>
