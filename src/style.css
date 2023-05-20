@@ -1,9 +1,132 @@
+
 .cabecalho{
-   background-color: #7bd172;
+   background-color: #D6E8DB;
 }
 footer{
-    background-color:#7bd172;
+    background-color:#D6E8DB;
 }
 .black-color{
     background-color :black;
   }
+/*=======*/
+.Lucas_Voltar {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(245, 241, 241);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Lucas_Card {
+    padding: 10px;
+    margin: auto;
+    border: solid 2px black;
+    border-radius: 15px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    width: 900px;
+    height: 550px;
+    box-shadow: 60px -16px #D6E8DB;
+}
+
+.Lucas_Card2 {
+    padding: auto;
+    margin: auto;
+    border: solid 2px black;
+    border-radius: 15px;
+    display: block;
+    font-size: 25px;
+    width: 900px;
+    height: 550px;
+    box-shadow: 60px -16px #D6E8DB;
+}
+
+.Lucas_Card3 {
+    padding: auto;
+    margin: auto;
+    border: solid 2px black;
+    border-radius: 15px;
+    display: flexbox;
+    justify-content: left;
+    text-align: right;
+    font-size: 25px;
+    width: 900px;
+    height: 550px;
+    box-shadow: 60px -16px #D6E8DB;
+}
+
+.Lucas_Input {
+    color: black;
+    border: 0px;
+    border-radius: 11px;
+    width: 350px;
+    background-color: rgb(230, 229, 229);
+    height: 40px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.Lucas_Input2 {
+    margin: 10px;
+    color: black;
+    border: 0px;
+    border-radius: 11px;
+    width: 350px;
+    background-color: rgb(230, 229, 229);
+    height: 40px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.Lucas_Input3 {
+    margin: 10px;
+    text-align: left;
+    color: black;
+    border: 0px;
+    border-radius: 11px;
+    width: 350px;
+    font-size: 18px;
+    background-color: rgb(230, 229, 229);
+    height: 40px
+}
+
+.Lucas_p {
+    text-decoration: none;
+    color: black;
+    font-size: 18px
+}
+
+.Lucas_button2:hover {
+    transform: scale(1.2);
+}
+
+.Lucas_button2 {
+    transition: transform 0.3;
+}
+
+.Lucas_button2 {
+    display: inline;
+    justify-content: left;
+    text-align: auto;
+    border: auto;
+    border-radius: 11px;
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: black;
+}
+
+.Lucas_button2:hover {
+    transform: scale(1.2);
+}
+
+.Lucas_button2 {
+    transition: transform 0.3s;
+}
+
