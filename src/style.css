@@ -1,14 +1,14 @@
-
-.cabecalho{
-   background-color: #D6E8DB;
+.cabecalho {
+    background-color: #D6E8DB;
 }
-footer{
-    background-color:#D6E8DB;
-}
-.black-color{
-    background-color :black;
-  }
 
+footer {
+    background-color: #D6E8DB;
+}
+
+.black-color {
+    background-color: black;
+}
 
 /*=======*/
 .Lucas_Voltar {
@@ -131,4 +131,3 @@ footer{
 .Lucas_button2 {
     transition: transform 0.3s;
 }
-
