@@ -277,8 +277,13 @@ header.index {
     background-color: #D6E8DB ;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    text-align: center;
 }
 header.index img {
+    height: 25%;
+}
+
+header.index #logo{
     height: 40%;
 }
 
@@ -321,6 +326,8 @@ footer.index {
     height: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    text-align: center;
 }
 
 footer.index img {
