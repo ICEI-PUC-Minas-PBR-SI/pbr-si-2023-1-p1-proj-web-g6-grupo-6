@@ -128,5 +128,50 @@ footer{
 
 .Lucas_button2 {
     transition: transform 0.3s;
+    
 }
+
+
+  body {
+      background-color: white;
+  }
+  
+  #resultado{
+      width: 100%;
+  }
+  
+  .table{
+      color: white;
+  }
+  
+  div.box {
+      height: 100%;
+      background: -webkit-linear-gradient(top, #088fad 20%, #00d5ff 100%);
+  }
+  
+  div.titulo {
+      font-size: 5vw;
+      text-align: center;
+      padding: 3vw;
+      position: relative;
+  }
+  
+  .sectionl{
+      display: flex;
+  }
+  
+  #container1 {
+      width: 50%;
+      min-width: 500px;
+      display: inline-block;
+      align-items: center;
+  }
+  
+  #container2 {
+      width: 50%;
+      min-width: 500px;
+      display: inline-block;
+      align-items: center;
+      margin-left: 200px;
+  }
 
