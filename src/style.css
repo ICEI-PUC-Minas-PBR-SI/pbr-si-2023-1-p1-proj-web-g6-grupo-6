@@ -6,6 +6,7 @@ footer{
 }
 .black-color{
     background-color :black;
+<<<<<<< HEAD
 }
 .texto{
     margin-top: 1%;
@@ -13,3 +14,9 @@ footer{
     margin-left: 5%;
     color: rgb(94, 94, 94);
 }
+=======
+  }
+.texto{
+    color: rgb(61, 61, 61);
+}
+>>>>>>> f_novo_post
