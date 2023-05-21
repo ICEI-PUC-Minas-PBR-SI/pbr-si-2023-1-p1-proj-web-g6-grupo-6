@@ -270,25 +270,64 @@ footer {
 body.index{
     background-color: white;
 }
+
+/* cabeçalho */
 header.index {
+    height: 100px;
     background-color: #D6E8DB ;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
+header.index img {
+    height: 40%;
+}
 
+header.index #buscador img {
+    height: 10%;
+}
+
+header.index input {
+    height: 10%;
+}
+/* conteudo do site */
 #conteudo {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
+    /*principal*/
+#posts {
+    display: grid;
+    grid-template-columns: 30%, 30%, 30%;
+    padding: 10%
+}
+#posts img {
+    width: 80%;
+} 
+    /* menu lateral */
+
+#links.uteis {
+    border: solid black 1px;
+
+}
+
+#projetos.recentes {
+    border: solid;
+}
+
+/* rodape */
 
 footer.index {
-
+    height: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#redes.sociais {
+footer.index img {
+    height: 20%;
+}
+
+footer.index #redes.sociais {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
