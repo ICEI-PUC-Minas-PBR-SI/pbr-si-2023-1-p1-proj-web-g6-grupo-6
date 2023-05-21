@@ -229,4 +229,10 @@
    .post_recente a:hover {
      text-decoration: underline;
    }
-   
+
+   .cabecalho{
+    background-color: #D6E8DB;
+   }
+   footer{
+    background-color: #D6E8DB;
+   }
