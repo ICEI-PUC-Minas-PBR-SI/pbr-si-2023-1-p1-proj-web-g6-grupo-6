@@ -294,6 +294,12 @@ header.index span {
     height: 120px;
 }
 
+header.index a {
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
 header.index #buscador{
     
 }
