@@ -349,7 +349,7 @@ header.index a {
         /* Carrossel */ 
 
         .index main {
-            height: 500px;
+            height: 390px;
             width: 100%;
             max-width: 1000px;
             display: flex;
@@ -361,7 +361,8 @@ header.index a {
           }
 
         .index main img {
-            height: 500px;
+            height: 374px;
+            width: 100%;
         }
 
         .swiper {
@@ -389,6 +390,11 @@ header.index a {
 #posts img {
     border-radius: 10px;
 }
+
+#posts h3{
+    margin: 10px;
+}
+
     /* menu lateral */
 
 #links_uteis {
@@ -434,9 +440,9 @@ header.index a {
 
 #clique_login {
     border-radius: 10px;
-    margin: 10px;
     border: 1px solid #D6E8DB ;
     padding: 15px 90px;
+    margin: 20px 0px;
 }
 
 #clique_login button {
@@ -507,20 +513,10 @@ footer #ajuda h3 {
 
 }
 
-@media screen and (max-width: 600px){
-    .index main {
-        height: 200px;
+@media screen and (max-width: 400px){
+    main {
+        display: none;
     }
+    
 }
 
-
-@media (max-width: 450px) {
-
-    .index main{
-        height: 100px;
-    }
-
-    .swiper {
-      height: 270px;
-    }
-  }
