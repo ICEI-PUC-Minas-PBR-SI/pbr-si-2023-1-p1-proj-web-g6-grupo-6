@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
@@ -9,11 +9,13 @@ img {
     max-width: 100%;
 }
 
-.cabecalho{
+.cabecalho {
     background-color: #D6E8DB;
 }
-footer{
-    background-color:#D6E8DB;
+
+
+footer {
+    background-color: #D6E8DB;
 }
 .black-color{
     background-color :black;
@@ -24,6 +26,11 @@ footer{
     margin-right: 5%;
     margin-left: 5%;
     color: rgb(94, 94, 94);
+}
+
+
+.black-color {
+    background-color: black;
 }
 
 /*=======*/
@@ -156,14 +163,14 @@ footer{
 
 
 
-/* index Letícia*/ 
-body.index{
+/* index Letícia*/
+body.index {
     background-color: white;
 }
 
 /* cabeçalho */
 header.index {
-    background-color: #D6E8DB ;
+    background-color: #D6E8DB;
     display: grid;
     grid-template-columns: 1fr 3fr 4fr;
     text-align: center;
@@ -186,7 +193,7 @@ header.index img {
     height: 25%;
 }
 
-header.index #logo{
+header.index #logo {
     height: 100px;
     margin: 15px;
     margin-left: 40px;
@@ -202,7 +209,7 @@ header.index input {
     padding-left: 10px;
 }
 
-header.index #menu{
+header.index #menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -211,6 +218,7 @@ header.index a {
     text-decoration: none;
     color: black;
 }
+
 /* conteudo do site */
 #conteudo {
     display: grid;
@@ -222,58 +230,59 @@ header.index a {
 }
 
 
-    /*principal*/
+/*principal*/
 
-        /* Carrossel */ 
+/* Carrossel */
 
-        .index main {
-            height: 390px;
-            width: 100%;
-            max-width: 1000px;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-            padding: 30px;
-            margin-left: 30px;
-          }
+.index main {
+    height: 390px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+    margin-left: 30px;
+}
 
-        .index main img {
-            height: 374px;
-            width: 100%;
-        }
+.index main img {
+    height: 374px;
+    width: 100%;
+}
 
-        .swiper {
-            height: 300px;
-          }
-          
-          .swiper-slide {
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
+.swiper {
+    height: 300px;
+}
 
-        /*restante do body */
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*restante do body */
 
 #posts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 #posts div {
     padding: 20px 40px;
     text-align: center;
-} 
+}
 
 #posts img {
     border-radius: 10px;
 }
 
-#posts h3{
+#posts h3 {
     margin: 10px;
 }
 
-    /* menu lateral */
+/* menu lateral */
 
 #links_uteis {
     border: solid #D6E8DB 1px;
@@ -293,7 +302,7 @@ header.index a {
     padding: 5px;
     text-decoration: none;
     color: black;
-    
+
 }
 
 #links_uteis a:hover {
@@ -301,7 +310,7 @@ header.index a {
 }
 
 #projetos_recentes {
-    border: #D6E8DB 1px solid ;
+    border: #D6E8DB 1px solid;
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -318,7 +327,7 @@ header.index a {
 
 #clique_login {
     border-radius: 10px;
-    border: 1px solid #D6E8DB ;
+    border: 1px solid #D6E8DB;
     padding: 15px 90px;
     margin: 20px 0px;
 }
@@ -338,7 +347,7 @@ footer.index {
     text-align: center;
 }
 
-footer.index > div {
+footer.index>div {
     height: 150px;
     padding: 20px;
 }
@@ -365,7 +374,7 @@ footer.index img {
     padding-bottom: 10px;
 }
 
- #redes_sociais h3 {
+#redes_sociais h3 {
     padding-bottom: 15px;
 }
 
@@ -388,7 +397,7 @@ footer #ajuda h3 {
 
 /* media query */
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1050px) {
     #menu_lateral_index {
         display: none;
     }
@@ -397,7 +406,8 @@ footer #ajuda h3 {
         width: 1050px;
         padding: 10px;
     }
-    header.index #logo{
+
+    header.index #logo {
         height: 80px;
         margin: 15px;
         margin-left: 40px;
@@ -421,19 +431,20 @@ footer #ajuda h3 {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     #carrossel {
         display: none;
     }
+
     #menu_lateral_index {
         display: none;
     }
 
     #conteudo {
-        display: grid;
-        grid-template-columns: 1fr;
-        
+        display: block;
+
     }
+
     #posts p {
         display: none;
     }
@@ -442,19 +453,19 @@ footer #ajuda h3 {
     #posts div {
         padding: 20px 40px;
         text-align: center;
-    } 
+    }
 
     #posts {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    header.index #logo{
+    header.index #logo {
         height: 70px;
         margin: 15px;
         margin-left: 40px;
     }
-    
+
     footer.index #icon_redes img {
         height: 40px;
         margin-top: 30px;
@@ -467,41 +478,45 @@ footer #ajuda h3 {
     #sobre p {
         display: none;
     }
+
+    body {
+        background-color: white;
+    }
 }  
 body {
     background-color: white;
 }
 
-#resultado{
-    width: 100%;
-}
+    #resultado {
+        width: 100%;
+    }
 
-.table{
-    color: white;
-}
+    .table {
+        color: white;
+    }
 
-div.box {
-    height: 100%;
-    background: -webkit-linear-gradient(top, #088fad 20%, #00d5ff 100%);
-}
+    div.box {
+        height: 100%;
+        background: -webkit-linear-gradient(top, #088fad 20%, #00d5ff 100%);
+    }
 
-div.titulo {
-    font-size: 5vw;
-    text-align: center;
-    padding: 3vw;
-    position: relative;
-}
+    div.titulo {
+        font-size: 5vw;
+        text-align: center;
+        padding: 3vw;
+        position: relative;
+    }
 
-.sectionl{
-    display: flex;
-}
+    .sectionl {
+        display: flex;
+    }
 
-#container1 {
-    width: 50%;
-    min-width: 500px;
-    display: inline-block;
-    align-items: center;
-}
+    #container1 {
+        width: 50%;
+        min-width: 500px;
+        display: inline-block;
+        align-items: center;
+    }
 
 #container2 {
     width: 50%;
@@ -515,4 +530,11 @@ div.titulo {
 
 .texto{
     color: rgb(61, 61, 61);
+    #container2 {
+        width: 50%;
+        min-width: 500px;
+        display: inline-block;
+        align-items: center;
+        margin-left: 200px;
+    }
 }
