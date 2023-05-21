@@ -274,6 +274,10 @@ footer {
     transition: transform 0.3s;
 }
 
+.nav-titulo{
+    background-color: #D6E8DB;
+}
+
 /* index Letícia*/ 
 body.index{
     background-color: white;
