@@ -1,4 +1,14 @@
-<<<<<<< HEAD
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
 .cabecalho{
     background-color: #D6E8DB;
  }
@@ -130,7 +140,6 @@
      transition: transform 0.3s;
  }
 
-=======
 .cabecalho {
     background-color: #D6E8DB;
 }
@@ -264,7 +273,6 @@ footer {
 .Lucas_button2 {
     transition: transform 0.3s;
 }
->>>>>>> bd3d0ebba1fc2192420f3794fb2c65f2b7575ebd
 
 /* index Letícia*/ 
 body.index{
@@ -273,18 +281,28 @@ body.index{
 
 /* cabeçalho */
 header.index {
-    height: 100px;
     background-color: #D6E8DB ;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     text-align: center;
+    padding-top: 10px;
+}
+
+header.index span {
+    display: flex;
+    align-items: center;
+}
+
+header.index #buscador{
+    padding-top: 20px;
 }
 header.index img {
     height: 25%;
 }
 
 header.index #logo{
-    height: 40%;
+    height: 50%;
+    margin: 10px;
 }
 
 header.index #buscador img {
@@ -300,6 +318,10 @@ header.index input {
     grid-template-columns: 3fr 1fr;
 }
 
+#menu_lateral_index {
+    text-align: center;
+}
+
 
     /*principal*/
 
@@ -310,17 +332,54 @@ header.index input {
     grid-template-columns: 1fr 1fr 1fr;
 }
 #posts div {
-    padding: 20px;
+    padding: 20px 40px;
+    text-align: center;
 } 
+
+#posts img {
+    border-radius: 10px;
+}
     /* menu lateral */
 
-#links.uteis {
-    border: solid black 1px;
+#links_uteis {
+    border: solid #D6E8DB 1px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
 
 }
 
-#projetos.recentes {
-    border: solid;
+#links_uteis h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#links_uteis a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#links_uteis a:hover {
+    color: #33bd41;
+}
+
+#projetos_recentes {
+    border: #D6E8DB 1px solid ;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#projetos_recentes h3 {
+    font-weight: bold;
+    padding: 20px;
+}
+
+#projetos_recentes img {
+    border-radius: 10px;
+    margin: 10px;
 }
 
 /* rodape */
