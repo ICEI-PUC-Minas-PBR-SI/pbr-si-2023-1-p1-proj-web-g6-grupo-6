@@ -9,7 +9,8 @@ Gustavo Amaral Silva:
 
 
 Leticia Gabriela Ramos Macedo:
-· 
+· Programação Página inicial (index)
+· Organização da branch Docs
 
 Lucas Vieira Souza:
 · Programação da página de login
