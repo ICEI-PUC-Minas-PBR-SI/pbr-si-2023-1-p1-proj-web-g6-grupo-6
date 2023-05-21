@@ -131,3 +131,7 @@ footer {
 .Lucas_button2 {
     transition: transform 0.3s;
 }
+
+.nav-titulo{
+    background-color: #D6E8DB;
+}
