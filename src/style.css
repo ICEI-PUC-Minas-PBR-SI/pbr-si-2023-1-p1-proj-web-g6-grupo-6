@@ -300,9 +300,6 @@ header.index a {
     height: 120px;
 }
 
-header.index #buscador{
-    
-}
 header.index img {
     height: 25%;
 }
@@ -326,6 +323,11 @@ header.index input {
 header.index #menu{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+header.index a {
+    text-decoration: none;
+    color: black;
 }
 /* conteudo do site */
 #conteudo {
@@ -441,6 +443,11 @@ footer.index > div {
 
 footer.index a {
     text-decoration: none;
+    color: black;
+}
+
+footer.index a:hover {
+    color: #33bd41;
 }
 
 footer.index img {
@@ -451,6 +458,8 @@ footer.index #redes.sociais {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* media query */
 
 @media screen and (max-width: 992px){
 
