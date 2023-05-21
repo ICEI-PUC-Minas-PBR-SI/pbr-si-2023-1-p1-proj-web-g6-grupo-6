@@ -1,5 +1,6 @@
 Eduarda Faria Pinheiro:
-·
+·Programação da página Novo Post
+·Programação da página Feed
 
 Giovanna Fabíola Vaz: 
 · 
