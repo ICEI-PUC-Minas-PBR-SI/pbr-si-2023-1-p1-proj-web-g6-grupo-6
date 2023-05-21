@@ -130,11 +130,6 @@
      transition: transform 0.3s;
  }
 
- /* index */ 
- header {
-       background-color: #D6E8DB ;
- }
- 
 =======
 .cabecalho {
     background-color: #D6E8DB;
@@ -270,3 +265,9 @@ footer {
     transition: transform 0.3s;
 }
 >>>>>>> bd3d0ebba1fc2192420f3794fb2c65f2b7575ebd
+
+/* index Letícia*/ 
+header {
+    background-color: #D6E8DB ;
+    display: grid;
+}
