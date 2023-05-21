@@ -294,57 +294,23 @@ header.index #buscador img {
 header.index input {
     height: 10%;
 }
-/* conteudo do site 
+/* conteudo do site */
 #conteudo {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
-teste */
 
     /*principal*/
-        /* carrossel */
-#conteudo{
-    position: relative;
-    padding: 10 px;
-    margin: 0 auto;    
-    max-width: 640px;
-}
-
-.fotos_carrossel{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 15px;
-}
-
-.contem_fotos{
-    overflow-x: auto;
-}
-
-seta_direita, seta_esquerda{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20 px;
-    line-height: 250px;
-    width: 40px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-}
 
         /*restante do body */
 
 #posts {
     display: grid;
-    grid-template-columns: 30%, 30%, 30%;
-    padding: 10%
+    grid-template-columns: 1fr 1fr 1fr;
 }
-#posts img {
-    width: 80%;
+#posts div {
+    padding: 20px;
 } 
     /* menu lateral */
 
