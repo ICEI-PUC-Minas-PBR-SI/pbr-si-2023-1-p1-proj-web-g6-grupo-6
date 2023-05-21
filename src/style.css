@@ -1,477 +1,232 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
 
-img {
-    max-width: 100%;
-}
-
-.cabecalho{
-    background-color: #D6E8DB;
- }
- footer{
-     background-color:#D6E8DB;
- }
- .black-color{
-     background-color :black;
+ 
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     color: #c00808;
    }
- /*=======*/
- .Lucas_Voltar {
-     text-decoration: none;
-     color: black;
-     font-size: 20px;
-     background-color: rgb(245, 241, 241);
+ 
+   .quadrados {
+     display: flex;
+   }
+ 
+   .project-list {
+     flex: 2;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     padding: 20px;
+   }
+ 
+   .project {
+     width: 300px;
+     height: 200px;
+     background-color: #f2f2f2;
      border-radius: 5px;
-     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
- }
- 
- .Lucas_Card {
-     padding: 10px;
-     margin: auto;
-     border: solid 2px black;
-     border-radius: 15px;
-     display: block;
-     justify-content: space-between;
+     margin: 10px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     display: flex;
      align-items: center;
+     justify-content: center;
      text-align: center;
-     font-size: 25px;
-     width: 900px;
-     height: 550px;
-     box-shadow: 60px -16px #D6E8DB;
+   }
+ 
+   .project:hover {
+     background-color: #e0e0e0;
+   }
+ 
+   .project-title {
+     font-weight: bold;
+     margin-top: 10px;
+   }
+ 
+   .sidebar {
+     flex: 0,5;
+     background-color: #D6E8DB;
+     color: #fff;
+     padding: 20px;
+   }
+ 
+   .recent-projects {
+     margin-bottom: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+   .recent-project {
+     width: 100%;
+     height: 200px;
+     background-color: #b0c0b4;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+   }
+ 
+   .recent-project:hover {
+     background-color: #555;
+   }
+ 
+   .recent-project a {
+     color: #fff;
+     text-decoration: none;
+   }
+ 
+   .recent-project a:hover {
+     text-decoration: underline;
+   }
+   
+   .novo_projeto{
+     margin-left: 300px;
+     color: #b0c0b4;
+     margin-top: 50px;
+     margin-bottom: 50px;
+   }
+   
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f8f8f8; 
+   }
+ /* Segunda Pagina  */
+ 
+ .logo {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
  }
  
- .Lucas_Card2 {
-     padding: auto;
-     margin: auto;
-     border: solid 2px black;
-     border-radius: 15px;
+ nav {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+ }
+ 
+ nav a {
+     color: white;
+     text-decoration: none;
+ }
+ 
+ main {
+     display: flex;
+     gap: 2rem;
+     padding: 2rem;
+ }
+ 
+ .perfil {
+     text-align: center;
+ }
+ 
+ .perfil img {
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+     border-radius: 50%;
+ }
+ 
+ .conteudo {
+     flex-grow: 1;
+ }
+ 
+ section.projetos {
+     margin-bottom: 2rem;
+     margin-bottom: 20px;
+     max-width: 950px;
+     margin-left: 80px;
+ }
+ 
+ .projeto:hover {
+     background-color: #dfd9d9;
+   }
+ 
+ section.projetos h3,
+ section.posts h {
+     margin-bottom: 1rem;
+ }
+ 
+ a.projeto {
      display: block;
-     font-size: 25px;
-     width: 900px;
-     height: 550px;
-     box-shadow: 60px -16px #D6E8DB;
- }
- 
- .Lucas_Card3 {
-     padding: auto;
-     margin: auto;
-     border: solid 2px black;
-     border-radius: 15px;
-     display: flexbox;
-     justify-content: left;
-     text-align: right;
-     font-size: 25px;
-     width: 900px;
-     height: 550px;
-     box-shadow: 60px -16px #D6E8DB;
- }
- 
- .Lucas_Input {
-     color: black;
-     border: 0px;
-     border-radius: 11px;
-     width: 350px;
-     background-color: rgb(230, 229, 229);
-     height: 40px;
-     font-size: 18px;
-     text-align: left;
- }
- 
- .Lucas_Input2 {
-     margin: 10px;
-     color: black;
-     border: 0px;
-     border-radius: 11px;
-     width: 350px;
-     background-color: rgb(230, 229, 229);
-     height: 40px;
-     font-size: 18px;
-     text-align: left;
- }
- 
- .Lucas_Input3 {
-     margin: 10px;
-     text-align: left;
-     color: black;
-     border: 0px;
-     border-radius: 11px;
-     width: 350px;
-     font-size: 18px;
-     background-color: rgb(230, 229, 229);
-     height: 40px
- }
- 
- .Lucas_p {
+     background-color: #f1f1f1;
+     padding: 1rem;
      text-decoration: none;
      color: black;
-     font-size: 18px
+     border-radius: 5px;
+     height: 150px;
  }
  
- .Lucas_button2:hover {
-     transform: scale(1.2);
+ aside.interesse {
+     width: 200px;
  }
  
- .Lucas_button2 {
-     transition: transform 0.3;
+ aside.interesse h3 {
+     margin-bottom: 1rem;
  }
  
- .Lucas_button2 {
-     display: inline;
-     justify-content: left;
-     text-align: auto;
-     border: auto;
-     border-radius: 11px;
-     width: 130px;
-     height: 50px;
-     font-size: 15px;
-     background-color: rgb(255, 255, 255);
+ .barralateral span {
+     display: block;
+     text-align: center;
+     font-weight: bold;
+   }
+   
+ 
+ .barralateral {
+     
+         /* position: sticky;
+         top: 50%;
+         left: 100%;
+         transform: translateY(-60%);
+         background-color: #f2f2f2;
+         width: 200px;
+         padding: 30px;
+         border-radius: 0 5px 5px 0; 
+         cursor: pointer;
+        */
+ 
+     flex: 0,5;
+     background-color: #D6E8DB;
+     color: #fff;
+     padding: 20px;
+   }
+ 
+   .posts_recentes {
+     margin-bottom: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+   .post_recente {
+     width: 100%;
+     height: 200px;
+     background-color: #b0c0b4;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+   }
+ 
+   .post_recente:hover {
+     background-color: #555;
+   }
+ 
+   .post_recente a {
+     color: #fff;
      text-decoration: none;
-     color: black;
- }
+   }
  
- .Lucas_button2:hover {
-     transform: scale(1.2);
- }
- 
- .Lucas_button2 {
-     transition: transform 0.3s;
- }
-
-.cabecalho {
-    background-color: #D6E8DB;
-}
-
-footer {
-    background-color: #D6E8DB;
-}
-
-.black-color {
-    background-color: black;
-}
-
-/*=======*/
-.Lucas_Voltar {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    background-color: rgb(245, 241, 241);
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.Lucas_Card {
-    padding: 10px;
-    margin: auto;
-    border: solid 2px black;
-    border-radius: 15px;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-size: 25px;
-    width: 900px;
-    height: 550px;
-    box-shadow: 60px -16px #D6E8DB;
-}
-
-.Lucas_Card2 {
-    padding: auto;
-    margin: auto;
-    border: solid 2px black;
-    border-radius: 15px;
-    display: block;
-    font-size: 25px;
-    width: 900px;
-    height: 550px;
-    box-shadow: 60px -16px #D6E8DB;
-}
-
-.Lucas_Card3 {
-    padding: auto;
-    margin: auto;
-    border: solid 2px black;
-    border-radius: 15px;
-    display: flexbox;
-    justify-content: left;
-    text-align: right;
-    font-size: 25px;
-    width: 900px;
-    height: 550px;
-    box-shadow: 60px -16px #D6E8DB;
-}
-
-.Lucas_Input {
-    color: black;
-    border: 0px;
-    border-radius: 11px;
-    width: 350px;
-    background-color: rgb(230, 229, 229);
-    height: 40px;
-    font-size: 18px;
-    text-align: left;
-}
-
-.Lucas_Input2 {
-    margin: 10px;
-    color: black;
-    border: 0px;
-    border-radius: 11px;
-    width: 350px;
-    background-color: rgb(230, 229, 229);
-    height: 40px;
-    font-size: 18px;
-    text-align: left;
-}
-
-.Lucas_Input3 {
-    margin: 10px;
-    text-align: left;
-    color: black;
-    border: 0px;
-    border-radius: 11px;
-    width: 350px;
-    font-size: 18px;
-    background-color: rgb(230, 229, 229);
-    height: 40px
-}
-
-.Lucas_p {
-    text-decoration: none;
-    color: black;
-    font-size: 18px
-}
-
-.Lucas_button2:hover {
-    transform: scale(1.2);
-}
-
-.Lucas_button2 {
-    transition: transform 0.3;
-}
-
-.Lucas_button2 {
-    display: inline;
-    justify-content: left;
-    text-align: auto;
-    border: auto;
-    border-radius: 11px;
-    width: 130px;
-    height: 50px;
-    font-size: 15px;
-    background-color: rgb(255, 255, 255);
-    text-decoration: none;
-    color: black;
-}
-
-.Lucas_button2:hover {
-    transform: scale(1.2);
-}
-
-.Lucas_button2 {
-    transition: transform 0.3s;
-}
-
-/* index Letícia*/ 
-body.index{
-    background-color: white;
-}
-
-/* cabeçalho */
-header.index {
-    background-color: #D6E8DB ;
-    display: grid;
-    grid-template-columns: 1fr 3fr 4fr;
-    text-align: center;
-    height: 120px;
-}
-
-header.index span {
-    display: flex;
-    align-items: center;
-    height: 120px;
-}
-
-header.index a {
-    display: flex;
-    align-items: center;
-    height: 120px;
-}
-
-header.index img {
-    height: 25%;
-}
-
-header.index #logo{
-    height: 100px;
-    margin: 15px;
-    margin-left: 40px;
-}
-
-header.index #buscador img {
-    height: 30px;
-}
-
-header.index input {
-    height: 30px;
-    width: 70%;
-    padding-left: 10px;
-}
-
-header.index #menu{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-header.index a {
-    text-decoration: none;
-    color: black;
-}
-/* conteudo do site */
-#conteudo {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
-#menu_lateral_index {
-    text-align: center;
-}
-
-
-    /*principal*/
-
-        /* Carrossel */ 
-
-        .index main {
-            height: 300px;
-            width: 100%;
-            max-width: 1000px;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-          }
-
-        .index main img {
-            width: 100%;
-        }
-
-        .swiper {
-            height: 300px;
-          }
-          
-          .swiper-slide {
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-
-        /*restante do body */
-
-#posts {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-#posts div {
-    padding: 20px 40px;
-    text-align: center;
-} 
-
-#posts img {
-    border-radius: 10px;
-}
-    /* menu lateral */
-
-#links_uteis {
-    border: solid #D6E8DB 1px;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-
-}
-
-#links_uteis h3 {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-#links_uteis a {
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-    color: black;
-    
-}
-
-#links_uteis a:hover {
-    color: #33bd41;
-}
-
-#projetos_recentes {
-    border: #D6E8DB 1px solid ;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-#projetos_recentes h3 {
-    font-weight: bold;
-    padding: 20px;
-}
-
-#projetos_recentes img {
-    border-radius: 10px;
-    margin: 10px;
-}
-
-/* rodape */
-
-footer.index {
-    height: 150px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2%;
-    text-align: center;
-}
-
-footer.index > div {
-    height: 150px;
-    padding: 20px;
-}
-
-footer.index a {
-    text-decoration: none;
-    color: black;
-}
-
-footer.index a:hover {
-    color: #33bd41;
-}
-
-footer.index img {
-    height: 20%;
-}
-
-footer.index #redes.sociais {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-/* media query */
-
-@media screen and (max-width: 992px){
-
-}
-
-@media screen and (max-width: 600px){
-
-}
-
-
-@media (max-width: 450px) {
-    .swiper {
-      height: 270px;
-    }
-  }
+   .post_recente a:hover {
+     text-decoration: underline;
+   }
+   
