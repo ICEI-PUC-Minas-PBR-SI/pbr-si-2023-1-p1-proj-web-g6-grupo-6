@@ -420,8 +420,25 @@ footer #ajuda h3 {
     #menu_lateral_index {
         display: none;
     }
+
+    #conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
     #posts p {
         display: none;
+    }
+
+
+    #posts div {
+        padding: 20px 40px;
+        text-align: center;
+    } 
+
+    #posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     header.index #logo{
