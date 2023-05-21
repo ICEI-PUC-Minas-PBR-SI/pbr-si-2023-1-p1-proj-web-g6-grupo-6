@@ -334,6 +334,33 @@ header.index #menu{
 
     /*principal*/
 
+        /* Carrossel */ 
+
+        .index main {
+            height: 300px;
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+          }
+
+        .index main img {
+            width: 100%;
+        }
+
+        .swiper {
+            height: 300px;
+          }
+          
+          .swiper-slide {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
         /*restante do body */
 
 #posts {
@@ -426,3 +453,10 @@ footer.index #redes.sociais {
 @media screen and (max-width: 600px){
 
 }
+
+
+@media (max-width: 450px) {
+    .swiper {
+      height: 270px;
+    }
+  }
