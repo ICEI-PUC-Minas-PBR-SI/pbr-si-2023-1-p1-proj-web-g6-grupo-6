@@ -267,7 +267,28 @@ footer {
 >>>>>>> bd3d0ebba1fc2192420f3794fb2c65f2b7575ebd
 
 /* index Letícia*/ 
-header {
+body.index{
+    background-color: white;
+}
+header.index {
     background-color: #D6E8DB ;
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#conteudo {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+footer.index {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#redes.sociais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
