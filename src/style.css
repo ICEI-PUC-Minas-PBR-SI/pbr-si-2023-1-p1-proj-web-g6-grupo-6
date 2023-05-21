@@ -509,12 +509,18 @@ footer #ajuda h3 {
 
 /* media query */
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1050px){
 
 }
 
 @media screen and (max-width: 400px){
-    main {
+    #carrossel {
+        display: none;
+    }
+    #menu_lateral_index {
+        display: none;
+    }
+    #posts p {
         display: none;
     }
     
