@@ -380,10 +380,26 @@ footer #ajuda h3 {
 /* media query */
 
 @media screen and (max-width: 1050px){
+    #menu_lateral_index {
+        display: none;
+    }
 
+    header.index {
+        width: 1050px;
+        padding: 10px;
+    }
+    header.index #logo{
+        height: 80px;
+        margin: 15px;
+        margin-left: 40px;
+    }
+
+    footer.index {
+        width: 1050px;
+    }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     #carrossel {
         display: none;
     }
@@ -392,6 +408,12 @@ footer #ajuda h3 {
     }
     #posts p {
         display: none;
+    }
+
+    header.index #logo{
+        height: 70px;
+        margin: 15px;
+        margin-left: 40px;
     }
     
 }
