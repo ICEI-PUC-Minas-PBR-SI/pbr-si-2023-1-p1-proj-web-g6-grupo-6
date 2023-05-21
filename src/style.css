@@ -283,34 +283,43 @@ body.index{
 header.index {
     background-color: #D6E8DB ;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr 3fr 4fr;
     text-align: center;
-    padding-top: 10px;
+    height: 120px;
 }
 
 header.index span {
     display: flex;
     align-items: center;
+    height: 120px;
 }
 
 header.index #buscador{
-    padding-top: 20px;
+    
 }
 header.index img {
     height: 25%;
 }
 
 header.index #logo{
-    height: 50%;
-    margin: 10px;
+    height: 100px;
+    margin: 15px;
+    margin-left: 40px;
 }
 
 header.index #buscador img {
-    height: 10%;
+    height: 30px;
 }
 
 header.index input {
-    height: 10%;
+    height: 30px;
+    width: 70%;
+    padding-left: 10px;
+}
+
+header.index #menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 /* conteudo do site */
 #conteudo {
@@ -390,6 +399,15 @@ footer.index {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2%;
     text-align: center;
+}
+
+footer.index > div {
+    height: 150px;
+    padding: 20px;
+}
+
+footer.index a {
+    text-decoration: none;
 }
 
 footer.index img {
