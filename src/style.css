@@ -429,7 +429,7 @@ header.index a {
 /* rodape */
 
 footer.index {
-    height: 150px;
+    height: 180px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2%;
@@ -439,6 +439,11 @@ footer.index {
 footer.index > div {
     height: 150px;
     padding: 20px;
+}
+
+#contato h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 footer.index a {
@@ -454,10 +459,28 @@ footer.index img {
     height: 20%;
 }
 
-footer.index #redes.sociais {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#sobre h3 {
+    padding-bottom: 10px;
 }
+
+ #redes.sociais h3 {
+    padding-bottom: 15px;
+}
+
+footer.index #icon_redes {
+    display: block;
+}
+
+footer.index #icon_redes a {
+    height: 30px;
+}
+
+footer #ajuda h3 {
+    padding-bottom: 10px;
+    padding-top: 40 px;
+    margin-top: 10px;
+}
+
 
 /* media query */
 
