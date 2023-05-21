@@ -429,8 +429,7 @@ footer #ajuda h3 {
     }
 
     #conteudo {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: block;
 
     }
 
