@@ -19,4 +19,4 @@ Lucas Vieira Souza:
 . Programação da página de LoginRegister
 
 Otávio Stefanine Nunes Soutelo:
-· 
+·  Programação da página preferências
