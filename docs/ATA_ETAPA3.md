@@ -3,7 +3,9 @@ Eduarda Faria Pinheiro:
 ·Programação da página Feed
 
 Giovanna Fabíola Vaz: 
-· 
+· Programação da página Central de Ajuda;
+· Programação das páginas subsequêntes à Central de Ajuda (Canais de Atendimento, Reposição de Senha, Vantagens de ser um membro e Dúvidas frequentes);
+· Padroização do site, organização das branches, auxílio aos outros integrantes quanto ao git, participação na estruturação e organização do trabalho.
 
 Gustavo Amaral Silva:
 · Criação da pagina Perfil.
