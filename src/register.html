@@ -10,14 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="Logo Volunteer Connect.png" type="image/x-icon">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volunteer Connect</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -78,22 +71,22 @@
       <br>
       <p style="text-align:center;"><b>Queremos te conhecer melhor!</b></p>
       <p style="font-size: 20px;text-align:center">Preencha os campos abaixo para concluir seu cadastro:</p>
-      <input type="text" class="Lucas_Input3" placeholder="  Nome completo"></input>
+      <input id="nome" type="text" class="Lucas_Input3" placeholder="  Nome completo"></input>
       <br>
-      <input type="email" class="Lucas_Input3" placeholder="  Informe seu Email"></input>
+      <input id="email" type="email" class="Lucas_Input3" placeholder="  Informe seu Email"></input>
       <br>
-      <input style="display: inline;" type="date" class="Lucas_Input3"></input>
+      <input id="nascimento" style="display: inline;" type="date" class="Lucas_Input3"></input>
       <br>
-      <input type="number" class="Lucas_Input3" placeholder="  CEP"></input>
+      <input id="cep" type="number" class="Lucas_Input3" placeholder="  CEP"></input>
       <br>
-      <input type="password" class="Lucas_Input3" placeholder="  Informe sua Senha"></input>
+      <input id="senha" type="password" class="Lucas_Input3" placeholder="  Informe sua Senha"></input>
       <br> 
-      <input type="password" class="Lucas_Input3" placeholder="  Confirmação da Senha"></input>
+      <input id="confirmsenha" type="password" class="Lucas_Input3" placeholder="  Confirmação da Senha"></input>
       <br> 
       <br>
-      <a style="text-decoration: none" href="perfil.html"><button class="Lucas_button2"><b>Criar
-            Conta</b></button></a>
+      <button id="btn_salvar" type="submit" onclick='cadastrar()' class="Lucas_button2"><b>CriarConta</b></button>
             <br><br>
+            <script src="script.js"></script>
     </div>
     <br><br><br><br><br>
 
