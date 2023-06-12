@@ -134,7 +134,21 @@ footer {
     transition: transform 0.3;
 }
 
+.Lucas_img {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.Lucas_font {
+    display: inline;
+    text-align: left;
+}
+
 .Lucas_button2 {
+    text-decoration: none;
     display: inline;
     justify-content: left;
     text-align: auto;
