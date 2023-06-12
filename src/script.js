@@ -10,4 +10,6 @@ var swiper = new Swiper(".swiper", {
     },
     keyboard: true,
   });
+
+  //Parte Registro
   
