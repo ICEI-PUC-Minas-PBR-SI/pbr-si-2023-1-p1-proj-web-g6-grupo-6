@@ -52,7 +52,7 @@ Gabriela está procurando por uma aplicação que ofereça uma ampla variedade d
 |RF-010| O sistema deve permitir que os usuários façam novos posts de fotos referentes aos trabalhos realizados | MÉDIA | Eduarda Faria |
 |RF-011| O sistema deve proporcionar uma tela de interação entre os usuários e os profissionais de atendimento da empresa | MÉDIA | Giovanna Vaz |
 |RF-012| O sistema deve permitir que o usuário tire dúvidas virtualmente com os assistentes da empresa | MÉDIA | Giovanna Vaz |
-|RF-013| O sistema deve proporcionar uma tela de com informações sobre a empresa | BAIXA | Giovanna Vaz |
+|RF-013| O sistema deve proporcionar uma tela de informações sobre a empresa | BAIXA | Giovanna Vaz |
 |RF-014| O sistema deve fornecer meios de contato entre a empresa e o usuário | BAIXA | Giovanna Vaz |
 |RF-015| O sistema deve permitir que o usuário altere ou recupere seus dados  | MÉDIA | Giovanna Vaz |
 |RF-016| O sistema deve proporcionar uma tela de perfil particular para que cada usuário consiga ter acesso aos seus dados frequentemente | MÉDIA | Gustavo Amaral |
