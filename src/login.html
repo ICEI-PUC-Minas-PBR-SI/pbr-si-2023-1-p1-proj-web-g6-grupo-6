@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
+  <script src="register.js"></script>
 </head>
 
 <body>
@@ -71,15 +71,15 @@
     <p><b>Bem-vindo de volta!</b></p>
     <p style="font-size: 20px;">Acesse sua conta agora!</p>
     <br>
-    <input type="email" class="Lucas_Input2" placeholder="  Email"></input>
+    <input id="email" type="email" class="Lucas_Input2" placeholder="  Email"></input>
     <br>
-    <input type="password" class="Lucas_Input2" placeholder="  Senha"></input>
+    <input id="senha" type="password" class="Lucas_Input2" placeholder="  Senha"></input>
     <br>
     <a class="Lucas_p" href="register.html">Não tem conta,crie uma?</a>
     <br>
     <a class="Lucas_p" href="trocarSenha.html">Esqueci minha senha</a>
     <br><br>
-    <a style="text-decoration: none" href="perfil.html"><button class="Lucas_button2"><b>Login</b></button></a>
+    <button type="submit" class="Lucas_button2" onclick="Login()"><b>Login</b></button>
     <br><br><br><br>
   </div>
   <br><br><br><br>
