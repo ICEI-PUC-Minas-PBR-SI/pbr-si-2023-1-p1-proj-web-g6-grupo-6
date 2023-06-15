@@ -100,6 +100,18 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 text-center ">
 
+
+                <form id="upload-form" enctype="multipart/form-data">
+                    <input type="file" id="image-input" name="image" accept="image/*">
+                    <button type="submit">Fazer upload da imagem</button>
+                  </form>
+                
+                  <img id="image-preview" src="#" alt="Imagem">
+                
+                  <div id="image-feed"></div>
+                
+                  <script src="novopost.js"></script>
+
                 <a type="button" class="botao btn  text-center px-2 mb-5" href="novo_post.html" role="button"><img
                         src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/upload.jpg" class="m-3" width="15px"
                         alt="">Fazer upload da imagem</a>
