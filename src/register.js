@@ -1,59 +1,88 @@
-//Parte Registro
-//campos registro
-
 const LOGIN_URL = "login.html";
-
 var db_usuarios = {};
-
 var usuarioCorrente = {};
 
+function generateUUID() {
+    var d = new Date().getTime();
+    var d2 = (performance && performance.now && (performance.now()*1000)) || 0;
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16;
+        if(d > 0){
+            r = (d + r)%16 | 0;
+            d = Math.floor(d/16);
+        } else {
+            r = (d2 + r)%16 | 0;
+            d2 = Math.floor(d2/16);
+        }
+        return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+    });
+}
+const dadosIniciais = {
+    usuarios: [
+        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com"},
+        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com"},
+    ]
+};
 
-function Login(event) {
-  var username = document.getElementById('email').value;
-  var password = document.getElementById('senha').value;
-  
-  if (username && password) {
-    window.location.href = 'index.html';
-  }
-  else { // Se login falhou, avisa ao usuário
-    alert('Usuário ou senha incorretos');
-  }
+function initLoginApp () {
+    usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+    if (usuarioCorrenteJSON) {
+        usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
+    }
+    var usuariosJSON = localStorage.getItem('db_usuarios');
+
+    if (!usuariosJSON) { 
+        alert('Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.');
+        db_usuarios = dadosIniciais;
+        localStorage.setItem('db_usuarios', JSON.stringify (dadosIniciais));
+    }
+    else  { 
+        db_usuarios = JSON.parse(usuariosJSON);    
+    }
+};
+function loginUser (login, senha) {
+    for (var i = 0; i < db_usuarios.usuarios.length; i++) {
+        var usuario = db_usuarios.usuarios[i];
+
+        if (login == usuario.login && senha == usuario.senha) {
+            usuarioCorrente.id = usuario.id;
+            usuarioCorrente.login = usuario.login;
+            usuarioCorrente.email = usuario.email;
+            usuarioCorrente.nome = usuario.nome;
+            
+            sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
+            return true;
+        }
+    }
+
+    return false;
 }
 
-function Valida(event){
-            let nome   = document.getElementById('nome').value;
-            let email  = document.getElementById('email0').value;
-            let birth  = document.getElementById('nascimento').value;
-            let cep  = document.getElementById('cep').value;
-            let senha0  = document.getElementById('senha0').value;
-            let senha1 = document.getElementById('senha1').value;
-            console.log(`Nome: ${nome} Email: ${email0} Aniversário: ${birth} CEP:${cep}`)
 
-            if (nome == "" || email =="" || birth == "" || cep == "" || senha0 == "" || senha1 == "") {
-              alert('Preencha todos os campos')
-            }else if (senha0 != senha1){
-              alert('senhas não correspondem')
-            }else{
-              alert (`Seja muito Bem-vindo ${nome}`);
-              window.location.href = 'index.html'
-            }
+function logoutUser () {
+    usuarioCorrente = {};
+    sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
+    window.location = LOGIN_URL;
 }
 
+function addUser (nome, login, senha, email) {
 
+    let newId = generateUUID ();
+    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "email": email };
 
+    db_usuarios.usuarios.push (usuario);
 
-function generateUUID() { // Public Domain/MIT
-  var d = new Date().getTime();//Timestamp
-  var d2 = (performance && performance.now && (performance.now()*1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-      var r = Math.random() * 16;//random number between 0 and 16
-      if(d > 0){//Use timestamp until depleted
-          r = (d + r)%16 | 0;
-          d = Math.floor(d/16);
-      } else {//Use microseconds since page-load if supported
-          r = (d2 + r)%16 | 0;
-          d2 = Math.floor(d2/16);
-      }
-      return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-  });
+    localStorage.setItem('db_usuarios', JSON.stringify (db_usuarios));
 }
+
+function setUserPass () {
+
+}
+initLoginApp ();
+
+
+
+
+
+        
+
