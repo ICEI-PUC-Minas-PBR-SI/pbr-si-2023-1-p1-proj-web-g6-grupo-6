@@ -100,22 +100,29 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 text-center ">
 
+                <form id="upload-form" enctype="multipart/form-data">
+                    <input type="file" id="image-input" name="image" accept="image/*">
+                    <textarea id="comment-input" placeholder="Adicione um comentário"></textarea>
+                    <select id="options-select">
+                      <option value="">Escolha uma opção</option>
+                      <option value="voluntario">Voluntário</option>
+                      <option value="beneficiario">Beneficiário</option>
+                      <option value="ong">ONG/Instituição</option>
+                    </select>
+                    <button type="submit">Enviar Imagem</button>
+                  </form>
+                
+                  <div id="image-feed" class="image-container"></div> 
 
                 <form id="upload-form" enctype="multipart/form-data">
                     <input type="file" id="image-input" name="image" accept="image/*">
-                    <button type="submit">Fazer upload da imagem</button>
-                  </form>
-                
-                  <img id="image-preview" src="#" alt="Imagem">
-                
-                  <div id="image-feed"></div>
-                
-                  <script src="novopost.js"></script>
+                    <button type="submit" class="botao btn text-center btn-outline-dark" role="button">Fazer upload da imagem</button>
+                </form>
 
-                <a type="button" class="botao btn  text-center px-2 mb-5" href="novo_post.html" role="button"><img
-                        src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/upload.jpg" class="m-3" width="15px"
-                        alt="">Fazer upload da imagem</a>
-                <br>
+                <img id="image-preview" src="#" alt="Imagem">
+            
+                <script src="novopost.js"></script>
+
                 <textarea placeholder="Escreva um comentário ..." rows=10 cols=50 class="caixadetexto mb-5"></textarea>
             </div>
         </div>
