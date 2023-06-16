@@ -75,29 +75,28 @@
 
                 <form id="upload-form" enctype="multipart/form-data">
                     <input type="file" id="image-input" name="image" accept="image/*">
-                    <textarea id="comment-input" placeholder="Adicione um comentário"></textarea>
                     <select id="options-select">
-                      <option value="">Escolha uma opção</option>
+                      <option value="">Neste projeto, você atuou como:</option>
                       <option value="voluntario">Voluntário</option>
                       <option value="beneficiario">Beneficiário</option>
                       <option value="ong">ONG/Instituição</option>
                     </select>
-                    <button type="submit">Enviar Imagem</button>
-                  </form>
+                    <textarea placeholder="Escreva um comentário ..." rows=5 cols=40 class="caixadetexto mb-2"></textarea>
+                    
+                    <form id="upload-form" enctype="multipart/form-data">
+                        <input type="file" id="image-input" name="image" accept="image/*">
+                        <button type="submit" class="botao btn text-center btn-outline-dark" role="button">Fazer upload da imagem</button>
+                    </form>
+                </form>
                 
                   <div id="image-feed" class="image-container"></div> 
-
-                <form id="upload-form" enctype="multipart/form-data">
-                    <input type="file" id="image-input" name="image" accept="image/*">
-                    <button type="submit" class="botao btn text-center btn-outline-dark" role="button">Fazer upload da imagem</button>
-                </form>
 
                 <img id="image-preview" src="#" alt="Imagem">
             
                 <script src="novopost.js"></script>
 
-                <textarea placeholder="Escreva um comentário ..." rows=10 cols=50 class="caixadetexto mb-5"></textarea>
             </div>
+
         </div>
 
 
