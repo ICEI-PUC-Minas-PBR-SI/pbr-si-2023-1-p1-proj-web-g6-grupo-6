@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+   
 </head>
 
 <body>
@@ -81,10 +82,20 @@
       </header>
 
       <main>
+        <!-- mudanças no quadro de perfil -->
         <div class="perfil">
-          <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/iconUser1.png" alt="">
-          <h2>Nome do Usuário</h2>
-          <p>Descrição breve do usuário.</p>
+
+          <label class="picture" for="picture__input" tabIndex="0">
+            <span class="picture__image">Choose an image</span>
+            
+          </label>
+         
+          <input type="file" accept="image/*" id="picture__input"/>
+          <!-- <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/iconUser1.png" alt=""> -->
+          <span id="nome-usuario"></span>
+        <h1></h1>
+          <span id="bio-usuario"></span>
+
           <button type="button" class="btn btn-primary"
         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Alterar perfil
      <li><a class="btn btn-primary" href="mudançanoperfil.html"></a></li>
@@ -107,7 +118,26 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
+
+        <script>
+          // Obtém o nome de usuário armazenado no localStorage
+          var biousuario = localStorage.getItem('biousuario');
         
+          // Verifica se o nome de usuário existe e exibe-o na página
+          if (biousuario) {
+            document.getElementById('bio-usuario').textContent = biousuario;
+          }
+        </script>
+
+        <script>
+          // Obtém o nome de usuário armazenado no localStorage
+          var nomeUsuario = localStorage.getItem('nomeUsuario');
+        
+          // Verifica se o nome de usuário existe e exibe-o na página
+          if (nomeUsuario) {
+            document.getElementById('nome-usuario').textContent = nomeUsuario;
+          }
+        </script>
         <!-- <div class="conteudo">
           <section class="projetos">
             <h3>Projetos Participados</h3>
@@ -127,20 +157,6 @@
         </div>
       </main> -->
 
-    </div>
-    <div class="barralateral">
-      <div class="posts_recentes">
-        <h2>Seus Posts Recentes</h2>
-        <div class="post_recente">
-          <a href="projeto1.html">Post 1</a>
-        </div>
-        <div class="post_recente">
-          <a href="projeto2.html">Post 2</a>
-        </div>
-        <div class="post_recente">
-          <a href="projeto3.html"> Post 3</a>
-        </div>
-      </div>
       <!-- Adicione outros elementos à barra lateral, se necessário -->
     </div>
     </div>
