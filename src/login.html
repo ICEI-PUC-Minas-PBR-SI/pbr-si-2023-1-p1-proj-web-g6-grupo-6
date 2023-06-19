@@ -29,7 +29,7 @@
   <!-- Inicio do Corpo -->
   <div>
     <br><br>
-    <h3><a href="index.html" class="Lucas_Voltar">◁ Voltar para à página inicial</a>
+    <h3><a href="logincadastro.html" class="Lucas_Voltar">◁ Voltar para à página de Login e Cadastro</a>
 
     </h3>
     <br><br><br><br>
@@ -154,7 +154,8 @@
       if (login == "" || nome == "" || email == "" || senha == "" || senha2 == "") {
         alert('Preencha todos os campos,tente novamente')
       } else {
-        alert('Usuário salvo com sucesso. Proceda com o login');
+        alert('Usuário salvo com sucesso!');
+        window.location.href = 'peferencias.html';
       }
       if (senha != senha2) {
         alert('As senhas informadas não conferem.');
