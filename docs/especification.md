@@ -40,25 +40,34 @@ Gabriela está procurando por uma aplicação que ofereça uma ampla variedade d
 ## Requisitos Funcionais
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| O sistema deve permitir cadastrar usuários com login e senha|  ALTA | Giovanna Vaz |
-|RF-002| O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | ALTA | Eduarda Faria |
+|RF-001| O sistema deve permitir cadastrar usuários com login e senha|  ALTA | Lucas Vieira |
+|RF-002| O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | ALTA | Lucas Vieira |
 |RF-003| O sistema deve permitir que usuários Beneficiados cadastrem Projetos | ALTA | Gustavo Amaral |
-|RF-004| O sistema deve permitir que usuários Voluntários se inscrevam em Projetos |  ALTA | Letícia Gabriela |
-|RF-005| O sistema deve permitir classificar os Projetos em Área de Motivação | ALTA | João Marcelo |
-|RF-006| O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica | ALTA | Lucas Vieira |
-|RF-007| O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto | MÉDIA | Otávio Nunes |
-|RF-008| O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto | MÉDIA | Eduarda Faria |
+|RF-004| O sistema deve permitir que usuários Voluntários se inscrevam em Projetos |  ALTA | Gustavo Amaral |
+|RF-005| O sistema deve permitir classificar os Projetos em Área de Motivação | MÉDIA | Otávio Nunes |
+|RF-006| O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica | ALTA | Otávio Nunes |
+|RF-007| O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto | MÉDIA | Eduarda Faria |
+|RF-008| O sistema deve permitir que usuários beneficiados confirmem a participação de voluntários no Projeto | BAIXA | Eduarda Faria |
+|RF-009| O sistema deve proporcionar uma tela de interação entre os usuários, com o nome de Feed, para a postagem de fotos | MÉDIA | Eduarda Faria |
+|RF-010| O sistema deve permitir que os usuários façam novos posts de fotos referentes aos trabalhos realizados | MÉDIA | Eduarda Faria |
+|RF-011| O sistema deve proporcionar uma tela de interação entre os usuários e os profissionais de atendimento da empresa | MÉDIA | Giovanna Vaz |
+|RF-012| O sistema deve permitir que o usuário tire dúvidas virtualmente com os assistentes da empresa | MÉDIA | Giovanna Vaz |
+|RF-013| O sistema deve proporcionar uma tela de informações sobre a empresa | BAIXA | Giovanna Vaz |
+|RF-014| O sistema deve fornecer meios de contato entre a empresa e o usuário | BAIXA | Giovanna Vaz |
+|RF-015| O sistema deve permitir que o usuário altere ou recupere seus dados  | MÉDIA | Giovanna Vaz |
+|RF-016| O sistema deve proporcionar uma tela de perfil particular para que cada usuário consiga ter acesso aos seus dados frequentemente | MÉDIA | Gustavo Amaral |
+|RF-017| O sistema deve fornecer uma tela inicial que contenha atalhos para as outras páginas, como login, cadastro, perfil pessoal, informações da empresa, etc | MÉDIA | Letícia Gabriela |
 
 ### Requisitos não Funcionais
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
 |RNF-001| O sistema deve parar 5 vezes ao ano para manutenção e funcionar no restante do tempo | BAIXA | Giovanna Vaz |
-|RMF-002| O sistema deve abrir o login em 5s | BAIXA | Letícia Gabriela |
-|RNF-003| O sistema deve fazer backup incremental diário| BAIXA | João Marcelo |
+|RMF-002| O sistema deve abrir o login em 2s | BAIXA | Letícia Gabriela |
+|RNF-003| O sistema deve fazer backup incremental diário| BAIXA | Letícia Gabriela |
 |RNF-004| O sistema deve ser acessado via cloud | BAIXA | Gustavo Amaral |
-|RNF-005| O sistema deve ser responsivo | MÉDIA | Giovanna Vaz |
+|RNF-005| O sistema deve ser responsivo | ALTA | Giovanna Vaz |
 |RNF-006| O sistema deve fechar os projetos concluídos ou que tenham data de validade | MÉDIA | Letícia Gabriela |
-|RNF-007| O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada. |MÉDIA| Lucas Vieira |
+|RNF-007| O sistema deve emitir um certificado para os voluntários que tenham a participação confirmada |MÉDIA| Letícia Gabriela |
 
 ## Restrições
 •	O projeto deverá ser entregue até o final do semestre;<br />
