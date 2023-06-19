@@ -50,9 +50,9 @@
                                 <input class="Lucas_Input2" placeholder="  Senha" type="password" name="password" id="password" ><br><br>                          
                                 <div style="display: inline;">
                                 <input class="Lucas_button2" type="submit" name="submit" value="Entrar"> 
-                                <b>ㅤㅤ</b>
-                        </form>
-                    <button class="Lucas_button2" type="button" data-toggle="modal" data-target="#loginModal"><b>Novo usuario</b></button>
+                        </form><br>
+                        <a href="trocarSenha.html" class="Lucas_p"onmouseover="this.style.color='green'"onmouseout="this.style.color='black'">Esqueci minha senha</a><br>
+                    <a class="Lucas_p" type="button" data-toggle="modal" data-target="#loginModal"onmouseover="this.style.color='green'"onmouseout="this.style.color='black'">Não tem conta ainda? Crie uma!</button>
                         </div>
                         <br><br>
                 </div>
@@ -79,8 +79,8 @@
                 <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
                     <h3 >Novo usuário</h3>
                     <div class="form-group">
-                        <label for="login">Usuário</label><br>
-                        <input type="text" name="txt_login" id="txt_login" class="form-control">
+                        <label for="login">Nome</label><br>
+                        <input type="text" name="txt_login" id="txt_email" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="nome">Nome completo</label><br>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label><br>
-                        <input type="text" name="txt_email" id="txt_email" class="form-control">
+                        <input type="text" name="txt_email" id="txt_login" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha</label><br>
