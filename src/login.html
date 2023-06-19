@@ -13,6 +13,7 @@
   <script src="register.js"></script>
 </head>
 <body class="index">
+      <!-- Inicio Cabeçalho -->
   <header class="index">
     <img src="images/LogoOficialVerde.png" id="logo" alt="Logo Site">
     <span id="buscador"><img src="images/LupaVerde.png"><input type="text" placeholder="Buscar"></span>
@@ -23,7 +24,8 @@
       <a href="logincadastro.html"><img src="images/UserVerde.png"> Meu perfil</a>
     </div>
   </header> 
-
+      <!-- Fim Cabeçalho -->
+      <!-- Inicio do Corpo -->
     <div>
       <br><br>
       <h3><a href="index.html" class="Lucas_Voltar">◁ Voltar para à página inicial</a>
@@ -59,7 +61,8 @@
             <br><br><br><br>
             </div>
         </div>
-    </div>    
+    </div>   
+    <!-- Fim do Corpo --> 
 
   <!-- Inicio do Modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -111,7 +114,9 @@
       </div>
     </div>
   </div>
+    <!-- Fim do Modal -->
     <script>
+      //Inicio Funções do Js
     function processaFormLogin (event) {                
     event.preventDefault ();
 
@@ -152,14 +157,15 @@ addUser (nome, login, senha, email);
 $('#loginModal').modal('hide');
 }
 document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
-document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);    
+document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);
+//Fim Funções do Js    
     </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
     <br><br><br><br>
-
+  <!-- Inicio do footer -->
     <footer class="index">
       <div id="contato">
         <h3>
@@ -199,7 +205,7 @@ document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);
   
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-  
+    <!-- Fim do footer -->
   </body>
   
   
