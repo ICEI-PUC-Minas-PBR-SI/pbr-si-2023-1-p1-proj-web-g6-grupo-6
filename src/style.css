@@ -43,20 +43,6 @@ footer {
 }
 
 .Lucas_Card {
-<<<<<<< HEAD
-    padding: 10px;
-    margin: auto;
-    border: solid 2px black;
-    border-radius: 15px;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-size: 25px;
-    width: 900px;
-    height: auto;
-    box-shadow: 60px -16px #D6E8DB;
-=======
   padding: 10px;
   margin: auto;
   border: solid 2px black;
@@ -81,7 +67,6 @@ footer {
   width: 900px;
   height: 550px;
   box-shadow: 60px -16px #d6e8db;
->>>>>>> 4571009967cfe03c58e39b38c7179deffc953bb4
 }
 
 .Lucas_Card3 {
@@ -161,20 +146,6 @@ footer {
 }
 
 .Lucas_button2 {
-<<<<<<< HEAD
-    text-decoration: none;
-    display: inline;
-    justify-content: left;
-    text-align: auto;
-    border: auto;
-    border-radius: 11px;
-    width: 140px;
-    height: 58px;
-    font-size: 15px;
-    background-color: rgb(255, 255, 255);
-    text-decoration: none;
-    color: black;
-=======
   display: inline;
   justify-content: left;
   text-align: auto;
@@ -186,7 +157,6 @@ footer {
   background-color: rgb(255, 255, 255);
   text-decoration: none;
   color: black;
->>>>>>> 4571009967cfe03c58e39b38c7179deffc953bb4
 }
 
 .Lucas_button2:hover {
@@ -892,3 +862,4 @@ div.titulo {
 #bio-usuario {
   display: inline-flex;
 }
+
