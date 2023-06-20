@@ -13,30 +13,18 @@
   <script src="register.js"></script>
 
 </head>
-  <body class="index">
-    <!-- Inicio Cabeçalho -->
-    <header class="index">
-      <img src="images/LogoOficialVerde.png" id="logo" alt="Logo Site">
-      <span id="buscador"><img src="images/LupaVerde.png"><input type="text" placeholder="Buscar"></span>
-      <div id="menu">
-        <a href="feed.html"><img src="images/CasaVerde.png">Feed</a>
-        <a href="novo_post.html"><img src="images/MaisVerde.png">Novo Post</a>
-        <a href="novosprojetos.html"><img src="images/LupaVerde.png"> Novo Projeto</a>
-        <a href="logincadastro.html"><img src="images/UserVerde.png"> Meu perfil</a>
-      </div>
-      <!-- Fim Cabeçalho -->
-    </header> 
+<br><br><br><br>
 <!-- Inicio do Corpo -->
+<body style="background: rgb(218,255,222);
+background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 66%);">
     <div>
+      <h3><a onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" href="index.html" class="Lucas_Voltar">ㅤㅤ◁ Voltar para à página inicialㅤㅤㅤ</a>
+      </h3>
       <br><br>
-      <h3><a href="index.html" class="Lucas_Voltar">◁ Voltar para à página inicial</a>
-      </h3>
-      <br><br><br><br>
-      </h3>
-      <br><br><br><br>
+      <br><br><br>
     </div>
 
-    <div class="Lucas_Card3">
+    <div class="Lucas_Card3" style="background-color: white;">
       <img class="Lucas_img" src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/logoVolCon.png">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
       <br>
       <hr style="
@@ -57,7 +45,7 @@
       <br><br>
 
     </div>
-    <br><br><br><br>
+    <br><br><br><br><br><br><br>
     <!-- Fim do Corpo -->
 
   <!-- Inicio do Modal -->
@@ -142,6 +130,7 @@ if(login == "" || nome == "" || email == "" || senha == "" || senha2 == ""){
 alert('Preencha todos os campos,tente novamente')
 }else{
     alert ('Usuário salvo com sucesso. Proceda com o login para ');
+    window.location.href = 'peferencias.html';
 }
 if (senha != senha2) {
     alert ('As senhas informadas não conferem.');
@@ -159,45 +148,7 @@ document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
-    <br><br><br><br>
 
-    <!-- Inicio do footer -->
-    <footer class="index">
-      <div id="contato">
-        <h3>
-          Entre em contato conosco
-        </h3>
-        <p>
-          email: <a href="mailto:volunteerconect@gmail.com">volunteerconect@gmail.com</a>
-        </p>
-        <p>
-          telefone: <a href="tel:+5531999101410">+55 31 xxxxxxx</a>
-        </p>
-      </div>
-      <div id="redes_sociais">
-        <h3>
-          Redes Sociais
-        </h3>
-        <div id="icon_redes">
-          <a href="https://www.instagram.com/"><img src="images/Instagram.png"> </a>
-          <a href="https://www.facebook.com/"><img src="images/facebook.png"> </a>
-          <a href="https://twitter.com/home"><img src="images/Twitter.png"> </a>
-          <a href="https://www.linkedin.com/feed/"><img src="images/linkedin.png"> </a>
-        </div>
-      </div>
-      <div id="sobre">
-        <h3>Sobre a Volunteer Connect</h3>
-        <p style="font-size: 14px;">A Volunteer Conect foi pensada e idealizada com o fim de estabelecer conexão entre pessoas que se voluntarizam
-          a ajudar o próximo e pessoas que, de alguma forma, possuem uma necessidade a ser suprida.
-          Uma Aplicação denvolvida para promover o bem!</p>
-      </div>
-      <div id="ajuda">
-        <h3>Ajuda</h3>
-        <a class="foot-link" href="centralAjuda.html">Dúvidas Gerais</a> <br>
-        <a class="foot-link" href="vantagensVC.html">Volunteer Connect</a> <br>
-        <a class="foot-link" href="duvidasFrequentes.html">Como Funciona</a> <br>
-      </div>
-    </footer>
   
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
