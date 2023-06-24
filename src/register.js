@@ -25,7 +25,7 @@ const dadosIniciais = {
 };
 
 function initLoginApp () {
-    usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+    var usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
     if (usuarioCorrenteJSON) {
         usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
     }
