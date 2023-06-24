@@ -1,74 +1,76 @@
 {
-    "1": {
-    "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
-    "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
-    "curtidas" : 25,
-    "perfil" : "leticia_ramos",
-    "area" : "crianças carentes",
-    "categoria" : "voluntario"
-    },
-    "2" : {
-    "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
-    "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
-    "curtidas" : 25,
-    "perfil" : "leticia_ramos",
-    "area" : "crianças carentes",
-    "categoria" : "voluntario"
-    },
-    "3": {
+    "posts" : [ 
+        {
         "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
         "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "leticia_ramos",
         "area" : "crianças carentes",
         "categoria" : "voluntario"
-    },
-    "4": {
+        },
+        {
         "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
         "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "leticia_ramos",
         "area" : "crianças carentes",
         "categoria" : "voluntario"
-    },
-    "5": {
-        "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
-        "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
-        "curtidas" : 25,
-        "perfil" : "leticia_ramos",
-        "area" : "crianças carentes",
-        "categoria" : "voluntario"
-    },
-    "6": {
-        "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
-        "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
-        "curtidas" : 25,
-        "perfil" : "leticia_ramos",
-        "area" : "crianças carentes",
-        "categoria" : "voluntario"
-    },
-    "7": {
-        "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
-        "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
-        "curtidas" : 25,
-        "perfil" : "leticia_ramos",
-        "area" : "crianças carentes",
-        "categoria" : "voluntario"
-    },
-    "8": {
-        "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
-        "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
-        "curtidas" : 25,
-        "perfil" : "leticia_ramos",
-        "area" : "crianças carentes",
-        "categoria" : "voluntario"
-    },
-    "9": {
-        "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
-        "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
-        "curtidas" : 25,
-        "perfil" : "leticia_ramos",
-        "area" : "crianças carentes",
-        "categoria" : "voluntario"
-    }
+        },
+        {
+            "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
+            "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+            "curtidas" : 25,
+            "perfil" : "leticia_ramos",
+            "area" : "crianças carentes",
+            "categoria" : "voluntario"
+        },
+        {
+            "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
+            "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+            "curtidas" : 25,
+            "perfil" : "leticia_ramos",
+            "area" : "crianças carentes",
+            "categoria" : "voluntario"
+        },
+        {
+            "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
+            "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+            "curtidas" : 25,
+            "perfil" : "leticia_ramos",
+            "area" : "crianças carentes",
+            "categoria" : "voluntario"
+        },
+        {
+            "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
+            "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+            "curtidas" : 25,
+            "perfil" : "leticia_ramos",
+            "area" : "crianças carentes",
+            "categoria" : "voluntario"
+        },
+        {
+            "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
+            "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+            "curtidas" : 25,
+            "perfil" : "leticia_ramos",
+            "area" : "crianças carentes",
+            "categoria" : "voluntario"
+        },
+        {
+            "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
+            "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+            "curtidas" : 25,
+            "perfil" : "leticia_ramos",
+            "area" : "crianças carentes",
+            "categoria" : "voluntario"
+        },
+        {
+            "imagem" : "https://observatorio3setor.org.br/wp-content/uploads/2019/08/voluntariado.jpg",
+            "descricao" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+            "curtidas" : 25,
+            "perfil" : "leticia_ramos",
+            "area" : "crianças carentes",
+            "categoria" : "voluntario"
+        }
+    ]
 }
