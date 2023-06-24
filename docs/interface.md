@@ -1,33 +1,102 @@
 
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
-
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+![Exemplo de UserFlow](images/userflowc1.png)
+![Exemplo de UserFlow](images/userflowc2.png)
+![Exemplo de UserFlow](images/userflowc3.png)
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
 
 ## Wireframes
+Página inicial:
+<br />
+![Exemplo de Wireframe](images/paginainicial.png)
+<br />
+Pagina inicial versão mobile:
+<br />
+![Exemplo de Wireframe](images/paginainicialvm.png)
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Central de Ajuda:
+<br />
+![Exemplo de Wireframe](images/centralAjuda.png)
+<br />
+Central de Ajuda mobile:
+<br />
+![Exemplo de Wireframe](images/centralAjuda-mobile.png)
+<br />
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+Login ou Cadastro:
+ <br /> 
+![Exemplo de Wireframe](images/logincadastrovc.png)
+ <br /> 
+Login ou cadastro mobile:
+ <br /> 
+![Exemplo de Wireframe](images/logincadastrovm.png)
+ <br /> 
+
+Login:
+ <br /> 
+![Exemplo de Wireframe](images/loginvc.png)
+<br /> 
+Login mobile:
+ <br /> 
+![Exemplo de Wireframe](images/loginvm.png)
+ <br /> 
+
+Cadastro:
+ <br /> 
+![Exemplo de Wireframe](images/cadastrovc.png)
+<br /> 
+Cadastro mobile:
+ <br /> 
+![Exemplo de Wireframe](images/cadastrovm.png)
+ <br /> 
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+ Meu perfil:
+ <br /> 
+![Exemplo de Wireframe](images/MeuPerfil-COMPUTADOR.png)
+<br />
+Meu perfil mobile:
+ <br /> 
+ ![Exemplo de Wireframe](images/MeuPerfil-MOBILE.png)
+ <br />
+Feed:
+<br />
+![Exemplo de Wireframe](images/Feed.png)
+<br />
+
+Feed versão mobile:
+<br />
+![Exemplo de Wireframe](images/Feed-versão-mobile.png)
+<br />
+
+Novo post:
+<br />
+![Exemplo de Wireframe](images/Novo-post.png)
+<br />
+
+Novo post versão mobile:
+<br />
+![Exemplo de Wireframe](images/Novo-post-mobile.png)
+<br />
+
+Novo projeto:
+<br />
+![Exemplo de Wireframe](images/inscomp.jpg)
+<br />
+Novo projeto versão mobile:
+<br />
+![Exemplo de Wireframe](images/inscmobile.jpg)
+<br />
+Preferências:
+<br />
+![Exemplo de Wireframe](images/vscomp.jpg)
+<br />
+Preferências versão mobile:
+<br />
+![Exemplo de Wireframe](images/vsmobile.jpg)
+<br />
+
