@@ -71,23 +71,22 @@
                     </div>
                 </fieldset>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 text-center ">
-
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <form id="upload-form" enctype="multipart/form-data">
-                    <input type="file" id="image-input" name="image" accept="image/*">
-                    <select id="options-select">
-                      <option value="">Neste projeto, você atuou como:</option>
-                      <option value="voluntario">Voluntário</option>
-                      <option value="beneficiario">Beneficiário</option>
-                      <option value="ong">ONG/Instituição</option>
-                    </select>
-                    <textarea placeholder="Escreva um comentário ..." rows=5 cols=40 class="caixadetexto mb-2"></textarea>
-                    <button type="submit" class="botao btn text-center btn-outline-dark" role="button">Fazer upload da imagem</button>                        
+                    <label class="form-check-label" for="image-url">
+                        Informe a URL da imagem
+                    </label>                    
+                    <input type="text" id="image-url" name="imageURL" oninput="mostraImagem()">
+                    <br><br>
+                    <textarea id="comentarioTextArea" placeholder="Escreva um comentário ..." rows=5 cols=40 class="caixadetexto mb-2" oninput="comentarioChange()"></textarea>
+                    <br>
+                    <button id="buttonPostar" type="button" class="botao btn text-center btn-outline-success ps-5 pe-5" disabled="true" role="button" onclick="postar()">Postar</button>                        
                 </form>
                 
                   <div id="image-feed" class="image-container"></div> 
 
-                <img id="image-preview" src="#" alt="Imagem">
+                <img id="image-preview" src="" style="max-width: 50%; max-height: 50%;">
+                <label id="labelURLInvalida" class="form-check-label" style="display: none;"> URL inválida</label>                                    
             
                 <script src="novopost.js"></script>
 
