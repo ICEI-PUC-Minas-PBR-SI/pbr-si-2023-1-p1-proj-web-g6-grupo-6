@@ -88,8 +88,20 @@ function postar() {
     alert("Informe uma URL válida!");
     return;
   }
-  var imgURL = document.getElementById("image-url").value;
+
+  var imgUrl = document.getElementById("imageURL");
+    localStorage.setItem("urlImg", imgUrl);
+    alert("URL da imagem salva com sucesso!"); 
+  
+  // Para recuperar a URL salva posteriormente:
+
   var comentarioTextArea = document.getElementById("comentarioTextArea").value;
 
   //Chamar o CRUDServer para salvar esses dois valores acima
+}
+
+function exibirUrl() {
+    var urlSalva = localStorage.getItem("urlSalva");
+    var urlText = document.getElementById("urlText");
+    urlText.innerHTML = urlSalva;
 }
