@@ -1,0 +1,79 @@
+{
+  "posts": [
+    {
+      "imagem": "src/images/Projetos/crianças.png",
+      "legenda": "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+      "curtidas": 25,
+      "perfil": "@leticia_ramos",
+      "area": "Crianças carentes",
+      "categoria": "voluntario"
+    },
+    {
+      "imagem": "src/images/Projetos/crianças.png",
+      "legenda": "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+      "curtidas": 25,
+      "perfil": "@leticia_ramos",
+      "area": "Crianças carentes",
+      "categoria": "voluntario"
+    },
+    {
+      "imagem": "src/images/Projetos/crianças.png",
+      "legenda": "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+      "curtidas": 25,
+      "perfil": "@leticia_ramos",
+      "area": "Crianças carentes",
+      "categoria": "voluntario"
+    },
+    {
+      "imagem": "src/images/Projetos/crianças.png",
+      "legenda": "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+      "curtidas": 25,
+      "perfil": "@leticia_ramos",
+      "area": "Crianças carentes",
+      "categoria": "voluntario"
+    },
+    {
+      "imagem": "src/images/Projetos/crianças.png",
+      "legenda": "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+      "curtidas": 25,
+      "perfil": "@leticia_ramos",
+      "area": "Crianças carentes",
+      "categoria": "voluntario"
+    },
+    {
+      "imagem": "src/images/Projetos/crianças.png",
+      "legenda": "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+      "curtidas": 25,
+      "perfil": "@leticia_ramos",
+      "area": "Crianças carentes",
+      "categoria": "voluntario"
+    },
+    {
+      "imagem": "src/images/Projetos/crianças.png",
+      "legenda": "O projeto 'Alimente Esperanças' é uma iniciativa dedicada a combater a fome e promover a solidariedade através da doação de comida. Nosso objetivo é tentar amenizar os danos causados pela fome, buscando a distribuição equitativa de alimentos para aqueles que mais precisam.",
+      "curtidas": 25,
+      "perfil": "@leticia_ramos",
+      "area": "Crianças carentes",
+      "categoria": "Voluntario"
+    },
+    {
+      "imagem": "src/images/Projetos/crianças.png",
+      "legenda": "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+      "curtidas": 25,
+      "perfil": "@leticia_ramos",
+      "area": "Ajuda á terceira idade",
+      "categoria": "Beneficiário"
+    },
+    {
+      "imagem": "src/images/Projetos/crianças.png",
+      "legenda": "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
+      "curtidas": 25,
+      "perfil": "@leticia_ramos",
+      "area": "Crianças carentes",
+      "categoria": "ONG"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

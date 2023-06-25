@@ -6,66 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Novo Post</title>
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 
-    <div class="container-fluid p-2">
-        <!--Cabeçalho-->
-        <div class="row cabecalho">
-            <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/LogoOficialVerde.png" class="mt-2 ms-5"
-                    alt="" width="50%" height="80%">
-            </div>
-            <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                            <br><br>
-                        </div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                            <nav class="navbar navbar-expand-lg">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse m-2" id="navbarSupportedContent">
-                                    <ul class="navbar-nav me-auto">
-                                        <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/CasaVerde.png"
-                                            class="mt-2" height="15%" width="10%">
-                                        <a class="nav-link mt-2" href="feed.html">Feed</a>
-                                        <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/MaisVerde.png"
-                                            height="15%" width="10%">
-                                        <a class="nav-link mt-2" href="novo_post.html">Novo Post</a>
-                                        <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/LupaVerde.png"
-                                            height="15%" width="10%">
-                                        <a class="nav-link mt-2" href="novosprojetos.html">Novo Projeto</a>
-                                        <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/UserVerde.png"
-                                            height="15%" width="10%">
-                                        <a class="nav-link mt-2" href="perfil.html">Meu Perfil</a>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container-fluid p-0">
+            <!--Cabeçalho-->
         </div>
+        <header class="index">
+            <img src="images/LogoOficialVerde.png" id="logo" alt="Logo Site">
+            <span id="buscador"><img src="images/LupaVerde.png"><input type="text" placeholder="Buscar"></span>
+            <div id="menu">
+              <a href="feed.html"><img src="images/CasaVerde.png">Feed</a>
+              <a href="novopost.html"><img src="images/MaisVerde.png">Novo Post</a>
+              <a href="novosprojetos.html"><img src="images/LupaVerde.png"> Novo Projeto</a>
+              <a href="logincadastro.html"><img src="images/UserVerde.png"> Meu perfil</a>
+            </div>
+        </header>
         <div class="row mt-4">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <a class="link-offset-2 link-underline link-underline-opacity-50" href="#">
-                    <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/iconVoltar.png" alt="icone voltar"
+                    <img src="images/iconVoltar.png" alt="icone voltar"
                         width="30" height="30" class="float-right"></a>
-                <a href="index.html"><button type="button">Voltar à página inicial</button></a>
+                <a href="perfil.html"><button type="button">Voltar ao Meu Perfil</button></a>
             </div>
         </div>
+    </div>
         <h4 class="texto text-center p-3"> Poste aqui os registros dos projetos que você participou</h4>
         <div class="row partecentral">
             <div class="col-lg-6 col-md-6 col-sm-12 px-5">
@@ -98,16 +74,27 @@
                     </div>
                 </fieldset>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 text-center ">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <form id="upload-form" enctype="multipart/form-data">
+                    <label class="form-check-label" for="image-url">
+                        Informe a URL da imagem
+                    </label>                    
+                    <input type="text" id="image-url" name="imageURL" oninput="mostraImagem()">
+                    <br><br>
+                    <textarea id="comentarioTextArea" placeholder="Escreva um comentário ..." rows=5 cols=40 class="caixadetexto mb-2" oninput="comentarioChange()"></textarea>
+                    <br>
+                    <button id="buttonPostar" type="button" class="botao btn text-center btn-outline-success ps-5 pe-5" disabled="true" role="button" onclick="postar()">Postar</button>                        
+                </form>
+                
+                  <div id="image-feed" class="image-container"></div> 
 
-                <a type="button" class="botao btn  text-center px-2 mb-5" href="novo_post.html" role="button"><img
-                        src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/upload.jpg" class="m-3" width="15px"
-                        alt="">Fazer upload da imagem</a>
-                <br>
-                <textarea placeholder="Escreva um comentário ..." rows=10 cols=50 class="caixadetexto mb-5"></textarea>
-            </div>
+                <img id="image-preview" src="" style="max-width: 50%; max-height: 50%;">
+                <label id="labelURLInvalida" class="form-check-label" style="display: none;"> URL inválida</label>                                    
+            
+                <script src="novopost.js"></script>
+</body>
+
         </div>
-
 
         <!--Rodapé da página-->
 
@@ -150,6 +137,6 @@
                 <a class="foot-link" href="duvidasFrequentes.html">Como Funciona</a> <br>
             </div>
         </footer>
-</body>
+
 
 </html>
