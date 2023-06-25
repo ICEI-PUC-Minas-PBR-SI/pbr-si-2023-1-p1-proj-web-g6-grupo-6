@@ -19,13 +19,13 @@ function generateUUID() {
 }
 const dadosIniciais = {
     usuarios: [
-        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com"},
-        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com"},
+        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com", "bio": "Bio do Usuário Admin", "img": ""},
+        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com", "bio": "Bio do Usuário User", "img": ""},
     ]
 };
 
 function initLoginApp () {
-    var usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+    var usuarioCorrenteJSON = localStorage.getItem('usuarioCorrente');
     if (usuarioCorrenteJSON) {
         usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
     }
@@ -41,6 +41,7 @@ function initLoginApp () {
     }
 };
 function loginUser (login, senha) {
+    console.log(db_usuarios);
     for (var i = 0; i < db_usuarios.usuarios.length; i++) {
         var usuario = db_usuarios.usuarios[i];
 
@@ -49,8 +50,10 @@ function loginUser (login, senha) {
             usuarioCorrente.login = usuario.login;
             usuarioCorrente.email = usuario.email;
             usuarioCorrente.nome = usuario.nome;
+            usuarioCorrente.bio = usuario.bio;
+            usuarioCorrente.img = usuario.img;
             
-            sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
+            localStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
             return true;
         }
     }
@@ -61,14 +64,14 @@ function loginUser (login, senha) {
 
 function logoutUser () {
     usuarioCorrente = {};
-    sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
+    localStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
     window.location = LOGIN_URL;
 }
 
 function addUser (nome, login, senha, email) {
 
     let newId = generateUUID ();
-    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "email": email };
+    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "email": email, "bio": '', "img": '' };
 
     db_usuarios.usuarios.push (usuario);
 
