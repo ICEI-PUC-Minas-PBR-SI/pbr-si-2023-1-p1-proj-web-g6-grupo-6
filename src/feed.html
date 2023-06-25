@@ -41,43 +41,111 @@
             </div>
         </div>
         <!--Barra de pesquisa-->
-       <div class="row m-5">
-            <div class="card-group">
-                <div class="card">
-                    <img id="image-url" src="..." class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <p id="comentarioTextArea" class="card-text"></p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">❤ 32 curtidas</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Projetos/2.png" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Uma mão lava a outra! Nunca se esqueça de ajudar o próximo.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">❤ 13 curtidas</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Projetos/3.png" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Foto do encontro passado dos voluntários. Sempre espalhando o amor pelo
-                            mundo!</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">❤ 27 curtidas</small>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+        <style>
+            /* Estilo para a div que contém a imagem */
+            .imagem-container {
+              width: 25%;
+              padding: 1%;
+              box-sizing: border-box;
+              border-radius: 5px;
+              border: 1px solid rgb(146, 146, 146); /* Adiciona uma borda sólida preta */
+              overflow: auto;
+            }
+        
+            /* Estilo para a imagem */
+            .imagem-container img {
+              width: 100%;
+              height: auto;
+              object-fit: contain;
+              display: block;
+            }
+        
+            /* Estilo para imagens com proporção 1:1 */
+            .imagem-container.square img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            /* Estilo para o contêiner que envolve as imagens */
+            #conteudo {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+          </style>
+       
+       <div id="conteudo"></div>
+       <script>
+
+
+        function apagarImagem(id) {
+        // Fazer uma requisição DELETE para o servidor para remover a imagem pelo ID
+        fetch("http://localhost:3000/imagens/" + id, {
+            method: "DELETE"
+        })
+            .then(function(response) {
+            // Verificar se a requisição foi bem-sucedida
+            if (response.ok) {
+                // Remover a div da imagem da página HTML
+                var div = document.getElementById("imagem-" + id);
+                div.remove();
+            } else {
+                throw new Error("Erro ao apagar a imagem.");
+            }
+            })
+            .catch(function(error) {
+            alert(error.message);
+            });
+        }
+           // Obtém os dados salvos no localStorage
+           var dadosArmazenados = localStorage.getItem("dados");
+
+           // Verifica se existem dados salvos
+           if (dadosArmazenados) {
+           // Converte os dados de JSON para um array
+           var dados = JSON.parse(dadosArmazenados);
+
+           // Obtém a referência do elemento para exibir as imagens, textos e opções
+           var conteudo = document.getElementById("conteudo");
+
+           // Itera sobre os dados e cria os elementos para exibir as imagens, textos e opções
+           dados.forEach(function(objetoImagemTexto) {
+               // Cria a div para a imagem
+               var div = document.createElement("div");
+               div.className = "imagem-container";
+
+               // Cria a imagem
+               var img = document.createElement("img");
+               img.src = objetoImagemTexto.urlImagem; // Define a URL da imagem
+
+               // Verifica se a imagem tem proporção 1:1
+               if (img.width === img.height) {
+               div.classList.add("square"); // Adiciona a classe "square" para aplicar o estilo de proporção 1:1
+               }
+
+               // Adiciona a imagem à div
+               div.appendChild(img);
+
+               // Cria o elemento de texto descritivo
+               var texto = document.createElement("p");
+               texto.textContent = objetoImagemTexto.texto;
+
+               // Cria o elemento de opção selecionada
+               var opcao = document.createElement("p");
+               opcao.textContent = "" + objetoImagemTexto.opcao;
+
+               // Adiciona o texto e a opção à div
+               div.appendChild(texto);
+               div.appendChild(opcao);
+
+               // Adiciona a div ao conteúdo
+               conteudo.appendChild(div);
+           });
+           }
+       </script>
+</div>
 
         <script src="novopost.js"></script>
 

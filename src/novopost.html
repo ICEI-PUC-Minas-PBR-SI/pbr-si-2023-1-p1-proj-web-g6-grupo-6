@@ -43,53 +43,39 @@
         </div>
     </div>
         <h4 class="texto text-center p-3"> Poste aqui os registros dos projetos que você participou</h4>
-        <div class="row partecentral">
-            <div class="col-lg-6 col-md-6 col-sm-12 px-5">
-                <p></p>
-                <fieldset class="row mt-3 ps-5 ms-5">
-                    <legend class="col-form-label ">Neste projeto, você atuou como:
-                    </legend>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                                Voluntário
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                                Beneficiário
-                            </label>
-                        </div>
-                        <div class="form-check disabled">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
-                                value="option3">
-                            <label class="form-check-label" for="gridRadios3">
-                                ONG ou Instituição
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <form id="upload-form" enctype="multipart/form-data">
-                    <label class="form-check-label" for="image-url">
-                        Informe a URL da imagem
-                    </label>                    
-                    <input type="text" id="image-url" name="imageURL" oninput="mostraImagem()">
-                    <br><br>
-                    <textarea id="comentarioTextArea" placeholder="Escreva um comentário ..." rows=5 cols=40 class="caixadetexto mb-2" oninput="comentarioChange()"></textarea>
-                    <br>
-                    <button id="buttonPostar" type="button" class="botao btn text-center btn-outline-success ps-5 pe-5" disabled="true" role="button" onclick="postar()">Postar</button>                        
-                </form>
-                
-                  <div id="image-feed" class="image-container"></div> 
+        
+  <input type="text" id="textoInput" placeholder="Descrição">
+  <input type="text" id="urlImagemInput" placeholder="URL da imagem">
+  <select id="opcoesInput">
+    <option value="Beneficiário">Beneficiário</option>
+    <option value="Voluntário">Voluntário</option>
+    <option value="ONG/Instituição">ONG/Instituição</option>
+  </select>
+  <button onclick="salvarImagemTexto()">Salvar</button>
 
-                <img id="image-preview" src="" style="max-width: 50%; max-height: 50%;">
-                <label id="labelURLInvalida" class="form-check-label" style="display: none;"> URL inválida</label>
+  <script>
+    function salvarImagemTexto() {
+      var texto = document.getElementById("textoInput").value;
+      var urlImagem = document.getElementById("urlImagemInput").value;
+      var opcao = document.getElementById("opcoesInput").value;
+
+      if (texto.trim() !== "" && urlImagem.trim() !== "") {
+        var objetoImagemTexto = {
+          texto: texto,
+          urlImagem: urlImagem,
+          opcao: opcao
+        };
+        var dadosAntigos = localStorage.getItem("dados");
+        var dados = dadosAntigos ? JSON.parse(dadosAntigos) : [];
+        dados.push(objetoImagemTexto);
+        localStorage.setItem("dados", JSON.stringify(dados));
+        document.getElementById("textoInput").value = "";
+        document.getElementById("urlImagemInput").value = "";
+        document.getElementById("opcoesInput").value = "Beneficiário"; // Define a opção padrão
+        alert("Post feito com sucesso!");
+      }
+    }
+  </script>
             
                 <script src="novopost.js"></script>
 </body>
@@ -102,7 +88,7 @@
             <!--formas de contato-->
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
                 <label><b>Entre em contato conosco</b></label>
-                <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/email.png" class="size p-3" alt="">
+                <img src="images/email.png" class="size p-3" alt="">
 
                 <p>Email: <a class="link-primary">email@email.com</a></p>
                 <p>Telefone: <a class="link-primary">+55 31 XXXXXXXXX</a></p>
@@ -111,20 +97,21 @@
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
                 <label><b>Redes sociais</b></label>
                 <br>
-                <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/Linkedin.png" class="m-2" height="20%"
-                    width="10%">
-                <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/Facebook.png" class="m-2" height="20%"
-                    width="10%">
+                <img src="images/Linkedin.png" class="m-2" height="20%"
+                    width="15%">
+                <img src="images/Facebook.png" class="m-2" height="20%"
+                    width="15%">
                 <br>
-                <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/Twitter.png" class="m-2" height="20%"
-                    width="10%">
-                <img src="/pbr-si-2023-1-p1-proj-web-g6-grupo-6/src/images/Instagram.png" class="m-2" height="20%"
-                    width="10%">
+                <img src="images/Twitter.png" class="m-2" height="20%"
+                    width="15%">
+                <img src="images/Instagram.png" class="m-2" height="20%"
+                    width="15%">
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
                 <!--Sobre a volunteer connect-->
                 <h3>Sobre a Volunteer Connect</h3>
-                <p>A Volunteer Conect foi pensada e idealizada com o fim de estabelecer conexão entre pessoas que se
+                <p>A Volunteer Conect foi pensada e idealizada com o fim de estabelecer conexão entre pessoas
+                    que se
                     voluntarizam
                     a ajudar o próximo e pessoas que, de alguma forma, possuem uma necessidade a ser suprida.
                     Uma Aplicação denvolvida para promover o bem!</p>
