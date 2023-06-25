@@ -17,7 +17,9 @@ Leticia Gabriela Ramos Macedo:
 · 
 
 Lucas Vieira Souza:
-· 
+· Programação do register.js(funcionalidades JavaScript);
+· Restruturação da página de Login e Registro(HTML e CSS);
+· Restruturação do cadastro (Inclusão de um Modal para registrar-se);
 
 Otávio Stefanine Nunes Soutelo:
 ·  
