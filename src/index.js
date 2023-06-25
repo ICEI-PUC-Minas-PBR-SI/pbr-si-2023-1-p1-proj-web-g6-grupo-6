@@ -14,7 +14,7 @@ fetch('http://localhost:3000/posts')
             todosPosts.appendChild(div_post); // fazer a div que criei para cada post ser filha da div com todos os posts 
 
             // fazendo pegar sempre os últimos 
-            var j = data.length - i;
+            var j = data.length - i -1;
             console.log(j);
 
             /*
@@ -39,4 +39,3 @@ fetch('http://localhost:3000/posts')
         }   
     })
 
-// buscador entre as descrições dos posts 
