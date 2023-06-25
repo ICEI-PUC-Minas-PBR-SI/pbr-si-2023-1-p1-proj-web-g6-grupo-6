@@ -64,19 +64,23 @@ background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 6
                     <h3 >Novo usuário</h3>
                     <div class="form-group">
                         <label for="login">Nome</label><br>
-                        <input type="text" name="txt_login" id="txt_email" class="form-control">
+                        <input type="text" name="txt_login" id="txt_login" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="nome">Nome completo</label><br>
                         <input type="text" name="txt_nome" id="txt_nome" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="nome">CEP</label><br>
-                        <input type="number" class="form-control">
+                      <label for="nome">CEP</label><br>
+                      <input type="number" name="txt_cep" id="txt_cep" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="nome">CPF</label><br>
+                      <input type="number" name="txt_cpf" id="txt_cpf" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label><br>
-                        <input type="text" name="txt_email" id="txt_login" class="form-control">
+                        <input type="text" name="txt_email" id="txt_email" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha</label><br>
@@ -123,14 +127,15 @@ event.preventDefault ();
 let login  = document.getElementById('txt_login').value;
 let nome   = document.getElementById('txt_nome').value;
 let email  = document.getElementById('txt_email').value;
+let cep  = document.getElementById('txt_cep').value;  
 let senha  = document.getElementById('txt_senha').value;
 let senha2 = document.getElementById('txt_senha2').value;
 
-if(login == "" || nome == "" || email == "" || senha == "" || senha2 == ""){
+if(login == "" || nome == "" || email == "" || senha == "" || senha2 == "" || cep == ""){
 alert('Preencha todos os campos,tente novamente')
 }else{
     alert ('Usuário salvo com sucesso. Proceda com o login para ');
-    window.location.href = 'peferencias.html';
+    window.location.href = 'login.html';
 }
 if (senha != senha2) {
     alert ('As senhas informadas não conferem.');
@@ -151,7 +156,7 @@ document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);
 
   
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="register.js"></script>
   
   </body>
   

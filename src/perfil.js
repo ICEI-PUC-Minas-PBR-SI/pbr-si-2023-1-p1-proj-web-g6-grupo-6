@@ -1,60 +1,25 @@
 const form = document.getElementById("form");
 const username = document.getElementById("username");
+const nomeUsuarioDiv = document.getElementById("nomeUsuarioDiv");
+const userbio = document.getElementById("userbio");
 const email = document.getElementById("email");
-const password = document.getElementById("password");
-const passwordConfirmation = document.getElementById("password-confirmation");
+var usuariosJSON = localStorage.getItem('db_usuarios');
+var usuarioCorrente = {};
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+function alteraUsuario(){
+  var db_usuarios = JSON.parse(usuariosJSON);
 
-  checkInputs();
-});
+  usuarioCorrente.bio = userbio.value;
 
-function checkInputs() {
-  const usernameValue = username.value;
-  const emailValue = email.value;
-  const passwordValue = password.value;
-  const passwordConfirmationValue = passwordConfirmation.value;
+  for (var i = 0; i < db_usuarios.usuarios.length; i++) {
+      if (usuarioCorrente.id == db_usuarios.usuarios[i].id) {
+          db_usuarios.usuarios[i].bio = usuarioCorrente.bio;
+      }
+  }    
 
-  if (usernameValue === "") {
-    setErrorFor(username, "O nome de usuário é obrigatório.");
-  } else {
-    setSuccessFor(username);
-  }
-
-  if (emailValue === "") {
-    setErrorFor(email, "O email é obrigatório.");
-  } else if (!checkEmail(emailValue)) {
-    setErrorFor(email, "Por favor, insira um email válido.");
-  } else {
-    setSuccessFor(email);
-  }
-
-  if (passwordValue === "") {
-    setErrorFor(password, "A senha é obrigatória.");
-  } else if (passwordValue.length < 7) {
-    setErrorFor(password, "A senha precisa ter no mínimo 7 caracteres.");
-  } else {
-    setSuccessFor(password);
-  }
-
-  if (passwordConfirmationValue === "") {
-    setErrorFor(passwordConfirmation, "A confirmação de senha é obrigatória.");
-  } else if (passwordConfirmationValue !== passwordValue) {
-    setErrorFor(passwordConfirmation, "As senhas não conferem.");
-  } else {
-    setSuccessFor(passwordConfirmation);
-  }
-
-  const formControls = form.querySelectorAll(".form-control");
-
-  const formIsValid = [...formControls].every((formControl) => {
-    return formControl.className === "form-control success";
-  });
-
-  if (formIsValid) {
-    console.log("O formulário está 100% válido!");
-  }
+  localStorage.setItem('db_usuarios', JSON.stringify(db_usuarios));
+  localStorage.setItem('usuarioCorrente', JSON.stringify(usuarioCorrente));
+  window.location.href = 'perfil.html';
 }
 
 function setErrorFor(input, message) {
@@ -80,3 +45,20 @@ function checkEmail(email) {
     email
   );
 }
+
+function main(){
+  var usuarioCorrenteJSON = localStorage.getItem('usuarioCorrente');
+  if (usuarioCorrenteJSON) {
+      usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
+  }
+ 
+  console.log(usuarioCorrente);
+
+  username.value = usuarioCorrente.login? usuarioCorrente.login: "";
+  email.value = usuarioCorrente.email? usuarioCorrente.email: "";
+  userbio.value = usuarioCorrente.bio? usuarioCorrente.bio: "";
+  nomeUsuarioDiv.innerHTML = usuarioCorrente.nome? usuarioCorrente.nome: "";
+
+}
+
+main();

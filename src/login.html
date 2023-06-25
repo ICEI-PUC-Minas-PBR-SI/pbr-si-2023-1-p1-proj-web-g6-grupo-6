@@ -10,7 +10,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
-  <script src="register.js"></script>
 </head>
 <br><br><br><br>
 <body class="index" style="background: rgb(218,255,222);
@@ -67,7 +66,7 @@ background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 6
         </div>
         <div class="modal-body">
           <div id="login-box" class="col-md-12">
-            <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+            <form id="login-form1" class="form" method="post" onsubmit="loginUser (this)">
               <h3>Novo usuário</h3>
               <div class="form-group">
                 <label for="login">Nome</label><br>
@@ -79,7 +78,11 @@ background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 6
               </div>
               <div class="form-group">
                 <label for="nome">CEP</label><br>
-                <input type="number" class="form-control">
+                <input type="number" name="txt_cep" id="txt_cep" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="nome">CPF</label><br>
+                <input type="number" id="txt_cpf" class="form-control">
               </div>
               <div class="form-group">
                 <label for="email">Email</label><br>
@@ -109,51 +112,51 @@ background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 6
   </div>
   <!-- Fim do Modal -->
   <script>
-    //Inicio Funções do Js
-    function processaFormLogin(event) {
-      event.preventDefault();
+    // Inicio Funções js do login
+    function processaFormLogin (event) {                
+    event.preventDefault ();
 
-      var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
 
-      resultadoLogin = loginUser(username, password);
-      if (username == "" || password == "") {
-        alert("Preencha todosos campos")
-      }
-      else if (resultadoLogin) {
+    resultadoLogin = loginUser (username, password);
+    if (resultadoLogin) {
         alert(`Bem vindo ${username}`)
         window.location.href = 'perfil.html';
-      }
-      else {
-        alert('Usuário ou senha incorretos');
-      }
     }
-    //Inicio fuções de registro
-    function salvaLogin(event) {
-      event.preventDefault();
+    else {
+        alert ('Usuário ou senha incorretos');
+    }
+}
 
-      let login = document.getElementById('txt_login').value;
-      let nome = document.getElementById('txt_nome').value;
-      let email = document.getElementById('txt_email').value;
-      let senha = document.getElementById('txt_senha').value;
-      let senha2 = document.getElementById('txt_senha2').value;
-      if (login == "" || nome == "" || email == "" || senha == "" || senha2 == "") {
-        alert('Preencha todos os campos,tente novamente')
-      } else {
-        alert('Usuário salvo com sucesso!');
-        window.location.href = 'peferencias.html';
-      }
-      if (senha != senha2) {
-        alert('As senhas informadas não conferem.');
-        return
-      }
-      addUser(nome, login, senha, email);
-      $('#loginModal').modal('hide');
-    }
-    document.getElementById('login-form').addEventListener('submit', processaFormLogin);
-    document.getElementById('btn_salvar').addEventListener('click', salvaLogin);
-//Fim fuções de registro
-//Fim Funções do Js    
+function salvaLogin (event) {
+event.preventDefault ();
+
+let login  = document.getElementById('txt_login').value;
+let nome   = document.getElementById('txt_nome').value;
+let email  = document.getElementById('txt_email').value;
+let cep  = document.getElementById('txt_cep').value;  
+let cpf  = document.getElementById('txt_cpf').value;  
+let senha  = document.getElementById('txt_senha').value;
+let senha2 = document.getElementById('txt_senha2').value;
+
+if(login == "" || nome == "" || email == "" || senha == "" || senha2 == "" || cep == "" || cpf == ""){
+alert('Preencha todos os campos,tente novamente')
+}else{
+    alert ('Usuário salvo com sucesso. Proceda com o login para ');
+    window.location.href = 'peferencias.html';
+}
+if (senha != senha2) {
+    alert ('As senhas informadas não conferem.');
+    return
+}
+addUser (nome, login, senha, email);
+$('#loginModal').modal('hide');
+}
+document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
+document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);  
+
+//Fim Funções Js do login    
   </script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -168,7 +171,7 @@ background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 6
   <br><br><br><br>
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="register.js"></script>
 </body>
 
 
