@@ -23,10 +23,14 @@ function ready(fn) {
 
         fetch('http://localhost:3000/posts')
         .then((response) => {
-        return response.json()
+            console.log(response);
+            console.log("teste fecth");
+            return response.json()
+
         })
         .then((data) => {
             console.log(data);
+            console.log("teste fetch");
         })
     }
 
