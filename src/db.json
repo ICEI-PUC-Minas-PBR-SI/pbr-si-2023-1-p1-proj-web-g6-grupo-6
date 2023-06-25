@@ -1,18 +1,17 @@
-{
-    "produtos": [
-      {
-        "id": "1",
-        "nome": "Arroz",
-        "vlr": "24.80",
-        "qtd": "1"
+[ {
+        "imagem": "https://asasdh.com.br/wp-content/uploads/2019/10/a_verdadeira_importancia_do_trabalho_em_equipe_asasdh.png",
+        "descrição": "Participar desse projeto como voluntário foi incrível! Equipe dedicada e causa impactante. Orgulho de fazer parte! 💙✨#voluntariado #causasocial",
+        "curtidas": "52",
+        "perfil": "duds_fpi",
+        "categoria": "voluntário"
       },
       {
-        "id": "2",
-        "nome": "Feijão",
-        "vlr": "9.69",
-        "qtd": "3"
+        "imagem": "##t##",
+        "descrição": "Sou imensamente grato por ter sido ajudado por esse projeto incrível! A equipe envolvida me proporcionou apoio e cuidado genuínos, e isso fez toda a diferença na minha vida. Serei eternamente grato por todo o suporte recebido e pelos impactos positivos que essa ajuda trouxe para mim. 🙏💙#gratidão #ajuda #impactospositivos",
+        "curtidas": "23",
+        "perfil": "ots_stef",
+        "categoria": "Beneficiário"
       }
-    ]
-  }
+ ]
 
   

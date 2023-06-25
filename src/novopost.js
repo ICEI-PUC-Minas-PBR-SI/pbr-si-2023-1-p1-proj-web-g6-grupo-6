@@ -88,20 +88,14 @@ function postar() {
     alert("Informe uma URL válida!");
     return;
   }
-
-  var imgUrl = document.getElementById("imageURL");
-    localStorage.setItem("urlImg", imgUrl);
-    alert("URL da imagem salva com sucesso!"); 
-  
-  // Para recuperar a URL salva posteriormente:
-
+  else {
+    var dados = JSON.stringify($('image-url').val());
+    sessionStorage.setItem('chave', dados );
+    alert("URL Salva");
+    return;
+  }
+  var imgURL = document.getElementById("image-url").value;
   var comentarioTextArea = document.getElementById("comentarioTextArea").value;
 
   //Chamar o CRUDServer para salvar esses dois valores acima
-}
-
-function exibirUrl() {
-    var urlSalva = localStorage.getItem("urlSalva");
-    var urlText = document.getElementById("urlText");
-    urlText.innerHTML = urlSalva;
 }

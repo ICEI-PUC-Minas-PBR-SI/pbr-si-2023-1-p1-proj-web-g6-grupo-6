@@ -21,3 +21,12 @@ fs.writeFile('dados.json', jsonString, 'utf8', (err) => {
   }
   console.log('Arquivo JSON criado com sucesso!');
 });
+
+
+function PegarDados()
+{
+    var dadosArquivados = JSON.parse(sessionStorage.getItem('chave'));
+
+    var urlText = document.getElementById("urlText");
+    urlText.innerHTML = dadosArquivados;
+}
