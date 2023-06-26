@@ -1,7 +1,7 @@
 {
   "posts": [
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",
@@ -10,7 +10,7 @@
         "id" : "1"
       },
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",
@@ -19,7 +19,7 @@
         "id" : "2"
       },
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",
@@ -28,7 +28,7 @@
         "id" : "3"
       },
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",
@@ -37,7 +37,7 @@
         "id" : "4"
       },
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",
@@ -46,7 +46,7 @@
         "id" : "5"
       },
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",
@@ -55,7 +55,7 @@
         "id" : "6"
       },
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "O projeto 'Alimente Esperanças' é uma iniciativa dedicada a combater a fome e promover a solidariedade através da doação de comida. Nosso objetivo é tentar amenizar os danos causados pela fome, buscando a distribuição equitativa de alimentos para aqueles que mais precisam.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",
@@ -64,7 +64,7 @@
         "id" : "7"
       },
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",
@@ -73,7 +73,7 @@
         "id" : "8"
       },
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",
@@ -82,7 +82,7 @@
         "id" : "9"
       },
       {
-        "imagem" : "src/images/Projetos/crianças.png",
+        "imagem" : "images/Projetos/crianças.png",
         "legenda" : "Ultimo post! Em nossa ONG, cada criança é uma estrela brilhante que merece brilhar. Estamos empenhados em construir um futuro melhor para elas, capacitando-as com habilidades essenciais, valores positivos e a confiança necessária para enfrentar os desafios da vida. Acreditamos que, ao investir nas crianças, estamos investindo em um mundo mais brilhante, cheio de oportunidades e esperança.",
         "curtidas" : 25,
         "perfil" : "@leticia_ramos",

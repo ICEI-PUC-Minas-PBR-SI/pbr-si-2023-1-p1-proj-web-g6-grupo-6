@@ -17,12 +17,10 @@ fetch('http://localhost:3000/posts')
             var j = data.length - i -1;
             console.log(j);
 
-            /*
             // adicionando a imagem
             const imagem = document.createElement('img');
-            imagem.setAttribute('src', "data[j].imagem");
-            */
-
+            imagem.setAttribute('src', data[j].imagem);
+            
             // adicionando o nome do perfil como h3
             const perfil = document.createElement('h3');
             perfil.innerHTML = data[j].perfil;
@@ -32,7 +30,7 @@ fetch('http://localhost:3000/posts')
             legenda.innerHTML = data[j].legenda;
             
             // fazendo os elementos necessários serem filho da div que contem os dados de cada post 
-            //div_post.appendChild (imagem); 
+            div_post.appendChild (imagem); 
             div_post.appendChild (perfil);
             div_post.appendChild (legenda);
 
