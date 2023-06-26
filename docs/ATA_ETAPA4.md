@@ -16,8 +16,9 @@ Giovanna Fabíola Vaz:
 
 Gustavo Amaral Silva:
 · Estrutura da pagina Novo Post
-· Estrutura da pagina Meu Perfil e o começo das funcionalidades 
-· Estrutura da pagina de Analise e formação de suas funcionalidades utilizando js
+· Estrutura da pagina Meu Perfil e o começo das funcionalidades da mesma utilizando (Java scrip)
+· Estrutura da pagina de Analise e formação de suas funcionalidades utilizando (java scrip)
+· Ajuda na organização do trabalho e divisão de tarefas
 
 Leticia Gabriela Ramos Macedo:
 · Função Buscar da página index
