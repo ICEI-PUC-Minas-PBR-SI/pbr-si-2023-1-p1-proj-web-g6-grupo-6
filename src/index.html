@@ -18,8 +18,7 @@
     <div class="container-fluid p-2">
         <div class="row cabecalho">
             <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                <img src="images/LogoOficialVerde.png" class="mt-2 ms-5"
-                    alt="" width="50%" height="80%">
+                <img src="images/LogoOficialVerde.png" class="mt-2 ms-5" alt="" width="50%" height="80%">
             </div>
             <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                 <div class="container-fluid">
@@ -28,7 +27,8 @@
 
                             <br><br>
                             <form class="d-flex" role="search" action="pesquisa.html" method="get">
-                                <input class="form-control me-2" name="search" type="search" placeholder="Procurar" aria-label="Procurar" id="input"> 
+                                <input class="form-control me-2" name="search" type="search" placeholder="Procurar"
+                                    aria-label="Procurar" id="input">
                                 <button class="btn btn-success" type="submit" id="botaoBuscar">
                                     Procurar
                                 </button>
@@ -45,8 +45,7 @@
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <a class="nav-link mt-3 ms-5" href="logincadastro.html">Entrar</a>
                                         <a class="nav-link mt-3 ms-5" href="trocarSenha.html">Esqueci minha senha</a>
-                                        <img src="images/UserVerde.png"
-                                            height="15%" width="10%" class="ms-5 mt-1">
+                                        <img src="images/UserVerde.png" height="15%" width="10%" class="ms-5 mt-1">
                                         <a class="nav-link mt-3" href="logincadastro.html">Meu Perfil</a>
                                         </li>
                                     </ul>
@@ -107,27 +106,120 @@
 
     <div class="container-fluid d-flex flex-wrap">
         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 pt-2 ps-3">
-            <div id="posts">
-                <!-- Exemplo de um post (eles serão criados via js)
-                <div>
-                    <img src="images/Projetos/praia.png" alt="Preserve Nossas Praias">
-                    <h3>Preserve Nossas Praias</h3>
-                    <p>O projeto "Preserve Nossas Praias" é uma iniciativa dedicada a manter nossas praias limpas e
-                        preservar a
-                        beleza natural dos ambientes costeiros. Reconhecemos a importância dos ecossistemas marinhos e a
-                        necessidade de promover a conscientização sobre a preservação ambiental.</p>
-                </div> -->
-            </div>
+            <style>
+                /* Estilo para a div que contém a imagem */
+                .imagem-container {
+                    width: 23%;
+                    padding: 1%;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    border: 1px solid rgb(146, 146, 146);
+                    /* Adiciona uma borda sólida preta */
+                    overflow: auto;
+                }
+
+                /* Estilo para a imagem */
+                .imagem-container img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    display: block;
+                }
+
+                /* Estilo para imagens com proporção 1:1 */
+                .imagem-container.square img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                /* Estilo para o contêiner que envolve as imagens */
+                #conteudo {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            </style>
+
+            <div id="conteudo"></div>
+        <script>
+
+
+            function apagarImagem(id) {
+                // Fazer uma requisição DELETE para o servidor para remover a imagem pelo ID
+                fetch("http://localhost:3000/imagens/" + id, {
+                    method: "DELETE"
+                })
+                    .then(function (response) {
+                        // Verificar se a requisição foi bem-sucedida
+                        if (response.ok) {
+                            // Remover a div da imagem da página HTML
+                            var div = document.getElementById("imagem-" + id);
+                            div.remove();
+                        } else {
+                            throw new Error("Erro ao apagar a imagem.");
+                        }
+                    })
+                    .catch(function (error) {
+                        alert(error.message);
+                    });
+            }
+            // Obtém os dados salvos no localStorage
+            var dadosArmazenados = localStorage.getItem("dados");
+
+            // Verifica se existem dados salvos
+            if (dadosArmazenados) {
+                // Converte os dados de JSON para um array
+                var dados = JSON.parse(dadosArmazenados);
+
+                // Obtém a referência do elemento para exibir as imagens, textos e opções
+                var conteudo = document.getElementById("conteudo");
+
+                // Itera sobre os dados e cria os elementos para exibir as imagens, textos e opções
+                dados.forEach(function (objetoImagemTexto) {
+                    // Cria a div para a imagem
+                    var div = document.createElement("div");
+                    div.className = "imagem-container";
+
+                    // Cria a imagem
+                    var img = document.createElement("img");
+                    img.src = objetoImagemTexto.urlImagem; // Define a URL da imagem
+
+                    div.classList.add("card");
+                    div.classList.add("p-3");
+                    div.classList.add("m-1");
+                    img.classList.add("card-img-top");
+
+                    // Adiciona a imagem à div
+                    div.appendChild(img);
+
+                    // Cria o elemento de texto descritivo
+                    var texto = document.createElement("p");
+                    texto.textContent = objetoImagemTexto.texto;
+
+                    // Cria o elemento de opção selecionada
+                    var opcao = document.createElement("p");
+                    opcao.textContent = "" + objetoImagemTexto.opcao;
+
+                    // Adiciona o texto e a opção à div
+                    div.appendChild(texto);
+                    div.appendChild(opcao);
+
+                    // Adiciona a div ao conteúdo
+                    conteudo.appendChild(div);
+                });
+            }
+        </script>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div id="projetos_recentes">
+            <h3>Projetos recentes</h3>
+            <img src="images/Projetos/1.png">
+            <img src="images/Projetos/2.png">
+            <img src="images/Projetos/3.png">
+            <img src="images/Projetos/4.png">
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div id="projetos_recentes">
-                <h3>Projetos recentes</h3>
-                <img src="images/Projetos/1.png">
-                <img src="images/Projetos/2.png">
-                <img src="images/Projetos/3.png">
-                <img src="images/Projetos/4.png">
-            </div>
-        </div>
+    </div>
+    </div>
     </div>
 
     <!--Rodapé da página-->
@@ -137,22 +229,19 @@
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
             <label><b>Entre em contato conosco</b></label>
             <img src="images/iconEmail.png" class="size p-3" alt="">
-            <p>Email: <a class="link-primary" href="mailto:volunteerconnect@gmail.com">volunteerconnect@gmail.com</a></p>
+            <p>Email: <a class="link-primary" href="mailto:volunteerconnect@gmail.com">volunteerconnect@gmail.com</a>
+            </p>
             <p>Telefone: <a class="link-primary">+55 31 XXXXXXXXX</a></p>
         </div>
         <!--redes sociais-->
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
             <label><b>Redes sociais</b></label>
             <br>
-            <img src="images/Linkedin.png" class="m-2" height="20%"
-                width="10%">
-            <img src="images/Facebook.png" class="m-2" height="20%"
-                width="10%">
+            <img src="images/Linkedin.png" class="m-2" height="20%" width="10%">
+            <img src="images/Facebook.png" class="m-2" height="20%" width="10%">
             <br>
-            <img src="images/Twitter.png" class="m-2" height="20%"
-                width="10%">
-            <img src="images/Instagram.png" class="m-2" height="20%"
-                width="10%">
+            <img src="images/Twitter.png" class="m-2" height="20%" width="10%">
+            <img src="images/Instagram.png" class="m-2" height="20%" width="10%">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
             <!--Sobre a volunteer connect-->
