@@ -15,7 +15,9 @@ Giovanna Fabíola Vaz:
 · Padroização do site, organização das branches, auxílio aos outros integrantes quanto ao git e javascript, participação na estruturação e organização do trabalho.
 
 Gustavo Amaral Silva:
-· 
+· Estrutura da pagina Novo Post
+· Estrutura da pagina Meu Perfil e o começo das funcionalidades 
+· Estrutura da pagina de Analise e formação de suas funcionalidades utilizando js
 
 Leticia Gabriela Ramos Macedo:
 · Função Buscar da página index
