@@ -79,119 +79,115 @@
             <h1 class="text-center">Feed de postagens</h1>
         </div>
         <!--Barra de pesquisa-->
-        <div class="row m-5">
-            <div class="card-group">
-                <div class="card">
-                    <img src="images/Projetos/1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Amizade, empatia, solidariedade e amor.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Projetos/2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Uma mão lava a outra! Nunca se esqueça de ajudar o próximo.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 10 mins ago</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Projetos/3.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Foto do encontro passado dos voluntários. Sempre espalhando o amor pelo
-                            mundo!</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 35 mins ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="card-group">
-                <div class="card">
-                    <img src="images/Projetos/cleaning.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Esse foi o nosso trabalho de hoje!!! Cuidamos da natureza e retribuímos,
-                            com amor, por tudo que ela nos proporciona.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 1 hour ago</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Projetos/comida.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">O trabalho de hoje foi em uma comunidade carente, na qual fizemos algumas
-                            variedades de comida e doamos para a população local. </p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 2 hours ago</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Projetos/crianças.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Hoje foi o dia de visitar essas lindas crianças! Levamos brinquedos e
-                            temtamos fazer com que elas se sentissem muito amadas.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 4 hours ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="card-group">
-                <div class="card">
-                    <img src="images/Projetos/idosos.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Dia com nossos avós do coração! Fomos visitá-los, levamos muitos mimos e
-                            alegrias. #EspalheOAmor</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 8 hours ago</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Projetos/palhaços.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Hoje fomos a um hospital de crianças que lutam contra o câncer. A realidade
-                            delas é muito triste, por isso demos o nosso máximo para fazê-los um pouco mais felizes e
-                            esperaçosos.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 11 hours ago</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Projetos/praia.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Volunteer Work</h5>
-                        <p class="card-text">Ontem foi o dia de fazermos uma limpeza na praia. Muito triste ver que as
-                            pessoas não se importam e sempre sujam onde vivemos, mas um dia alcançaremos nossa meta de
-                            manter tudo limpo!</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 1 day ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="row d-flex mx-5 pb-5 px-3">
+        <style>
+            /* Estilo para a div que contém a imagem */
+            .imagem-container {
+              width: 23%;
+              padding: 1%;
+              box-sizing: border-box;
+              border-radius: 5px;
+              border: 1px solid rgb(146, 146, 146); /* Adiciona uma borda sólida preta */
+              overflow: auto;
+            }
+        
+            /* Estilo para a imagem */
+            .imagem-container img {
+              width: 100%;
+              height: auto;
+              object-fit: contain;
+              display: block;
+            }
+        
+            /* Estilo para imagens com proporção 1:1 */
+            .imagem-container.square img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
 
-        <!--Rodapé da página-->
+            /* Estilo para o contêiner que envolve as imagens */
+            #conteudo {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+          </style>
+       
+       <div id="conteudo"></div>
+       </div>
+       <script>
+
+
+        function apagarImagem(id) {
+        // Fazer uma requisição DELETE para o servidor para remover a imagem pelo ID
+        fetch("http://localhost:3000/imagens/" + id, {
+            method: "DELETE"
+        })
+            .then(function(response) {
+            // Verificar se a requisição foi bem-sucedida
+            if (response.ok) {
+                // Remover a div da imagem da página HTML
+                var div = document.getElementById("imagem-" + id);
+                div.remove();
+            } else {
+                throw new Error("Erro ao apagar a imagem.");
+            }
+            })
+            .catch(function(error) {
+            alert(error.message);
+            });
+        }
+           // Obtém os dados salvos no localStorage
+           var dadosArmazenados = localStorage.getItem("dados");
+
+           // Verifica se existem dados salvos
+            if (dadosArmazenados) {
+            // Converte os dados de JSON para um array
+            var dados = JSON.parse(dadosArmazenados);
+
+            // Obtém a referência do elemento para exibir as imagens, textos e opções
+            var conteudo = document.getElementById("conteudo");
+
+            // Itera sobre os dados e cria os elementos para exibir as imagens, textos e opções
+            dados.forEach(function(objetoImagemTexto) {
+                // Cria a div para a imagem
+                var div = document.createElement("div");
+                div.className = "imagem-container";
+
+                // Cria a imagem
+                var img = document.createElement("img");
+                img.src = objetoImagemTexto.urlImagem; // Define a URL da imagem
+
+                div.classList.add("card");
+                div.classList.add("p-3");
+                div.classList.add("m-1");
+                img.classList.add("card-img-top");
+
+                // Adiciona a imagem à div
+                div.appendChild(img);
+
+                // Cria o elemento de texto descritivo
+                var texto = document.createElement("p");
+                texto.textContent = objetoImagemTexto.texto;
+
+                // Cria o elemento de opção selecionada
+                var opcao = document.createElement("p");
+                opcao.textContent = "" + objetoImagemTexto.opcao;
+
+                // Adiciona o texto e a opção à div
+                div.appendChild(texto);
+                div.appendChild(opcao);
+
+                // Adiciona a div ao conteúdo
+                conteudo.appendChild(div);
+            });
+           }
+       </script>
+</div>
+
+
+<!--Rodapé da página-->
 
         <footer class="row pt-3">
             <!--formas de contato-->
@@ -220,16 +216,17 @@
                     voluntarizam
                     a ajudar o próximo e pessoas que, de alguma forma, possuem uma necessidade a ser suprida.
                     Uma Aplicação denvolvida para promover o bem!</p>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-                <label><b>Ajuda</b></label>
-                <br>
-                <a class="foot-link" href="centralAjuda.html">Dúvidas Gerais</a> <br>
-                <a class="foot-link" href="vantagensVC.html">Volunteer Connect</a> <br>
-                <a class="foot-link" href="duvidasFrequentes.html">Como Funciona</a> <br>
-            </div>
-        </footer>
-    </div>
-</body>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+                    <label><b>Ajuda</b></label>
+                    <br>
+                    <a class="foot-link" href="centralAjuda.html">Dúvidas Gerais</a> <br>
+                    <a class="foot-link" href="vantagensVC.html">Volunteer Connect</a> <br>
+                    <a class="foot-link" href="duvidasFrequentes.html">Como Funciona</a> <br>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="novopost.js"></script>
 
 </html>
