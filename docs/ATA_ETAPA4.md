@@ -18,7 +18,8 @@ Gustavo Amaral Silva:
 · 
 
 Leticia Gabriela Ramos Macedo:
-· 
+· Função Buscar da página index
+· Busca dinânica na pagina index, para buscar os ultimos arquivos do json
 
 Lucas Vieira Souza:
 · Programação do register.js(funcionalidades JavaScript);
