@@ -13,10 +13,8 @@ O projeto trata-se do desenvolvimento de uma aplicação que facilite e permita 
 * Eduarda Faria Pinheiro 
 * Giovanna Fabíola Vaz
 * Gustavo Amaral Silva
-* João Marcelo Byrro Ferreira Pinto
 * Leticia Gabriela Ramos Macedo
 * Lucas Vieira Souza
-* Otávio Stefanine Nunes Soutelo
 
 ## Orientador
 
