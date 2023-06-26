@@ -1,5 +1,9 @@
 Eduarda Faria Pinheiro:
-·
+· Estruturação da página de Novo Post (parte estática), a organização visual feita com ajuda da Giovanna Vaz;;
+· Programação e realização da parte funcional da página de Novo Post (HTML, CSS e funcionalidades em JavaScript);
+· Estruturação da página de Feed (parte estática), a organização visual feita com ajuda da Giovanna Vaz;
+· Pprogramação e realização da parte funcional da página de Feed (HTML, CSS e funcionalidades em JavaScript);
+· Realização da funcionalidade de salvar as imagens com Local Storage;
 
 Giovanna Fabíola Vaz: 
 · Estruturação da página de Novo Post (parte estática);
