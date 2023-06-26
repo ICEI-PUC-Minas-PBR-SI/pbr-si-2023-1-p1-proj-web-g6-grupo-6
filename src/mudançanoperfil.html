@@ -89,7 +89,7 @@
     <body>
         <div class="container">
           <div class="headerjs">
-            <h2>Alterar Informações da conta</h2>
+            <h2>Alterar Informações da conta </h2> <div id="nomeUsuarioDiv"></div>
           </div>
     
           <form id="form" class="form">
@@ -98,12 +98,21 @@
               <input
                 type="text"
                 id="username"
+                disabled="true"
                 placeholder="Digite seu nome de usuário..."
               />
               <i class="fas fa-exclamation-circle"></i>
               <i class="fas fa-check-circle"></i>
               <small>Mensagem de erro</small>
             </div>
+
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" disabled="true" id="email" placeholder="Digite seu email.." />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
+            </div>            
 
             <form id="form" class="form">
               <div class="form-control">
@@ -116,80 +125,11 @@
                 <i class="fas fa-exclamation-circle"></i>
                 <i class="fas fa-check-circle"></i>
                 <small>Mensagem de erro</small>
-              </div>
+              </div>        
     
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input type="text" id="email" placeholder="Digite seu email.." />
-              <i class="fas fa-exclamation-circle"></i>
-              <i class="fas fa-check-circle"></i>
-              <small>Mensagem de erro</small>
-            </div>
-    
-            <div class="form-control">
-              <label for="password"> Nova Senha</label>
-              <input
-                type="password"
-                id="password"
-                placeholder="Digite sua senha..."
-              />
-              <i class="fas fa-exclamation-circle"></i>
-              <i class="fas fa-check-circle"></i>
-              <small>Mensagem de erro</small>
-            </div>
-    
-            <div class="form-control">
-              <label for="password-confirmation">Confirmação da nova senha</label>
-              <input
-                type="password"
-                id="password-confirmation"
-                placeholder="Digite sua senha novamente..."
-              />
-              <i class="fas fa-exclamation-circle"></i>
-              <i class="fas fa-check-circle"></i>
-              <small>Mensagem de erro</small>
-            </div>
-    
-            <button type="submit">Enviar</button>
+            <button type="button" onclick="alteraUsuario()">Enviar</button>
           </form>
         </div>
-
-        <script>
-          // Evento de envio do formulário
-          document.getElementById('form').addEventListener('submit', function(e) {
-              e.preventDefault(); // Evita o comportamento padrão de envio do formulário
-  
-              // Obtém o valor do campo de entrada do nome de usuário
-              var biousuario = document.getElementById('userbio').value;
-  
-              // Armazena o nome de usuário no localStorage
-              localStorage.setItem('biousuario', biousuario);
-  
-              // Redireciona para a outra página
-              window.location.href = 'perfil.html';
-          });
-      </script>
-
-        <script>
-          // Evento de envio do formulário
-          document.getElementById('form').addEventListener('submit', function(e) {
-              e.preventDefault(); // Evita o comportamento padrão de envio do formulário
-  
-              // Obtém o valor do campo de entrada do nome de usuário
-              var nomeUsuario = document.getElementById('username').value;
-  
-              // Armazena o nome de usuário no localStorage
-              localStorage.setItem('nomeUsuario', nomeUsuario);
-  
-              // Redireciona para a outra página
-              window.location.href = 'perfil.html';
-          });
-
-          document.getElementById("form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
-        // Seu código para processar os dados do formulário aqui
-      });
-      </script>
     
         <script
           src="https://kit.fontawesome.com/f9e19193d6.js"
