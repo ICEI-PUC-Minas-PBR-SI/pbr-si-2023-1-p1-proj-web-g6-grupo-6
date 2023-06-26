@@ -11,7 +11,7 @@
     <title>Página Feed</title>
 </head>
 
-<body onload="exibirUrl()">
+<body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
@@ -79,11 +79,11 @@
             <h1 class="text-center">Feed de postagens</h1>
         </div>
         <!--Barra de pesquisa-->
-
+        <div class="row d-flex mx-5 pb-5 px-3">
         <style>
             /* Estilo para a div que contém a imagem */
             .imagem-container {
-              width: 25%;
+              width: 23%;
               padding: 1%;
               box-sizing: border-box;
               border-radius: 5px;
@@ -115,6 +115,7 @@
           </style>
        
        <div id="conteudo"></div>
+       </div>
        <script>
 
 
@@ -141,53 +142,52 @@
            var dadosArmazenados = localStorage.getItem("dados");
 
            // Verifica se existem dados salvos
-           if (dadosArmazenados) {
-           // Converte os dados de JSON para um array
-           var dados = JSON.parse(dadosArmazenados);
+            if (dadosArmazenados) {
+            // Converte os dados de JSON para um array
+            var dados = JSON.parse(dadosArmazenados);
 
-           // Obtém a referência do elemento para exibir as imagens, textos e opções
-           var conteudo = document.getElementById("conteudo");
+            // Obtém a referência do elemento para exibir as imagens, textos e opções
+            var conteudo = document.getElementById("conteudo");
 
-           // Itera sobre os dados e cria os elementos para exibir as imagens, textos e opções
-           dados.forEach(function(objetoImagemTexto) {
-               // Cria a div para a imagem
-               var div = document.createElement("div");
-               div.className = "imagem-container";
+            // Itera sobre os dados e cria os elementos para exibir as imagens, textos e opções
+            dados.forEach(function(objetoImagemTexto) {
+                // Cria a div para a imagem
+                var div = document.createElement("div");
+                div.className = "imagem-container";
 
-               // Cria a imagem
-               var img = document.createElement("img");
-               img.src = objetoImagemTexto.urlImagem; // Define a URL da imagem
+                // Cria a imagem
+                var img = document.createElement("img");
+                img.src = objetoImagemTexto.urlImagem; // Define a URL da imagem
 
-               // Verifica se a imagem tem proporção 1:1
-               if (img.width === img.height) {
-               div.classList.add("square"); // Adiciona a classe "square" para aplicar o estilo de proporção 1:1
-               }
+                div.classList.add("card");
+                div.classList.add("p-3");
+                div.classList.add("m-1");
+                img.classList.add("card-img-top");
 
-               // Adiciona a imagem à div
-               div.appendChild(img);
+                // Adiciona a imagem à div
+                div.appendChild(img);
 
-               // Cria o elemento de texto descritivo
-               var texto = document.createElement("p");
-               texto.textContent = objetoImagemTexto.texto;
+                // Cria o elemento de texto descritivo
+                var texto = document.createElement("p");
+                texto.textContent = objetoImagemTexto.texto;
 
-               // Cria o elemento de opção selecionada
-               var opcao = document.createElement("p");
-               opcao.textContent = "" + objetoImagemTexto.opcao;
+                // Cria o elemento de opção selecionada
+                var opcao = document.createElement("p");
+                opcao.textContent = "" + objetoImagemTexto.opcao;
 
-               // Adiciona o texto e a opção à div
-               div.appendChild(texto);
-               div.appendChild(opcao);
+                // Adiciona o texto e a opção à div
+                div.appendChild(texto);
+                div.appendChild(opcao);
 
-               // Adiciona a div ao conteúdo
-               conteudo.appendChild(div);
-           });
+                // Adiciona a div ao conteúdo
+                conteudo.appendChild(div);
+            });
            }
        </script>
 </div>
 
-        <script src="novopost.js"></script>
 
-        <!--Rodapé da página-->
+<!--Rodapé da página-->
 
         <footer class="row pt-3">
             <!--formas de contato-->
@@ -216,16 +216,17 @@
                     voluntarizam
                     a ajudar o próximo e pessoas que, de alguma forma, possuem uma necessidade a ser suprida.
                     Uma Aplicação denvolvida para promover o bem!</p>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-                <label><b>Ajuda</b></label>
-                <br>
-                <a class="foot-link" href="centralAjuda.html">Dúvidas Gerais</a> <br>
-                <a class="foot-link" href="vantagensVC.html">Volunteer Connect</a> <br>
-                <a class="foot-link" href="duvidasFrequentes.html">Como Funciona</a> <br>
-            </div>
-        </footer>
-    </div>
-</body>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+                    <label><b>Ajuda</b></label>
+                    <br>
+                    <a class="foot-link" href="centralAjuda.html">Dúvidas Gerais</a> <br>
+                    <a class="foot-link" href="vantagensVC.html">Volunteer Connect</a> <br>
+                    <a class="foot-link" href="duvidasFrequentes.html">Como Funciona</a> <br>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="novopost.js"></script>
 
 </html>
