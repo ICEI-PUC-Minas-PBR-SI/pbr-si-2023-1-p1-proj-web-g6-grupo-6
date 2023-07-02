@@ -19,8 +19,7 @@
         <!--Cabeçalho-->
         <div class="row cabecalho">
             <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
-                <img src="./images/LogoOficialVerde.png" class="mt-2 ms-5"
-                    alt="" width="50%" height="80%">
+                <img src="./images/LogoOficialVerde.png" class="mt-2 ms-5" alt="" width="50%" height="80%">
             </div>
             <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                 <div class="container-fluid">
@@ -38,17 +37,13 @@
                                 </button>
                                 <div class="collapse navbar-collapse m-2" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <img src="./images/CasaVerde.png"
-                                            class="mt-2" height="13%" width="8%">
+                                        <img src="./images/CasaVerde.png" class="mt-2" height="13%" width="8%">
                                         <a class="nav-link mt-3" href="feed.html">Feed</a>
-                                        <img src="./images/MaisVerde.png"
-                                            height="15%" width="10%">
+                                        <img src="./images/MaisVerde.png" height="15%" width="10%">
                                         <a class="nav-link mt-3" href="novopost.html">Novo Post</a>
-                                        <img src="./images/LupaVerde.png"
-                                            height="15%" width="10%">
+                                        <img src="./images/LupaVerde.png" height="15%" width="10%">
                                         <a class="nav-link mt-3" href="novosprojetos.html">Novo Projeto</a>
-                                        <img src="./images/UserVerde.png"
-                                            height="15%" width="10%">
+                                        <img src="./images/UserVerde.png" height="15%" width="10%">
                                         <a class="nav-link mt-3" href="perfil.html">Meu Perfil</a>
                                         </li>
                                     </ul>
@@ -62,8 +57,8 @@
         <div class="row mt-4">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <a class="link-offset-2 link-underline link-underline-opacity-50" href="#">
-                    <img src="./images/iconVoltar.png" alt="icone voltar"
-                        width="30" height="30" class="float-right"></a>
+                    <img src="./images/iconVoltar.png" alt="icone voltar" width="30" height="30"
+                        class="float-right"></a>
                 <a href="perfil.html"><button type="button">Voltar ao Meu Perfil</button></a>
             </div>
             <div class="col-lg-8 col-md-4 col-sm-12">
@@ -75,153 +70,196 @@
         </div>
         <!--Barra de pesquisa-->
         <div class="row d-flex mx-5 pb-5 px-3">
-        <style>
-            /* Estilo para a div que contém a imagem */
-            .imagem-container {
-              width: 23%;
-              padding: 1%;
-              box-sizing: border-box;
-              border-radius: 5px;
-              border: 1px solid rgb(146, 146, 146); /* Adiciona uma borda sólida preta */
-              overflow: auto;
-            }
-        
-            /* Estilo para a imagem */
-            .imagem-container img {
-              width: 100%;
-              height: auto;
-              object-fit: contain;
-              display: block;
-            }
-        
-            /* Estilo para imagens com proporção 1:1 */
-            .imagem-container.square img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
+            <style>
+                /* Estilo para a div que contém a imagem */
+                .imagem-container {
+                    width: 23%;
+                    padding: 1%;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    border: 1px solid rgb(146, 146, 146);
+                    /* Adiciona uma borda sólida preta */
+                    overflow: auto;
+                }
 
-            /* Estilo para o contêiner que envolve as imagens */
-            #conteudo {
-                display: flex;
-                flex-wrap: wrap;
-            }
+                /* Estilo para a imagem */
+                .imagem-container img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    display: block;
+                }
 
-          </style>
-       
-       <div id="conteudo"></div>
-       </div>
-       <script>
+                /* Estilo para imagens com proporção 1:1 */
+                .imagem-container.square img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
 
+                /* Estilo para o contêiner que envolve as imagens */
+                #conteudo {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            </style>
 
-        function apagarImagem(id) {
-        // Fazer uma requisição DELETE para o servidor para remover a imagem pelo ID
-        fetch("http://localhost:3000/imagens/" + id, {
-            method: "DELETE"
-        })
-            .then(function(response) {
-            // Verificar se a requisição foi bem-sucedida
-            if (response.ok) {
-                // Remover a div da imagem da página HTML
-                var div = document.getElementById("imagem-" + id);
-                div.remove();
-            } else {
-                throw new Error("Erro ao apagar a imagem.");
-            }
-            })
-            .catch(function(error) {
-            alert(error.message);
-            });
-        }
-           // Obtém os dados salvos no localStorage
-           var dadosArmazenados = localStorage.getItem("dados");
-
-           // Verifica se existem dados salvos
-            if (dadosArmazenados) {
-            // Converte os dados de JSON para um array
-            var dados = JSON.parse(dadosArmazenados);
-
-            // Obtém a referência do elemento para exibir as imagens, textos e opções
-            var conteudo = document.getElementById("conteudo");
-
-            // Itera sobre os dados e cria os elementos para exibir as imagens, textos e opções
-            dados.forEach(function(objetoImagemTexto) {
-                // Cria a div para a imagem
-                var div = document.createElement("div");
-                div.className = "imagem-container";
-
-                // Cria a imagem
-                var img = document.createElement("img");
-                img.src = objetoImagemTexto.urlImagem; // Define a URL da imagem
-
-                div.classList.add("card");
-                div.classList.add("p-3");
-                div.classList.add("m-1");
-                img.classList.add("card-img-top");
-
-                // Adiciona a imagem à div
-                div.appendChild(img);
-
-                // Cria o elemento de texto descritivo
-                var texto = document.createElement("p");
-                texto.textContent = objetoImagemTexto.texto;
-
-                // Cria o elemento de opção selecionada
-                var opcao = document.createElement("p");
-                opcao.textContent = "" + objetoImagemTexto.opcao;
-
-                // Adiciona o texto e a opção à div
-                div.appendChild(texto);
-                div.appendChild(opcao);
-
-                // Adiciona a div ao conteúdo
-                conteudo.appendChild(div);
-            });
-           }
-       </script>
-</div>
-
-
-<!--Rodapé da página-->
-
-        <footer class="row pt-3">
-            <!--formas de contato-->
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-                <label><b>Entre em contato conosco</b></label>
-                <img src="images/email.png" class="size p-3" alt="">
-
-                <p>Email: <a class="link-primary">email@email.com</a></p>
-                <p>Telefone: <a class="link-primary">+55 31 XXXXXXXXX</a></p>
-            </div>
-            <!--redes sociais-->
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-                <label><b>Redes sociais</b></label>
-                <br>
-                <img src="./images/linkedin.png" class="m-2" height="20%" width="15%">
-                <img src="./images/facebook.png" class="m-2" height="20%" width="15%">
-                <br>
-                <img src="images/Twitter.png" class="m-2" height="20%" width="15%">
-                <img src="images/Instagram.png" class="m-2" height="20%" width="15%">
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-                <!--Sobre a volunteer connect-->
-                <h3>Sobre a Volunteer Connect</h3>
-                <p>A Volunteer Conect foi pensada e idealizada com o fim de estabelecer conexão entre pessoas
-                    que se
-                    voluntarizam
-                    a ajudar o próximo e pessoas que, de alguma forma, possuem uma necessidade a ser suprida.
-                    Uma Aplicação denvolvida para promover o bem!</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-                    <label><b>Ajuda</b></label>
-                    <br>
-                    <a class="foot-link" href="centralAjuda.html">Dúvidas Gerais</a> <br>
-                    <a class="foot-link" href="vantagensVC.html">Volunteer Connect</a> <br>
-                    <a class="foot-link" href="duvidasFrequentes.html">Como Funciona</a> <br>
-                </div>
-            </footer>
+            <div id="conteudo"></div>
         </div>
-    </body>
-    <script src="novopost.js"></script>
+        <script>
+            function apagarImagem(id) {
+                // Fazer uma requisição DELETE para o servidor para remover a imagem pelo ID
+                fetch("http://localhost:3000/imagens/" + id, {
+                    method: "DELETE"
+                })
+                    .then(function (response) {
+                        // Verificar se a requisição foi bem-sucedida
+                        if (response.ok) {
+                            // Remover a div da imagem da página HTML
+                            var div = document.getElementById("imagem-" + id);
+                            div.remove();
+                        } else {
+                            throw new Error("Erro ao apagar a imagem.");
+                        }
+                    })
+                    .catch(function (error) {
+                        alert(error.message);
+                    });
+            }
+
+            function carregaPagina(){
+                // Obtém a referência do elemento para exibir as imagens, textos e opções
+                var conteudo = document.getElementById("conteudo");
+                conteudo.innerHTML = "";
+
+                // Obtém os dados salvos no localStorage
+                var dadosArmazenados = localStorage.getItem("dados");
+
+                // Verifica se existem dados salvos
+                if (dadosArmazenados) {
+                    // Converte os dados de JSON para um array
+                    var dados = JSON.parse(dadosArmazenados);
+
+                    // Itera sobre os dados e cria os elementos para exibir as imagens, textos e opções
+                    dados.forEach(function (objetoImagemTexto) {
+                        // Cria a div para a imagem
+                        var div = document.createElement("div");
+                        div.className = "imagem-container";
+
+                        // Cria a imagem
+                        var img = document.createElement("img");
+                        img.src = objetoImagemTexto.urlImagem; // Define a URL da imagem
+
+                        div.classList.add("card");
+                        div.classList.add("p-3");
+                        div.classList.add("m-1");
+                        img.classList.add("card-img-top");
+
+                        // Adiciona a imagem à div
+                        div.appendChild(img);
+
+                        // Cria o elemento de texto descritivo
+                        var texto = document.createElement("p");
+                        texto.textContent = objetoImagemTexto.texto;
+
+                        // Cria o elemento de opção selecionada
+                        var opcao = document.createElement("p");
+                        opcao.textContent = "" + objetoImagemTexto.opcao;                           
+
+                        // Adiciona o texto e a opção à div
+                        div.appendChild(texto);
+                        div.appendChild(opcao);
+
+                        if(objetoImagemTexto.opcao == "Beneficiário"){                          
+                            var botaoInscrever = document.createElement("button");
+                            botaoInscrever.type = "button"
+                            botaoInscrever.classList.add("m-2");
+                            botaoInscrever.classList.add("btn");
+                            botaoInscrever.classList.add("btn-success");
+                            botaoInscrever.innerHTML = "Inscreva-se";
+                            if(objetoImagemTexto.usuarioInscrito == true)
+                                botaoInscrever.disabled = true;
+                            botaoInscrever.onclick = 
+                                function confirmaInscricao(){
+                                    if(confirm('Deseja efetuar a inscrição?')){
+                                        realizarInscricao(objetoImagemTexto.id);
+                                    }
+                                }
+                            //botaoInscrever.addEventListener("click", confirmaInscricao);
+                            div.appendChild(botaoInscrever);
+                        }                    
+
+                        // Adiciona a div ao conteúdo
+                        conteudo.appendChild(div);
+                    });
+                }
+            }
+
+            function realizarInscricao(postId){
+                // Obtém os dados salvos no localStorage
+                var dadosArmazenados = localStorage.getItem("dados");
+
+                // Verifica se existem dados salvos
+                if (dadosArmazenados) {
+                    // Converte os dados de JSON para um array
+                    var dados = JSON.parse(dadosArmazenados);
+                    dados.forEach(function (objetoImagemTexto) {
+                        if(objetoImagemTexto.id == postId){
+                            objetoImagemTexto.usuarioInscrito = true;
+                        }
+                    })
+                    localStorage.setItem("dados", JSON.stringify(dados));
+                }
+                carregaPagina();
+            }
+                        
+        </script>
+    </div>
+
+
+    <!--Rodapé da página-->
+
+    <footer class="row pt-3">
+        <!--formas de contato-->
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+            <label><b>Entre em contato conosco</b></label>
+            <img src="images/email.png" class="size p-3" alt="">
+
+            <p>Email: <a class="link-primary">email@email.com</a></p>
+            <p>Telefone: <a class="link-primary">+55 31 XXXXXXXXX</a></p>
+        </div>
+        <!--redes sociais-->
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+            <label><b>Redes sociais</b></label>
+            <br>
+            <img src="./images/linkedin.png" class="m-2" height="20%" width="15%">
+            <img src="./images/facebook.png" class="m-2" height="20%" width="15%">
+            <br>
+            <img src="images/Twitter.png" class="m-2" height="20%" width="15%">
+            <img src="images/Instagram.png" class="m-2" height="20%" width="15%">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+            <!--Sobre a volunteer connect-->
+            <h3>Sobre a Volunteer Connect</h3>
+            <p>A Volunteer Conect foi pensada e idealizada com o fim de estabelecer conexão entre pessoas
+                que se
+                voluntarizam
+                a ajudar o próximo e pessoas que, de alguma forma, possuem uma necessidade a ser suprida.
+                Uma Aplicação denvolvida para promover o bem!</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+            <label><b>Ajuda</b></label>
+            <br>
+            <a class="foot-link" href="centralAjuda.html">Dúvidas Gerais</a> <br>
+            <a class="foot-link" href="vantagensVC.html">Volunteer Connect</a> <br>
+            <a class="foot-link" href="duvidasFrequentes.html">Como Funciona</a> <br>
+        </div>
+    </footer>
+    </div>
+</body>
+<script src="novopost.js"></script>
+<script>
+    carregaPagina();
+</script>
 
 </html>

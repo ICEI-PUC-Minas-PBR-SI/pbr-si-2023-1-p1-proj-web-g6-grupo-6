@@ -64,11 +64,14 @@
           <a href="perfil.html"><button type="button">Voltar para Meu Perfil</button></a>
         </div>
       </div>
-      <div class="row p-3">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h3 class="text-center pb-3">Instruções para inscrição</h3>
+      <div class="row p-5">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+          <h3>Instruções para inscrição</h3>
           <ol>
-            <li>Ao clicar no botão ao lado, você será direcionado(a) a uma página de criação de projeto para publicar algo relacionado ao problema que você enfrenta.</li>
+            <li>Selecione, no campo ao lado, sua forma de participação no projeto;</li>
+            <li>Você será direcionado(a) a uma página de criação de projeto (caso tenha selecionado a opção
+              "Beneficiário") e para uma página de Inscrição em projetos criados por outras pessoas (caso tenha
+              selecionado a opção "Voluntário");</li>
             <li>Beneficiário: <br> - Ao selecionar a opção de Beneficiário, você será direcionado para a página em que
               irá cadastrar o seu rojeto com sua necessidade.<br>
               - Nesta página, você deverá inserir o seu endereço, o seu CEP, selecionar a opção de quem irá receber a
@@ -76,21 +79,30 @@
               necessidade (exemplo: se você precisa de ajuda com uma reforma, é possível postar fotos da parte da casa a
               ser reformada). 
             </li>
+            <li>Voluntário: <br> - Ao clicar em "Saber mais", uma tela contendo informações aprofundadas sobre o projeto
+              será aberta.<br>
+              - Ao selecionar "Inscreva-se", você será automaticamente direcionado a uma página para concluir a
+              inscrição.<br>
+              - Se a opção selecionada for "Descartar", o projeto será eliminado de sua tela, mostrando o seu
+              desinteresse pelo projeto em questão <br>
+              - Além disso, para fazer uma busca mais rápida e precisa, você pode buscar por projetos utilizando uma
+              palavra chave ou nome na barra de pesquisas.</li>
           </ol>
         </div>
-      </div>
-      <div class="row pb-5 text-center">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <br>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <a class="btn btn-success text-align-center" href="projetoBeneficiario.html" role="button"
-            aria-expanded="false">
-            Abrir um novo projeto
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <br>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="dropdown">
+            <a class="btn btn-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Selecione sua forma de participação no projeto
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="projetoBeneficiario.html">Beneficiário (Aquele que carece de algo)</a>
+              </li>
+              <li><a class="dropdown-item" href="projetoVoluntario.html">Voluntário (Aquele que está disposto a
+                  ajudar)</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <!--Rodapé da página-->
