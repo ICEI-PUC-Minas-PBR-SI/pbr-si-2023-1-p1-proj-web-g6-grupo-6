@@ -141,20 +141,16 @@ background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 6
 
       if (login == "" || nome == "" || email == "" || senha == "" || senha2 == "" || cep == "") {
         alert('Preencha todos os campos,tente novamente')
-      } else if (login.length >= 30 || login.length <= 10) {
-        alert(`Email não pode ter ${login.length} caracteres!`)
-      } else if (nome.length >= 50 || nome.length <= 8) {
-        alert(`Nome completo não pode ter ${nome.length} caracteres!`)
       } else if (cep.length >= 9 || cep.length <= 7) {
-        alert(`CEP não pode ter ${cep.length} caracteres!`)
+        alert(`CEP inválido! Certifique-se de que o CEP inserido possui 8 números.`)
         }else if(cpf.length >=12 || cpf.length <=10){
-          alert(`CPF não pode ter ${cpf.length} caracteres!`)
+          alert(`CPF inválido! Certifique-se de que o CPF inserido possui 11 números.`)
         }else if (senha.length < 4  || senha.length >= 20){
-         alert(`A senha muito curta`)
+         alert(`Senha inválida!`)
         }else if (senha != senha2){
-          alert('A senha é inválida')
+          alert('As senhas informadas são incompatíveis.')
         }else{
-        alert('Usuário salvo com sucesso. Proceda com o login ');
+        alert('Usuário salvo com sucesso. Proceda com o login!');
         window.location.href = 'login.html';
       }
       addUser(nome, login, senha, email);
