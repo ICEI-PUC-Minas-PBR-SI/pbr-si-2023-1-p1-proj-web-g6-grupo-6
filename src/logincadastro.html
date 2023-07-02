@@ -15,41 +15,46 @@
 </head>
 <br><br><br><br>
 <!-- Inicio do Corpo -->
+
 <body style="background: rgb(218,255,222);
 background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 66%);">
-    <div>
-      <h3><a onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" href="index.html" class="Lucas_Voltar">ㅤㅤ◁ Voltar para à página inicialㅤㅤㅤ</a>
-      </h3>
-      <br><br>
-      <br><br><br>
-    </div>
+  <div>
+    <h3><a onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" href="index.html"
+        class="Lucas_Voltar">ㅤㅤ◁ Voltar para à página inicialㅤㅤㅤ</a>
+    </h3>
+    <br><br>
+    <br><br><br>
+  </div>
 
-    <div class="Lucas_Card3" style="background-color: white;">
-      <img class="Lucas_img" src="./images/logoVolCon.png">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-      <br>
-      <hr style="
+  <div class="Lucas_Card3" style="background-color: white;">
+    <img class="Lucas_img" src="./images/logoVolCon.png">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+    <br>
+    <hr style="
       top: 20px;
       border: none;
       height: 2px;
       background: #000000"><br>
 
-      ㅤㅤ<p style="display:inline;text-align:left;"><b>Já possui cadastro?</b></p>ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-      <p style="display:inline;text-align:left;"><b>Não possui cadastro?</b></p>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<br>
-      <p style="display:inline;text-align:right;font-size: 20px;">Acesse sua conta agora!</b></p>ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-      <h3 style="display:inline;text-align:left;">Crie sua conta agora!</b></h3>ㅤㅤㅤㅤ
-      <br><br>
-      <a style="text-decoration: none;color:black;" href="login.html"><button  class="Lucas_button2"><b>Login</b></button></a>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-      <button class="Lucas_button2" type="button" data-toggle="modal" data-target="#loginModal"><b>Novo usuario</b></button>ㅤㅤㅤㅤㅤㅤㅤ
-      <br><br>
-      <br>
-      <br><br>
+    ㅤㅤ<p style="display:inline;text-align:left;"><b>Já possui cadastro?</b></p>ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+    <p style="display:inline;text-align:left;"><b>Não possui cadastro?</b></p>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<br>
+    <p style="display:inline;text-align:right;font-size: 20px;">Acesse sua conta agora!</b></p>ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+    <h3 style="display:inline;text-align:left;">Crie sua conta agora!</b></h3>ㅤㅤㅤㅤ
+    <br><br>
+    <a style="text-decoration: none;color:black;" href="login.html"><button
+        class="Lucas_button2"><b>Login</b></button></a>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+    <button class="Lucas_button2" type="button" data-toggle="modal" data-target="#loginModal"><b>Novo
+        usuario</b></button>ㅤㅤㅤㅤㅤㅤㅤ
+    <br><br>
+    <br>
+    <br><br>
 
-    </div>
-    <br><br><br><br><br><br><br>
-    <!-- Fim do Corpo -->
+  </div>
+  <br><br><br><br><br><br><br>
+  <!-- Fim do Corpo -->
 
   <!-- Inicio do Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document" style="box-shadow: 60px -16px #D6E8DB; border-radius: 10px;">
       <div class="modal-content">
         <div class="modal-header">
@@ -59,106 +64,123 @@ background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 6
           </button>
         </div>
         <div class="modal-body">
-            <div id="login-box" class="col-md-12">
-                <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
-                    <h3 >Novo usuário</h3>
-                    <div class="form-group">
-                        <label for="login">Nome</label><br>
-                        <input type="text" name="txt_login" id="txt_login" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="nome">Nome completo</label><br>
-                        <input type="text" name="txt_nome" id="txt_nome" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label for="nome">CEP</label><br>
-                      <input type="number" name="txt_cep" id="txt_cep" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label for="nome">CPF</label><br>
-                      <input type="number" name="txt_cpf" id="txt_cpf" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label><br>
-                        <input type="text" name="txt_email" id="txt_email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="senha">Senha</label><br>
-                        <input type="password" name="txt_senha" id="txt_senha" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="senha2">Confirmação de Senha</label><br>
-                        <input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
-                    </div>
+          <div id="login-box" class="col-md-12">
+            <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+              <h3>Novo usuário</h3>
+              <div class="form-group">
+                <label for="login">Nome</label><br>
+                <input type="text" name="txt_login" id="txt_email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="nome">Nome completo</label><br>
+                <input type="text" name="txt_nome" id="txt_nome" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="nome">CEP</label><br>
+                <input type="number" name="txt_cep" id="txt_cep" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="nome">CPF</label><br>
+                <input type="number" id="txt_cpf" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="text" name="txt_email" id="txt_login" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="senha">Senha</label><br>
+                <input type="password" name="txt_senha" id="txt_senha" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="senha2">Confirmação de Senha</label><br>
+                <input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
+              </div>
 
-                </form>
-            </div>
+            </form>
+          </div>
         </div>
         <div>
-            ㅤㅤ <button onmouseover="this.style.color='red'"onmouseout="this.style.color='black'" class="Lucas_button2" type="button" data-dismiss="modal"><b>Cancelar</b></button>
-            ㅤㅤ<button onmouseover="this.style.color='green'"onmouseout="this.style.color='black'" class="Lucas_button2" type="button" id="btn_salvar" ><b>Salvar</b></button>
+          ㅤㅤ <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" class="Lucas_button2"
+            type="button" data-dismiss="modal"><b>Cancelar</b></button>
+          ㅤㅤ<button onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" class="Lucas_button2"
+            type="button" id="btn_salvar"><b>Salvar</b></button>
           <br><br>
         </div>
       </div>
     </div>
   </div>
   <!-- Fim do Modal -->
-    <script>
-      // Inicio Funções js do login
-    function processaFormLogin (event) {                
-    event.preventDefault ();
+  <script>
+    // Inicio Funções js do login
+    function processaFormLogin(event) {
+      event.preventDefault();
 
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
 
-    resultadoLogin = loginUser (username, password);
-    if (resultadoLogin) {
+      resultadoLogin = loginUser(username, password);
+      if (resultadoLogin) {
         alert(`Bem vindo ${username}`)
         window.location.href = 'index.html';
+      }
+      else {
+        alert('Usuário ou senha incorretos');
+      }
     }
-    else {
-        alert ('Usuário ou senha incorretos');
+
+    function salvaLogin(event) {
+      event.preventDefault();
+
+      let login = document.getElementById('txt_login').value;
+      let nome = document.getElementById('txt_nome').value;
+      let email = document.getElementById('txt_email').value;
+      let cep = document.getElementById('txt_cep').value;
+      let cpf = document.getElementById('txt_cpf').value;  //CPF
+      let senha = document.getElementById('txt_senha').value;
+      let senha2 = document.getElementById('txt_senha2').value;
+
+      if (login == "" || nome == "" || email == "" || senha == "" || senha2 == "" || cep == "") {
+        alert('Preencha todos os campos,tente novamente')
+      } else if (login.length >= 30 || login.length <= 10) {
+        alert(`Email não pode ter ${login.length} caracteres!`)
+      } else if (nome.length >= 50 || nome.length <= 8) {
+        alert(`Nome completo não pode ter ${nome.length} caracteres!`)
+      } else if (cep.length >= 9 || cep.length <= 7) {
+        alert(`CEP não pode ter ${cep.length} caracteres!`)
+        }else if(cpf.length >=12 || cpf.length <=10){
+          alert(`CPF não pode ter ${cpf.length} caracteres!`)
+        }else if (senha.length < 4  || senha.length >= 20){
+         alert(`A senha muito curta`)
+        }else if (senha != senha2){
+          alert('A senha é inválida')
+        }else{
+        alert('Usuário salvo com sucesso. Proceda com o login ');
+        window.location.href = 'login.html';
+      }
+      addUser(nome, login, senha, email);
+      $('#loginModal').modal('hide');
     }
-}
-
-function salvaLogin (event) {
-event.preventDefault ();
-
-let login  = document.getElementById('txt_login').value;
-let nome   = document.getElementById('txt_nome').value;
-let email  = document.getElementById('txt_email').value;
-let cep  = document.getElementById('txt_cep').value;  
-let senha  = document.getElementById('txt_senha').value;
-let senha2 = document.getElementById('txt_senha2').value;
-
-if(login == "" || nome == "" || email == "" || senha == "" || senha2 == "" || cep == ""){
-alert('Preencha todos os campos,tente novamente')
-}else{
-    alert ('Usuário salvo com sucesso. Proceda com o login para ');
-    window.location.href = 'login.html';
-}
-if (senha != senha2) {
-    alert ('As senhas informadas não conferem.');
-    return
-}
-addUser (nome, login, senha, email);
-$('#loginModal').modal('hide');
-}
-document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
-document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);  
+    document.getElementById('login-form').addEventListener('submit', processaFormLogin);
+    document.getElementById('btn_salvar').addEventListener('click', salvaLogin);
 //Fim Funções Js do login  
-    </script>
+  </script>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-  
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="register.js"></script>
-  
-  </body>
-  
-  
-  </html>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="register.js"></script>
+
+</body>
+
+
+</html>

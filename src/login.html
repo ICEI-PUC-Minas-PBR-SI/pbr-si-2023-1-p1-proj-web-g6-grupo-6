@@ -12,11 +12,14 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <br><br><br><br>
+
 <body class="index" style="background: rgb(218,255,222);
 background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 66%);">
   <!-- Inicio do Corpo -->
   <div>
-    <h3><a onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" style="display:inline;text-decoration: none;" href="logincadastro.html" class="Lucas_Voltar">ㅤㅤ◁ Voltar para à página de Login e Cadastroㅤ</a>
+    <h3><a onmouseover="this.style.color='green'" onmouseout="this.style.color='black'"
+        style="display:inline;text-decoration: none;" href="logincadastro.html" class="Lucas_Voltar">ㅤㅤ◁ Voltar para à
+        página de Login e Cadastroㅤ</a>
     </h3>
     <br><br>
     <br><br><br>
@@ -113,48 +116,57 @@ background: linear-gradient(0deg, rgba(218,255,222,1) 11%, rgba(255,255,255,1) 6
   <!-- Fim do Modal -->
   <script>
     // Inicio Funções js do login
-    function processaFormLogin (event) {                
-    event.preventDefault ();
+    function processaFormLogin(event) {
+      event.preventDefault();
 
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
 
-    resultadoLogin = loginUser (username, password);
-    if (resultadoLogin) {
+      resultadoLogin = loginUser(username, password);
+      if (resultadoLogin) {
         alert(`Bem vindo ${username}`)
         window.location.href = 'perfil.html';
+      }
+      else {
+        alert('Usuário ou senha incorretos');
+      }
     }
-    else {
-        alert ('Usuário ou senha incorretos');
+
+    function salvaLogin(event) {
+      event.preventDefault();
+
+      let login = document.getElementById('txt_login').value;
+      let nome = document.getElementById('txt_nome').value;
+      let email = document.getElementById('txt_email').value;
+      let cep = document.getElementById('txt_cep').value;  //CEP
+      let cpf = document.getElementById('txt_cpf').value;  //CPF
+      let senha = document.getElementById('txt_senha').value;
+      let senha2 = document.getElementById('txt_senha2').value;
+
+        if (login == "" || nome == "" ||email == "" || senha == "" ||senha2 == "" || cep == "" 
+        || cpf == "") {
+          alert('Preencha todos os campos, tente novamente')
+        }else if (login.length >= 30 || login.length <= 10){
+         alert(`Email não pode ter ${login.length} caracteres!`)
+        }else if (nome.length >= 50 || nome.length <= 8){
+          alert(`Nome completo não pode ter ${nome.length} caracteres!`)
+        }else  if (cep.length >= 9 || cep.length <= 7){
+          alert(`CEP não pode ter ${cep.length} caracteres!`)
+        }else if (cpf.length >=12 || cpf.length <=10){
+          alert(`CPF não pode ter ${cpf.length} caracteres!`)
+        }else if(senha.length < 4  || senha.length >= 20){
+         alert(`A senha é inválida`)
+        }else if (senha != senha2){
+          ('As senhas informadas não conferem.');
+        }else{
+          alert('Usuário salvo com sucesso. Proceda com o login');
+          window.location.href = 'peferencias.html';
+          }
+      addUser(nome, login, senha, email);
+      $('#loginModal').modal('hide');
     }
-}
-
-function salvaLogin (event) {
-event.preventDefault ();
-
-let login  = document.getElementById('txt_login').value;
-let nome   = document.getElementById('txt_nome').value;
-let email  = document.getElementById('txt_email').value;
-let cep  = document.getElementById('txt_cep').value;  
-let cpf  = document.getElementById('txt_cpf').value;  
-let senha  = document.getElementById('txt_senha').value;
-let senha2 = document.getElementById('txt_senha2').value;
-
-if(login == "" || nome == "" || email == "" || senha == "" || senha2 == "" || cep == "" || cpf == ""){
-alert('Preencha todos os campos,tente novamente')
-}else{
-    alert ('Usuário salvo com sucesso. Proceda com o login para ');
-    window.location.href = 'peferencias.html';
-}
-if (senha != senha2) {
-    alert ('As senhas informadas não conferem.');
-    return
-}
-addUser (nome, login, senha, email);
-$('#loginModal').modal('hide');
-}
-document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
-document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);  
+    document.getElementById('login-form').addEventListener('submit', processaFormLogin);
+    document.getElementById('btn_salvar').addEventListener('click', salvaLogin);
 
 //Fim Funções Js do login    
   </script>
