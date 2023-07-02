@@ -140,7 +140,7 @@
                 }
             </style>
 
-            <div id="conteudo"></div>
+            <div id="posts"></div>
         <script>
 
 
@@ -174,39 +174,37 @@
                 // Obtém a referência do elemento para exibir as imagens, textos e opções
                 var conteudo = document.getElementById("conteudo");
 
-                // Itera sobre os dados e cria os elementos para exibir as imagens, textos e opções
-                dados.forEach(function (objetoImagemTexto) {
-                    // Cria a div para a imagem
-                    var div = document.createElement("div");
-                    div.className = "imagem-container";
+                const todosPosts = document.querySelector('#posts'); // criei uma constante que recebe o elemento div que irá receber todos os posts    
 
-                    // Cria a imagem
-                    var img = document.createElement("img");
-                    img.src = objetoImagemTexto.urlImagem; // Define a URL da imagem
 
-                    div.classList.add("card");
-                    div.classList.add("p-3");
-                    div.classList.add("m-1");
-                    img.classList.add("card-img-top");
+                for(var i=0; i<9; i++){ // criando uma repetição com 9 posts para serem exibidos 
 
-                    // Adiciona a imagem à div
-                    div.appendChild(img);
+                    console.log(dados);
 
-                    // Cria o elemento de texto descritivo
-                    var texto = document.createElement("p");
-                    texto.textContent = objetoImagemTexto.texto;
+                    const div_post = document.createElement ('div'); // vou criar uma div para cada post 
+                    todosPosts.appendChild(div_post); // fazer a div que criei para cada post ser filha da div com todos os posts 
 
-                    // Cria o elemento de opção selecionada
-                    var opcao = document.createElement("p");
-                    opcao.textContent = "" + objetoImagemTexto.opcao;
+                    // fazendo pegar sempre os últimos 
+                    var j = dados.length - i -1;
+                    console.log(j);
 
-                    // Adiciona o texto e a opção à div
-                    div.appendChild(texto);
-                    div.appendChild(opcao);
+                    // adicionando legenda 
+                    const legenda = document.createElement('p');
+                    legenda.innerHTML = dados[j].texto;
 
-                    // Adiciona a div ao conteúdo
-                    conteudo.appendChild(div);
-                });
+                    // adicionando a imagem
+                    const imagem = document.createElement('img');
+                    imagem.setAttribute('src', dados[j].urlImagem);
+
+                    // adicionando se é beneficario ou nao
+                    const opcaoBVO = document.createElement('p');
+                    opcaoBVO.innerHTML = dados[j].opcao;
+
+                    // fazendo os elementos necessários serem filho da div que contem os dados de cada post 
+                    div_post.appendChild(imagem);
+                    div_post.appendChild(legenda);
+                    div_post.appendChild(opcaoBVO);
+                }
             }
         </script>
     </div>
