@@ -78,18 +78,19 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <h3>Instruções e ideias</h3>
                     <ul>
-                        <li>Nos campos abaixo, você tem a possibilidade de selecionar fotos da sua demanda (como um
+                        <li>Nos campos ao lado, você tem a possibilidade de selecionar fotos da sua demanda (como um
                             objeto ou cômodo quebrados, por exemplo), fotos pessoais para sua identificação e/ou fotos
-                            da situação de pessoas que carecem de ajuda (alguèm que precisa de uma reforma, por
+                            da situação de pessoas que carecem de ajuda (alguém que precisa de uma reforma, por
                             exemplo).</li>
                         <li>Você tambem pode adicionar uma legenda, citando as caracteristícas e informações principais
                             do projeto e das pessoas que carecem de ajuda. Exagere na criatividade!</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-                    <h3>Informações pessoais:</h3>
+                    <h3 class="text-center">Informações pessoais:</h3>
                     <div class="row p-5 mx-5">
                         <input type="text" id="textoInput" placeholder="Descrição" class="pb-5 mb-4">
+                        <input type="text" id="localInput" placeholder="Localização" class="pb-5 mb-4">
                         <input type="text" id="urlImagemInput" placeholder="URL da imagem" class="mb-4">
 
                         <button onclick="salvarImagemTexto()" class="btn btn-outline-success">Salvar</button>
@@ -97,6 +98,7 @@
                       <script>
                         function salvarImagemTexto() {
                           var texto = document.getElementById("textoInput").value;
+                          var localizacao = document.getElementById("localInput").value;
                           var urlImagem = document.getElementById("urlImagemInput").value;
                           var opcao = "Beneficiário";
                   
@@ -106,10 +108,11 @@
                             usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
                           }        
                   
-                          if (texto.trim() !== "" && urlImagem.trim() !== "") {
+                          if (texto.trim() !== "" && urlImagem.trim() !== "" && localizacao.trim() !== "") {
                             var objetoImagemTexto = {
                               id: generateUUID(),
                               texto: texto,
+                              localizacao: localizacao,
                               urlImagem: urlImagem,
                               opcao: opcao,
                               usuarioId: usuarioCorrente.id,
@@ -120,6 +123,7 @@
                             dados.push(objetoImagemTexto);
                             localStorage.setItem("dados", JSON.stringify(dados));
                             document.getElementById("textoInput").value = "";
+                            document.getElementById("localInput").value = "";
                             document.getElementById("urlImagemInput").value = "";
                             alert("Projeto Criado com sucesso!");
                             window.location = "feed.html";

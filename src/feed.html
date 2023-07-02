@@ -162,12 +162,17 @@
                         var texto = document.createElement("p");
                         texto.textContent = objetoImagemTexto.texto;
 
+                        // Cria o elemento de Localização
+                        var localizacao = document.createElement("p");
+                        localizacao.textContent = objetoImagemTexto.localizacao;
+
                         // Cria o elemento de opção selecionada
                         var opcao = document.createElement("p");
                         opcao.textContent = "" + objetoImagemTexto.opcao;                           
 
                         // Adiciona o texto e a opção à div
                         div.appendChild(texto);
+                        div.appendChild(localizacao);
                         div.appendChild(opcao);
 
                         if(objetoImagemTexto.opcao == "Beneficiário"){                          
