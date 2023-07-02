@@ -201,6 +201,11 @@
             }
 
             function realizarInscricao(postId){
+                var usuarioCorrenteJSON = localStorage.getItem('usuarioCorrente');
+                var usuarioCorrente = {};
+                if (usuarioCorrenteJSON) {
+                    usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
+                }                
                 // Obtém os dados salvos no localStorage
                 var dadosArmazenados = localStorage.getItem("dados");
 
@@ -211,6 +216,7 @@
                     dados.forEach(function (objetoImagemTexto) {
                         if(objetoImagemTexto.id == postId){
                             objetoImagemTexto.usuarioInscrito = true;
+                            objetoImagemTexto.usuarioInscritoId = usuarioCorrente.id;
                         }
                     })
                     localStorage.setItem("dados", JSON.stringify(dados));

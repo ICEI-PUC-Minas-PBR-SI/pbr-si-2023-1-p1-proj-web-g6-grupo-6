@@ -194,7 +194,7 @@
 
                 // Adiciona a div ao conteúdo
                 if((objetoImagemTexto.usuarioId == usuarioCorrente.id && divconteudo == "minhasPostagensConteudo") ||
-                (objetoImagemTexto.usuarioInscrito == true && divconteudo == "projetosParticipeiConteudo")){
+                (objetoImagemTexto.usuarioInscrito == true && divconteudo == "projetosParticipeiConteudo" && objetoImagemTexto.usuarioInscritoId == usuarioCorrente.id)){
                   conteudo.appendChild(div);
                 }
           });
