@@ -117,9 +117,14 @@ ready(function () { // aqui dentro vai o codigo que eu preciso
                     const imagem = document.createElement('img');
                     imagem.setAttribute('src', dados[i].urlImagem);
 
+                    // adicionando se é beneficario ou nao
+                    const opcaoBVO = document.createElement('p');
+                    opcaoBVO.innerHTML = dados[i].opcao;
+
                     // fazendo os elementos necessários serem filho da div que contem os dados de cada post 
                     div_post.appendChild(imagem);
                     div_post.appendChild(legenda);
+                    div_post.appendChild(opcaoBVO);
 
                 }
             };
