@@ -15,6 +15,7 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 ## Requisitos Funcionais
 |ID    | Descrição do Requisito  | Artefato | Responsável | Status 
 |------|-----------------------------------------|----| ----|
+
 |RF-001| O sistema deve permitir cadastrar usuários com login e senha| logincadastro.html | Lucas Vieira | Implementado
 |RF-002| O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | -- | -- | Não implementado, pois decidimos classificar somente a participação dentro do projeto
 |RF-003| O sistema deve permitir que usuários Beneficiados cadastrem Projetos | novosprojetos.html | Giovanna Vaz (JavaScript) Gustavo amaral (html) | Implementado
