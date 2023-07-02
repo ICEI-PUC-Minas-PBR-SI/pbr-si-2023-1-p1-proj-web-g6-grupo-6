@@ -37,10 +37,14 @@
       }
 
       /* Estilo para o contêiner que envolve as imagens */
-      #conteudo {
+      #minhasPostagensConteudo {
           display: flex;
           flex-wrap: wrap;
       }
+      #projetosParticipeiConteudo {
+          display: flex;
+          flex-wrap: wrap;
+      }      
 
     </style>
 </head>
@@ -122,8 +126,14 @@
     </div>
     <!-- <h3>Projetos Participados</h3> -->
     <div class="row px-5">
-      <h3 class="text-center pb-4">Minhas postagens</h3>
-      <div id="conteudo"></div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h3 class="text-center pb-4">Minhas postagens</h3>
+        <div id="minhasPostagensConteudo"></div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h3 class="text-center pb-4">Projetos que participei</h3>
+        <div id="projetosParticipeiConteudo"></div>
+      </div>
     </div>
     </div>
 
@@ -143,7 +153,7 @@
       document.getElementById("image-url").value = usuarioCorrente.img? usuarioCorrente.img: "";
       mostraImagem();
 
-      function exibeFeed(){
+      function exibeFeed(divconteudo){
         // Obtém os dados salvos no localStorage
         var dadosArmazenados = localStorage.getItem("dados");
 
@@ -153,12 +163,10 @@
           var dados = JSON.parse(dadosArmazenados);
 
           // Obtém a referência do elemento para exibir as imagens, textos e opções
-          var conteudo = document.getElementById("conteudo");
+          var conteudo = document.getElementById(divconteudo);
 
           // Itera sobre os dados e cria os elementos para exibir as imagens, textos e opções
-          dados.forEach(function(objetoImagemTexto) {
-              if(objetoImagemTexto.usuarioId == usuarioCorrente.id){
-                  
+          dados.forEach(function(objetoImagemTexto) {                 
                 // Cria a div para a imagem
                 var div = document.createElement("div");
                 div.className = "imagem-container";
@@ -188,8 +196,10 @@
                 div.appendChild(opcao);
 
                 // Adiciona a div ao conteúdo
-                conteudo.appendChild(div);
-              }
+                if((objetoImagemTexto.usuarioId == usuarioCorrente.id && divconteudo == "minhasPostagensConteudo") ||
+                (objetoImagemTexto.usuarioInscrito == true && divconteudo == "projetosParticipeiConteudo")){
+                  conteudo.appendChild(div);
+                }
           });
         }
       }      
@@ -257,7 +267,8 @@
         alert('Imagem atualizada.');
       }      
 
-      exibeFeed();
+      exibeFeed("minhasPostagensConteudo");
+      exibeFeed("projetosParticipeiConteudo");
 
     </script>    
   </div>

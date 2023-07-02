@@ -85,44 +85,63 @@
                         <li>Você tambem pode adicionar uma legenda, citando as caracteristícas e informações principais
                             do projeto e das pessoas que carecem de ajuda. Exagere na criatividade!</li>
                     </ul>
-                    <a type="button" class="botao btn  text-center px-2 ps-5 mb-2" href="novo_post.html" role="button"><img
-                        src="./images/upload.jpg" class="m-3" width="15px"
-                        alt="">Fazer upload da imagem</a>
-                <br>
-                <textarea placeholder="Escreva um comentário ..." rows=10 cols=50
-                    class="caixadetexto mb-5 ms-5"></textarea>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
                     <h3>Informações pessoais:</h3>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEndereco1" class="form-label">Endereço</label>
-                          <input type="endereco" class="form-control" id="exampleInputEndereco1" aria-describedby="emailHelp">
-                          <div id="endereco" class="form-text">Insira o endereço contendo Estado e Cidade, para que o  voluntário saiba a área de atuação</div>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputCep1" class="form-label">CEP</label>
-                          <input type="cep" class="form-control" id="exampleInputCep1">
-                          <div id="cep" class="form-text">Insira o endereço contendo Estado e Cidade, para que o  voluntário saiba a área de atuação</div>
-                        </div>
-                        <div class="dropdown">
-                            <a class="btn btn-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                              aria-expanded="false">
-                              Quem irá receber a ajuda?
-                            </a>
-                
-                            <ul class="dropdown-menu">
-                              <li>Eu mesmo(a)</li>
-                              <li>Algum conhecido meu</li>
-                              <li>Várias pessoas serão ajudadas</li>
-                            </ul>
-                          </div>
-                        <div class="mb-3 mt-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Confirma que todas as informações estão corretas?</label>
-                        </div>
-                        <button type="submit" class="btn btn-success">Submit</button>
-                      </form>
+                    <div class="row p-5 mx-5">
+                        <input type="text" id="textoInput" placeholder="Descrição" class="pb-5 mb-4">
+                        <input type="text" id="urlImagemInput" placeholder="URL da imagem" class="mb-4">
+
+                        <button onclick="salvarImagemTexto()" class="btn btn-outline-success">Salvar</button>
+                      </div>
+                      <script>
+                        function salvarImagemTexto() {
+                          var texto = document.getElementById("textoInput").value;
+                          var urlImagem = document.getElementById("urlImagemInput").value;
+                          var opcao = "Beneficiário";
+                  
+                          var usuarioCorrenteJSON = localStorage.getItem('usuarioCorrente');
+                          var usuarioCorrente;
+                          if (usuarioCorrenteJSON) {
+                            usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
+                          }        
+                  
+                          if (texto.trim() !== "" && urlImagem.trim() !== "") {
+                            var objetoImagemTexto = {
+                              id: generateUUID(),
+                              texto: texto,
+                              urlImagem: urlImagem,
+                              opcao: opcao,
+                              usuarioId: usuarioCorrente.id,
+                              usuarioInscrito: false
+                            };
+                            var dadosAntigos = localStorage.getItem("dados");
+                            var dados = dadosAntigos ? JSON.parse(dadosAntigos) : [];
+                            dados.push(objetoImagemTexto);
+                            localStorage.setItem("dados", JSON.stringify(dados));
+                            document.getElementById("textoInput").value = "";
+                            document.getElementById("urlImagemInput").value = "";
+                            alert("Projeto Criado com sucesso!");
+                            window.location = "feed.html";
+                          }
+                        }
+
+                        function generateUUID() {
+                            var d = new Date().getTime();
+                            var d2 = (performance && performance.now && (performance.now()*1000)) || 0;
+                            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                                var r = Math.random() * 16;
+                                if(d > 0){
+                                    r = (d + r)%16 | 0;
+                                    d = Math.floor(d/16);
+                                } else {
+                                    r = (d2 + r)%16 | 0;
+                                    d2 = Math.floor(d2/16);
+                                }
+                                return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+                            });
+                        }                         
+                      </script>
                 </div>
             </div>
 
@@ -168,5 +187,5 @@
             </footer>
 
     </body>
-
+    <script src="novoprojeto.js"></script>
 </html>
