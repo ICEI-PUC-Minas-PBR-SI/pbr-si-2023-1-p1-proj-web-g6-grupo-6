@@ -13,6 +13,7 @@ Giovanna Fabíola Vaz:
 > Configuração da responsividade de todas as páginas;
 > Padroização do site, organização das branches, auxílio aos outros integrantes quanto ao javascript, participação na estruturação e organização do trabalho.
 > Estrutura da pagina Novo Post;
+> Gravação, edição e montagem do vídeo de apresentação do site. Confecção dos slides para a apresentação.
 
 Gustavo Amaral Silva: 
 > Não atuou nesta etapa.
@@ -25,3 +26,4 @@ Lucas Vieira Souza:
 > Programação do register.js(funcionalidades JavaScript);
 > Restruturação da página de Login e Registro(HTML e CSS);
 > Restruturação do cadastro (Inclusão de um Modal para registrar-se);
+
