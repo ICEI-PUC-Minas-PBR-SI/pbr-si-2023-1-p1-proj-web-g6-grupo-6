@@ -8,9 +8,8 @@
 |------|-----------------------------------------|----|------| ----|
 |RF-001| O sistema deve permitir cadastrar usuários com login e senha| logincadastro.html | Lucas Vieira | Implementado
 |RF-002| O sistema deve permitir classificar os usuários entre Voluntários e/ou Beneficiados | Não implementado  | Não implementado | Não implementado, pois decidimos classificar somente a participação dentro do projeto
-|RF-003| O sistema deve permitir que usuários Beneficiados cadastrem Projetos | novosprojetos.html | Giovanna Vaz
-| Implementado
-|RF-004| O sistema deve permitir que usuários Voluntários se inscrevam em Projetos |  novosprojetos.html | Giovanna Vaz | Implementado
+|RF-003| O sistema deve permitir que usuários Beneficiados cadastrem Projetos | novosprojetos.html | Giovanna Vaz | Implementado
+|RF-004| O sistema deve permitir que usuários Voluntários se inscrevam em Projetos | novosprojetos.html | Giovanna Vaz | Implementado
 |RF-005| O sistema deve permitir classificar os Projetos em Área de Motivação | peferencias.html | Não implementado | Não implementado
 |RF-006| O sistema deve permitir filtrar os Projetos por classificações listadas acima e por região geográfica | Não implementado | Otávio Nunes | Não implementado
 |RF-007| O sistema deve permitir que usuários beneficiados façam atualizações do andamento do Projeto | Não implementado | Não implementado | Não implementado
