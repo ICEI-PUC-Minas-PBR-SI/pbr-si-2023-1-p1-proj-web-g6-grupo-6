@@ -7,18 +7,15 @@ Eduarda Faria Pinheiro:
 
 Giovanna Fabíola Vaz: 
 · Estruturação da página de Novo Post (parte estática);
-· Estruturação, programação e realização da parte funcional da página de Meu Perfil;
-· Estruturação, programação e realização da parte funcional da página de Substituição de senha;
-· Programação e estruturação das páginas de Novo projeto, Novo projeto de beneficiário e Novo projeto de voluntário (parte estática);
+· Estruturação, programação e realização da parte funcional (Java Script) da página de Meu Perfil;
+· Estruturação, programação e realização da parte funcional (Java Script) da página de Substituição de senha;
+· Programação e estruturação (parte estática) das páginas de Novo projeto E Novo projeto de beneficiário;
 · Estruturação da Página Inicial (parte estática);
 · Configuração da responsividade de todas as páginas;
 · Padroização do site, organização das branches, auxílio aos outros integrantes quanto ao git e javascript, participação na estruturação e organização do trabalho.
 
 Gustavo Amaral Silva:
-· Estrutura da pagina Novo Post
-· Estrutura da pagina Meu Perfil e o começo das funcionalidades da mesma utilizando (Java scrip)
-· Estrutura da pagina de Analise e formação de suas funcionalidades utilizando (java scrip)
-· Ajuda na organização do trabalho e divisão de tarefas
+> Não atuou nesta etapa.
 
 Leticia Gabriela Ramos Macedo:
 · Função Buscar da página index
